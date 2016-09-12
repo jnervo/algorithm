@@ -78,11 +78,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="huiwen.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="prime_number_sum.cpp" />
     <ClCompile Include="string_player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="huiwen.h" />
     <ClInclude Include="prime_number_sum.h" />
     <ClInclude Include="string_player.h" />
   </ItemGroup>
