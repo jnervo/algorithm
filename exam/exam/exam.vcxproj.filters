@@ -21,9 +21,15 @@
     <ClCompile Include="prime_number_sum.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="string_player.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="prime_number_sum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="string_player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

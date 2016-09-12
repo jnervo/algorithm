@@ -80,9 +80,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="prime_number_sum.cpp" />
+    <ClCompile Include="string_player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="prime_number_sum.h" />
+    <ClInclude Include="string_player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

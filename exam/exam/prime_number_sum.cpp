@@ -6,7 +6,7 @@
 
 using namespace std;
 
-bool isPrime(int num)
+bool is_prime(int num)
 {
     for(int i = 2; i < num; i++)
     {
@@ -18,26 +18,26 @@ bool isPrime(int num)
     return true;
 }
 
-int getPrimeNumberPairCount(int num)
+int get_prime_number_pair_count(int num)
 {
     if(num <= 4)
     {
         return 0;
     }
 
-    vector<bool> vec_isPrime(num, false);
+    vector<bool> vec_is_prime(num, false);
 
     for(int i = 2; i < num; i++)
     {
-        if(isPrime(i))
+        if(is_prime(i))
         {
-            vec_isPrime[i] = true;
+            vec_is_prime[i] = true;
         }
     }
     int count = 0;
-    for(int i = 2; i < num; i++)
+    for(int i = 2; i < num / 2; i++)
     {
-        if(vec_isPrime[i] && vec_isPrime[num-i])
+        if(vec_is_prime[i] && vec_is_prime[num-i])
         {
             printf("%d + %d = %d\n", i, num-i, num);
             count++;

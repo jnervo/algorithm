@@ -2,4 +2,5 @@
 #include <iostream>
 #include <vector>
 
-int getPrimeNumberPairCount(int num);
+bool is_prime(int num);
+int get_prime_number_pair_count(int num);
