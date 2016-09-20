@@ -27,6 +27,12 @@
     <ClCompile Include="huiwen.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="link_node.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dna_repair.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="prime_number_sum.h">
@@ -36,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="huiwen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="link_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dna_repair.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
