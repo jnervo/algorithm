@@ -37,13 +37,20 @@ namespace NlpFileConverter
 */
     class StanfordNlpParserResultHandler
     {
-        public static void FormatConvert(string input, string output)
+        public static void FormatConvert(string input, string output, string originalInput)
         {
             var sentenceList = ReadSentenceList(input);
 
-            AdaptSentenceList(sentenceList);
+            var originalSentenceList = ReadOriginalSentenceList(originalInput);
+
+            AdaptSentenceList(sentenceList, originalSentenceList);
 
             WriteSentenceList(output, sentenceList);
+        }
+
+        private static List<List<string>> ReadOriginalSentenceList(string originalInput)
+        {
+            return File.ReadAllLines(originalInput).Select(l => l.Split('\t').ToList()).ToList();
         }
 
         private static void WriteSentenceList(string output, List<Sentence> sentenceList)
@@ -61,12 +68,18 @@ namespace NlpFileConverter
             }
         }
 
-        private static void AdaptSentenceList(List<Sentence> sentenceList)
+        private static void AdaptSentenceList(List<Sentence> sentenceList, List<List<string>> originalSentenceList)
         {
-            sentenceList.ForEach(s => AdaptSentence(s));
+            if (sentenceList.Count <= originalSentenceList.Count)
+            {
+                for (int i = 0; i < sentenceList.Count; i++)
+                {
+                    AdaptSentence(sentenceList[i], originalSentenceList[i]);
+                }
+            }
         }
 
-        private static void AdaptSentence(Sentence sentence)
+        private static void AdaptSentence(Sentence sentence, List<string> originalWords)
         {
             var wordsDic = AdaptWords(sentence);
 
@@ -120,7 +133,28 @@ namespace NlpFileConverter
                     wordsDic[relation.word2.position].tag = "cadv";
                 }
             }
-            sentence.words = wordsDic.Where(w => w.Key != 0).OrderBy(w => w.Key).Select(w => w.Value).ToList();
+
+            // fill back punctuations
+            var words = wordsDic.Where(w => w.Key != 0).OrderBy(w => w.Key).Select(w => w.Value).ToList();
+
+            int originalWordIndex = 0;
+
+            var wordsWithPunc = new List<Word>();
+            foreach (var word in words)
+            {
+                while (!string.Equals(word.str, originalWords[originalWordIndex]))
+                {
+                    wordsWithPunc.Add(new Word()
+                    {
+                        str = originalWords[originalWordIndex],
+                        tag = "n",
+                    });
+                    originalWordIndex++;
+                }
+                wordsWithPunc.Add(word);
+                originalWordIndex++;
+            }
+            sentence.words = wordsWithPunc;
         }
 
         private static void recursion(Relation relation, Sentence sentence, Dictionary<int, Word> wordsDic, string type)

@@ -10,7 +10,7 @@ namespace NlpFileConverter
     {
         static void Main(string[] args)
         {
-            StanfordNlpParserResultHandler.FormatConvert("out.txt", "out.convert");
+            StanfordNlpParserResultHandler.FormatConvert("out.txt", "out.convert1", "fenci.out");
         }
     }
 }
