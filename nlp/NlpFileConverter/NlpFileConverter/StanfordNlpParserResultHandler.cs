@@ -154,6 +154,15 @@ namespace NlpFileConverter
                 wordsWithPunc.Add(word);
                 originalWordIndex++;
             }
+            while (originalWordIndex <= originalWords.Count - 1)
+            {
+                wordsWithPunc.Add(new Word()
+                {
+                    str = originalWords[originalWordIndex],
+                    tag = "n",
+                });
+                originalWordIndex++;
+            }
             sentence.words = wordsWithPunc;
         }
 
