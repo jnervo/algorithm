@@ -10,7 +10,9 @@ namespace NlpFileConverter
     {
         static void Main(string[] args)
         {
-            StanfordNlpParserResultHandler.FormatConvert("out.txt", "out.convert1", "fenci.out");
+            CrfConverter.Convert(@".\Data\CRF\input.txt", @".\Data\CRF\out.txt", @".\Data\CRF\wordBreakerInput.txt");
+
+            //StanfordNlpParserResultConverter.FormatConvert(@".\Data\Stanford\out.txt", @".\Data\Stanford\out.convert", @".\Data\Stanford\fenci.out");
         }
     }
 }
