@@ -193,7 +193,7 @@ namespace NlpFileConverter
             {
                 case "<a>": return CrfCategory.A;
                 case "<e>": return CrfCategory.E;
-                default: return CrfCategory.O;
+                default: return CrfCategory.Q;
             }
         }
 
@@ -230,6 +230,7 @@ namespace NlpFileConverter
         {
             A,
             E,
+            Q,
             O
         }
         public enum CrfPosition
