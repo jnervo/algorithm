@@ -43,16 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CrfConverter.cs" />
+    <Compile Include="Converter\CrfConverter.cs" />
+    <Compile Include="Converter\UtilizationReportGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StanfordNlpParserResultHandler.cs" />
+    <Compile Include="Converter\StanfordConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Data\Stanford\fenci.out">
+    <Content Include="Data\Stanford\seg.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -62,7 +63,7 @@
     <Content Include="Data\CRF\wordBreakerInput.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Stanford\out.txt">
+    <Content Include="Data\Stanford\parser.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

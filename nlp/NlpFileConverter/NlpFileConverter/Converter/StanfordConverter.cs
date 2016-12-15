@@ -35,9 +35,9 @@ namespace NlpFileConverter
     很 cadv
     方便 cadj
 */
-    class StanfordNlpParserResultConverter
+    class StanfordConverter
     {
-        public static void FormatConvert(string input, string output, string originalInput)
+        public static void ConvertParserResult2Crf(string input, string output, string originalInput)
         {
             var sentenceList = ReadSentenceList(input);
 
