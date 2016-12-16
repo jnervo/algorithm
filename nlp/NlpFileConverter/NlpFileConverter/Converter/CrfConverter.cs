@@ -30,7 +30,7 @@ namespace NlpFileConverter
         {
             var labelingResults = File.ReadAllLines(input).ToList();
 
-            var wordBreakerResults = ReadWordBreakerResults(wordBreakerInput);
+            var wordBreakerResults = ReadWordBreakerResultsV1(wordBreakerInput);
 
             var convertResults = Convert(labelingResults, wordBreakerResults);
 
@@ -197,7 +197,16 @@ namespace NlpFileConverter
             }
         }
 
-        private static List<List<string>> ReadWordBreakerResults(string wordBreakerInput)
+        /// <summary>
+        /// the word breaker input is like:
+        ///     屏幕
+        ///     有点
+        ///     大
+        ///     ，
+        /// </summary>
+        /// <param name="wordBreakerInput"></param>
+        /// <returns></returns>
+        private static List<List<string>> ReadWordBreakerResultsV2(string wordBreakerInput)
         {
             List<List<string>> sentences = new List<List<string>>();
 
@@ -222,6 +231,29 @@ namespace NlpFileConverter
             if (words.Count > 0)
             {
                 sentences.Add(words);
+            }
+            return sentences;
+        }
+
+        /// <summary>
+        /// the word breaker input is like:
+        ///     有时	接	电话	会	黑屏	，	貌似	是	贴膜	把	距离	感应器	挡	到	了	，	可以	试	着	把	膜切	了	。
+        /// </summary>
+        /// <param name="wordBreakerInput"></param>
+        /// <returns></returns>
+        private static List<List<string>> ReadWordBreakerResultsV1(string wordBreakerInput)
+        {
+            List<List<string>> sentences = new List<List<string>>();
+
+            List<string> words = new List<string>();
+            using (StreamReader sr = new StreamReader(wordBreakerInput))
+            {
+                while (!sr.EndOfStream)
+                {
+                    var line = sr.ReadLine();
+
+                    sentences.Add(line.Split('\t').ToList());
+                }
             }
             return sentences;
         }
