@@ -11,9 +11,16 @@ namespace NlpFileConverter
     {
         static void Main(string[] args)
         {
-            CrfConverter.Convert(@".\Data\CRF\dev.txt", @".\Data\CRF\crfdev.txt", @".\Data\CRF\segdev.txt");
-            CrfConverter.Convert(@".\Data\CRF\test.txt", @".\Data\CRF\crftest.txt", @".\Data\CRF\segtest.txt");
-            CrfConverter.Convert(@".\Data\CRF\train.txt", @".\Data\CRF\crftrain.txt", @".\Data\CRF\segtrain.txt");
+            foreach (var type in new string[] { "dev", "test", "train" })
+            {
+                var inputFile = string.Format(@".\Data\CRF\{0}\{0}.txt", type);
+                var segInputFile = string.Format(@".\Data\CRF\{0}\seg{0}.txt", type);
+                var posInputFile = string.Format(@".\Data\CRF\{0}\pos{0}.txt", type);
+
+                var outputFile = string.Format(@".\Data\CRF\{0}\{0}.output", type);
+
+                CrfConverter.Convert2Crf(inputFile, segInputFile, posInputFile, outputFile);
+            }
 
             //Split5000();
             //StanfordConverter.ConvertParserResult2Crf(@".\Data\Stanford\parser.txt", @".\Data\Stanford\out.convert", @".\Data\Stanford\seg.txt");
