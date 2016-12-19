@@ -9,6 +9,8 @@ namespace NlpFileConverter
 {
     public class CrfConverter
     {
+        #region Merge
+
         public static void Convert2Crf(string input, string segInput, string posInput, string output)
         {
             var labelingResults = File.ReadAllLines(input).ToList();
@@ -37,6 +39,43 @@ namespace NlpFileConverter
                 }
             }
         }
+        private static List<CrfResult> Convert(List<string> labelingResults, List<List<string>> segResults, List<PosInfo> posResults)
+        {
+            List<CrfResult> crfResultList = new List<CrfResult>();
+            if (labelingResults == null
+                || segResults == null
+                || labelingResults.Count != segResults.Count
+                || labelingResults.Count != posResults.Count)
+            {
+                return crfResultList;
+            }
+
+            for (int i = 0; i < labelingResults.Count; i++)
+            {
+                var crfResult = GenerateCrfResult(labelingResults[i], segResults[i]);
+                if (crfResult != null)
+                {
+                    FillPosInfo(posResults[i], ref crfResult);
+
+                    crfResultList.Add(crfResult);
+                }
+            }
+
+            return crfResultList;
+        }
+
+        private static void FillPosInfo(PosInfo posInfo, ref CrfResult crfResult)
+        {
+            if (crfResult.CrfWords.Count != posInfo.Words.Count)
+            {
+                return;
+            }
+            for (int i = 0; i < crfResult.CrfWords.Count; i++)
+            {
+                crfResult.CrfWords[i].CrfPos = posInfo.Words[i].Pos;
+            }
+        }
+        #endregion
 
         #region Labeled Result => CRF
         /// <summary>
@@ -79,43 +118,6 @@ namespace NlpFileConverter
                     }
                     sw.WriteLine();
                 }
-            }
-        }
-
-        private static List<CrfResult> Convert(List<string> labelingResults, List<List<string>> segResults, List<PosInfo> posResults)
-        {
-            List<CrfResult> crfResultList = new List<CrfResult>();
-            if (labelingResults == null
-                || segResults == null
-                || labelingResults.Count != segResults.Count
-                || labelingResults.Count != posResults.Count)
-            {
-                return crfResultList;
-            }
-
-            for (int i = 0; i < labelingResults.Count; i++)
-            {
-                var crfResult = GenerateCrfResult(labelingResults[i], segResults[i]);
-                if (crfResult != null)
-                {
-                    FillPosInfo(posResults[i], ref crfResult);
-
-                    crfResultList.Add(crfResult);
-                }
-            }
-
-            return crfResultList;
-        }
-
-        private static void FillPosInfo(PosInfo posInfo, ref CrfResult crfResult)
-        {
-            if (crfResult.CrfWords.Count != posInfo.Words.Count)
-            {
-                return;
-            }
-            for (int i = 0; i < crfResult.CrfWords.Count; i++)
-            {
-                crfResult.CrfWords[i].CrfPos = posInfo.Words[i].Pos;
             }
         }
 
