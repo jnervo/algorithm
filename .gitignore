@@ -3,3 +3,4 @@ Debug/
 *.opensdf
 *.sdf
 nlp/NlpFileConverter.zip
+nlp/NlpFileConverter/NlpFileConverter/Data/CRF/output/
