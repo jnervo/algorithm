@@ -11,20 +11,103 @@ namespace NlpFileConverter
     {
         #region Merge
 
-        public static void Convert2Crf(string input, string segInput, string posInput, string output)
+        public static void Convert2Crf(string labelInput, string segInput, string posInput, string outputDir, string fileName, bool need2Split, bool need2FilterFailedCase = false)
         {
-            var labelingResults = File.ReadAllLines(input).ToList();
+            //read
+            var labelingResults = File.ReadAllLines(labelInput).ToList();
 
             var segResults = ReadSegInputV1(segInput);
 
-            //read
             var posInfoList = ReadPosInfoList(posInput);
 
-            var convertResults = Convert(labelingResults, segResults, posInfoList);
+            //convert
+            var crfResults = Convert(labelingResults, segResults, posInfoList);
 
+            //split & filter
+            var attributesList = new List<List<string>>();
+            var evaluationsList = new List<List<string>>();
+            var expressionsList = new List<List<string>>();
+
+            var labelingResults_filtered = new List<string>();
+            var segResults_filtered = new List<List<string>>();
+            var posResults_filtered = new List<PosInfo>();
+            var crfResults_filtered = new List<CrfResult>();
+
+            for (int i = 0; i < crfResults.Count; i++)
+            {
+                if (crfResults[i] == null)
+                {
+                    continue;
+                }
+
+                List<string> attributes, evaluations, expressions;
+
+                DetectTags(crfResults[i], out attributes, out evaluations, out expressions);
+
+                // if no need to filter failed case, or it has expressions result indeed, add it to output list
+                if (!need2FilterFailedCase || expressions.Count > 0)
+                {
+                    attributesList.Add(attributes);
+                    evaluationsList.Add(evaluations);
+                    expressionsList.Add(expressions);
+
+                    labelingResults_filtered.Add(labelingResults[i]);
+                    segResults_filtered.Add(segResults[i]);
+                    posResults_filtered.Add(posInfoList[i]);
+                    crfResults_filtered.Add(crfResults[i]);
+                }
+            }
+
+            OutputResults(outputDir, fileName,
+                labelingResults_filtered,
+                segResults_filtered,
+                posResults_filtered,
+                crfResults_filtered,
+                attributesList,
+                evaluationsList,
+                expressionsList);
+        }
+
+        private static void OutputResults(string outputDir, string fileName,
+            List<string> labelingResults,
+            List<List<string>> segResults,
+            List<PosInfo> posResults,
+            List<CrfResult> crfResults,
+            List<List<string>> attributesList,
+            List<List<string>> evaluationsList,
+            List<List<string>> expressionsList)
+        {
+            if (!Directory.Exists(outputDir))
+            {
+                Directory.CreateDirectory(outputDir);
+            }
+
+            //label file
+            File.WriteAllLines(Path.Combine(outputDir, fileName + ".labeled"),
+                labelingResults);
+
+            //seg file
+            File.WriteAllLines(Path.Combine(outputDir, fileName + ".seg"),
+                segResults.Select(q => string.Join("\t", q)));
+
+            //pos file
+            File.WriteAllLines(Path.Combine(outputDir, fileName + ".pos"),
+                posResults.Select(q => string.Join("\t", q.Words.Select(w => string.Join("/", w.Word, w.Pos)))));
+
+            //crf file
+            OutputCrfResults(Path.Combine(outputDir, fileName + ".crf"), crfResults);
+
+            //split files: attributes, evalutions, expressions
+            File.WriteAllLines(Path.Combine(outputDir, fileName + ".attributes"), attributesList.Select(q => string.Join("\t", q)));
+            File.WriteAllLines(Path.Combine(outputDir, fileName + ".evaluations"), evaluationsList.Select(q => string.Join("\t", q)));
+            File.WriteAllLines(Path.Combine(outputDir, fileName + ".expressions"), expressionsList.Select(q => string.Join("\t", q)));
+        }
+
+        public static void OutputCrfResults(string output, List<CrfResult> crfResults)
+        {
             using (StreamWriter sw = new StreamWriter(output))
             {
-                foreach (var crfResult in convertResults)
+                foreach (var crfResult in crfResults)
                 {
                     foreach (var crfWord in crfResult.CrfWords)
                     {
@@ -32,13 +115,14 @@ namespace NlpFileConverter
                             string.Join("\t",
                                 crfWord.WordStr,
                                 crfWord.CrfPos,
-                                crfWord.CrfCategory == CrfCategory.O ? "O" : string.Format("{0}-{1}", crfWord.CrfPosition.ToString(), crfWord.CrfCategory.ToString())
+                                crfWord.CrfCategoryPosition
                             ));
                     }
                     sw.WriteLine();
                 }
             }
         }
+
         private static List<CrfResult> Convert(List<string> labelingResults, List<List<string>> segResults, List<PosInfo> posResults)
         {
             List<CrfResult> crfResultList = new List<CrfResult>();
@@ -56,9 +140,12 @@ namespace NlpFileConverter
                 if (crfResult != null)
                 {
                     FillPosInfo(posResults[i], ref crfResult);
-
-                    crfResultList.Add(crfResult);
                 }
+                else
+                {
+                    Console.WriteLine("Failed to GenerateCrfResult for: {0}", labelingResults[i]);
+                }
+                crfResultList.Add(crfResult);
             }
 
             return crfResultList;
@@ -159,7 +246,8 @@ namespace NlpFileConverter
             {
                 var wordsInCurrentSubSentence = new List<string>();
 
-                while (wordIndex < words.Count && string.Join("", wordsInCurrentSubSentence) != subSentence.WordStr)
+                while (wordIndex < words.Count && string.Join("", wordsInCurrentSubSentence) != subSentence.WordStr
+                    && string.Join("", wordsInCurrentSubSentence).Replace(" ", "") != subSentence.WordStr.Replace(" ", ""))
                 {
                     wordsInCurrentSubSentence.Add(words[wordIndex]);
                     wordIndex++;
@@ -361,14 +449,39 @@ namespace NlpFileConverter
         {
             public List<string> Words;
             public List<CrfWord> CrfWords;
+
+            public CrfResult()
+            {
+                Words = new List<string>();
+                CrfWords = new List<CrfWord>();
+            }
         }
 
         public class CrfWord
         {
             public string WordStr;
             public string CrfPos;
+
             public CrfCategory CrfCategory;
             public CrfPosition CrfPosition;
+
+            private string _crfCategoryPosition;
+            public string CrfCategoryPosition
+            {
+                get
+                {
+                    if (string.IsNullOrEmpty(_crfCategoryPosition))
+                    {
+                        _crfCategoryPosition = this.CrfCategory == CrfCategory.O ?
+                            "O" : string.Format("{0}-{1}", this.CrfPosition.ToString(), this.CrfCategory.ToString());
+                    }
+                    return _crfCategoryPosition;
+                }
+                set
+                {
+                    _crfCategoryPosition = value;
+                }
+            }
         }
 
         #endregion
@@ -602,6 +715,112 @@ namespace NlpFileConverter
             public string Word;
             public string Pos;
             public string Type;
+        }
+
+        #endregion
+
+        #region CRF => Property + Evaluate + Expression
+
+        public static void ConvertCrf2TagFiles(string crfFile)
+        {
+            var crfResults = ReadCrfResults(crfFile);
+
+            var attributesList = new List<List<string>>();
+            var evaluationsList = new List<List<string>>();
+            var expressionsList = new List<List<string>>();
+
+            var filteredCrfResults = new List<CrfResult>();
+
+            foreach (var crfResult in crfResults)
+            {
+                List<string> attributes, evaluations, expressions;
+
+                DetectTags(crfResult, out attributes, out evaluations, out expressions);
+
+                if (expressions.Count > 0)
+                {
+                    attributesList.Add(attributes);
+                    evaluationsList.Add(evaluations);
+                    expressionsList.Add(expressions);
+
+                    filteredCrfResults.Add(crfResult);
+                }
+            }
+
+            OutputCrfResults(crfFile, filteredCrfResults);
+
+            File.WriteAllLines(crfFile + ".attributes", attributesList.Select(q => string.Join("\t", q)));
+            File.WriteAllLines(crfFile + ".evaluations", evaluationsList.Select(q => string.Join("\t", q)));
+            File.WriteAllLines(crfFile + ".expressions", expressionsList.Select(q => string.Join("\t", q)));
+        }
+
+        private static void DetectTags(CrfResult crfResult, out List<string> attributes, out List<string> evaluations, out List<string> expressions)
+        {
+            attributes = new List<string>();
+            evaluations = new List<string>();
+            expressions = new List<string>();
+
+            for (int i = 0; i < crfResult.CrfWords.Count; i++)
+            {
+                if (crfResult.CrfWords[i].CrfCategoryPosition == "O")
+                {
+                    continue;
+                }
+                var tokens = crfResult.CrfWords[i].CrfCategoryPosition.Split('-');
+                var type = tokens.LastOrDefault();
+
+                string fullWord = string.Empty;
+                if (tokens.FirstOrDefault() == "S")
+                {
+                    fullWord = crfResult.CrfWords[i].WordStr;
+                }
+                else
+                {
+                    do
+                    {
+                        fullWord += crfResult.CrfWords[i].WordStr;
+                    }
+                    while (!crfResult.CrfWords[i++].CrfCategoryPosition.StartsWith("E-"));
+                    i--;
+                }
+
+                switch (type)
+                {
+                    case "A": attributes.Add(fullWord); break;
+                    case "E": evaluations.Add(fullWord); break;
+                    case "Q": expressions.Add(fullWord); break;
+                }
+            }
+        }
+
+        private static List<CrfResult> ReadCrfResults(string crfFile)
+        {
+            var crfResults = new List<CrfResult>();
+            CrfResult crfResult = new CrfResult();
+            foreach (var line in File.ReadAllLines(crfFile))
+            {
+                if (string.IsNullOrWhiteSpace(line))
+                {
+                    crfResults.Add(crfResult);
+                    crfResult = new CrfResult();
+                    continue;
+                }
+
+                var tokens = line.Split('\t');
+
+                var crfWord = new CrfWord()
+                {
+                    WordStr = tokens[0],
+                    CrfPos = tokens[1],
+                    CrfCategoryPosition = tokens[2]
+                };
+                crfResult.CrfWords.Add(crfWord);
+            }
+            if (crfResult.CrfWords.Count > 0)
+            {
+                crfResults.Add(crfResult);
+            }
+            return crfResults;
         }
 
         #endregion

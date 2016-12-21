@@ -11,6 +11,7 @@ namespace Parsers
     {
         static void Main(string[] args)
         {
+            MitParser.Parse();
             UtilizationReportParser.Parse();
         }
     }

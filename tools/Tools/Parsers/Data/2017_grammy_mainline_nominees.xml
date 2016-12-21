@@ -1,0 +1,2865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Item Id="1">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>b10f4c370fe74b219dd145456390fea4</CategoryID>
+    <CategoryType>Record of the Year</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>a61c5ecd-fd40-5793-064f-5ef510937e26</SatoriID>
+        <Name>Hello</Name>
+        <Query>Adele “Hello”</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Afecd71c962f150ea3a13f07c5cd4af7e</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Adele</Url>
+              <Text>Adele</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>46d2ee1d-d83b-74f0-f1c8-d4b07b5dbf62</SatoriID>
+        <Name>Formation</Name>
+        <Query>Beyoncé "Formation"</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>OSC.TOOLEAD8998FA9C87B151DCC28776D76952554916F54AB10A53F5D821B8512AAA7BD</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Beyoncé</Url>
+              <Text>Beyoncé</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>d85b067c-8a3e-a1d3-020b-76e8bb70bc4a</SatoriID>
+        <Name>7 Years</Name>
+        <Query>Lukas Graham 7 Years</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Af6cd3eb9df8634eb5cd2ca4ff0458a65</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Lukas Graham</Url>
+              <Text>Lukas Graham</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>c233cff5-1ac4-5b1e-2b6c-8681a0401d4d</SatoriID>
+        <Name>Work</Name>
+        <Query>Rihanna ft. Drake Work</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A3858320abed7dc0a2e90b21d7eadcbb7</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Rihanna ft. Drake</Url>
+              <Text>Rihanna ft. Drake</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>e64ca721-59e1-319f-4de4-c71a60305137</SatoriID>
+        <Name>Stressed Out</Name>
+        <Query>Twenty One Pilots Stressed Out</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A48e4d114036a2b4ac24f7fadb44a3c4d</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Twenty One Pilots</Url>
+              <Text>Twenty One Pilots</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Record of the Year nominees</Trigger>
+  </Item>
+  <Item Id="2">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>f735aab4de0b476ea51a7cf793c4564a</CategoryID>
+    <CategoryType>Album of the Year</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>c70897b2-a9e0-40e5-8c34-c34dd7bb23f2</SatoriID>
+        <Name>25</Name>
+        <Query>Adele '25'</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A29b94b78e09c04d76ba041ede26fd2f4</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Adele</Url>
+              <Text>Adele</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>f4ca7e3d-6323-5b0c-a883-0c7a5a240e28</SatoriID>
+        <Name>Lemonade</Name>
+        <Query>Beyoncé "Lemonade"</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A8674aa8bd04a0479e8235203dd4b8e6a</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Beyoncé</Url>
+              <Text>Beyoncé</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>31858f59-0ede-edd6-aa8c-6c04e8b9bbd1</SatoriID>
+        <Name>Purpose</Name>
+        <Query>Justin Bieber “Purpose”</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ac9c1a34f3d143aa40d9b82f81656b857</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Justin Bieber</Url>
+              <Text>Justin Bieber</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>3bdc3c8d-3595-acbf-1b75-d6439f97ad53</SatoriID>
+        <Name>Views</Name>
+        <Query>Views Drake</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A08e7adb17026e7a41e665712dec950af</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Drake</Url>
+              <Text>Drake</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>037645ca-0573-105f-be04-eea4ad63e879</SatoriID>
+        <Name>A Sailor’s Guide to Earth</Name>
+        <Query>Sturgill Simpson A Sailor’s Guide to Earth</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A1e6e7f11561affd418ae35bbbaf2a682</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Sturgill Simpson</Url>
+              <Text>Sturgill Simpson</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Album of the Year nominees</Trigger>
+  </Item>
+  <Item Id="3">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>73dfb6e1300e4e61bb920453f6f39c61</CategoryID>
+    <CategoryType>Song of the Year</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>46d2ee1d-d83b-74f0-f1c8-d4b07b5dbf62</SatoriID>
+        <Name>Formation</Name>
+        <Query>Beyoncé "Formation"</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>OSC.TOOLEAD8998FA9C87B151DCC28776D76952554916F54AB10A53F5D821B8512AAA7BD</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Beyoncé</Url>
+              <Text>Beyoncé</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>a61c5ecd-fd40-5793-064f-5ef510937e26</SatoriID>
+        <Name>Hello</Name>
+        <Query>Adele “Hello”</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Afecd71c962f150ea3a13f07c5cd4af7e</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Adele</Url>
+              <Text>Adele</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>4673ca6a-27e2-8a1d-5a71-cf9936413284</SatoriID>
+        <Name>I Took A Pill In Ibiza</Name>
+        <Query>Mike Posner I Took A Pill In Ibiza</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A30d23f93563af0358c18dd272df38823</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Mike Posner</Url>
+              <Text>Mike Posner</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>df607463-6c70-7ab2-605a-891978887a15</SatoriID>
+        <Name>Love Yourself</Name>
+        <Query>Love Yourself Justin Bieber</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ac9c1a34f3d143aa40d9b82f81656b857</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Justin Bieber</Url>
+              <Text>Justin Bieber</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>d85b067c-8a3e-a1d3-020b-76e8bb70bc4a</SatoriID>
+        <Name>7 Years</Name>
+        <Query>Lukas Graham 7 Years</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Af6cd3eb9df8634eb5cd2ca4ff0458a65</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Lukas Graham</Url>
+              <Text>Lukas Graham</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Song of the Year nominees</Trigger>
+  </Item>
+  <Item Id="4">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>739f47edd15e486fa474366f49a5dc82</CategoryID>
+    <CategoryType>Best New Artist</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>b8aa48e0-39e9-11e9-c194-444faa27ab66</SatoriID>
+        <Name>Kelsea Ballerini</Name>
+        <Query>Kelsea Ballerini The First Time</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A992bbd79f7a2b91bf9f6f8c305824268</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Album</MentionType>
+            <Url>
+              <Url>Kelsea Ballerini The First Time</Url>
+              <Text>The First Time</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>0009baca-486e-4ec5-9bf3-86110a02962f</SatoriID>
+        <Name>The Chainsmokers</Name>
+        <Query>The Chainsmokers Collage</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Adc9df5dd11d8851b0c966932d1b8b0c7</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Album</MentionType>
+            <Url>
+              <Url>The Chainsmokers Collage</Url>
+              <Text>Collage</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>70ffd3da-f537-4c8a-8be1-707bd249d665</SatoriID>
+        <Name>Chance The Rapper</Name>
+        <Query>Chance The Rapper Coloring Book</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A3bcefa352958463645b15a3c1d819db6</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Album</MentionType>
+            <Url>
+              <Url>Chance The Rapper Coloring Book</Url>
+              <Text>Coloring Book</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>7e8a3d91-7210-5d9f-bcbe-a2d6931aab53</SatoriID>
+        <Name>Maren Morris</Name>
+        <Query>Hero Maren Morris</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A24f919a5a1ea3eb13595c9ab4c6e2539</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Album</MentionType>
+            <Url>
+              <Url>Maren Morris Hero album</Url>
+              <Text>Hero</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>5c5e34ff-cf4b-9cfb-5709-8c7d25ce5bb3</SatoriID>
+        <Name>Anderson .Paak</Name>
+        <Query>Malibu Anderson .Paak</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A6060ca1e133462b452cefe56805bc9a1</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Album</MentionType>
+            <Url>
+              <Url>Anderson .Paak Malibu</Url>
+              <Text>Malibu</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy New Artist nominees</Trigger>
+  </Item>
+  <Item Id="5">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>d31275a43b9945ce964fc762329e74fc</CategoryID>
+    <CategoryType>Best Pop Solo Performance</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>a61c5ecd-fd40-5793-064f-5ef510937e26</SatoriID>
+        <Name>Hello</Name>
+        <Query>Adele Hello</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Afecd71c962f150ea3a13f07c5cd4af7e</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Adele</Url>
+              <Text>Adele</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>7db79889-2f2c-f217-4145-fb8a2fc7fba5</SatoriID>
+        <Name>Hold Up</Name>
+        <Query>Beyoncé Hold Up</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A8674aa8bd04a0479e8235203dd4b8e6a</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Beyoncé</Url>
+              <Text>Beyoncé</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>df607463-6c70-7ab2-605a-891978887a15</SatoriID>
+        <Name>Love Yourself</Name>
+        <Query>Love Yourself Justin Bieber</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ac9c1a34f3d143aa40d9b82f81656b857</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Justin Bieber</Url>
+              <Text>Justin Bieber</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>bf0b7469-c923-4b8c-e23d-3623c5406af8</SatoriID>
+        <Name>Piece By Piece (Idol Version)</Name>
+        <Query>Kelly Clarkson Piece By Piece (Idol Version)</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A67931041cb89b5a0efa61024ebcfe02e</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Kelly Clarkson</Url>
+              <Text>Kelly Clarkson</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>e31ac52e-6574-7b4c-fed3-528fc9c91e64</SatoriID>
+        <Name>Dangerous Woman</Name>
+        <Query>Ariana Grande Dangerous Woman</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Aaa0d665473d0841d11137c620659e467</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Ariana Grande</Url>
+              <Text>Ariana Grande</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Pop Solo Performance nominees</Trigger>
+  </Item>
+  <Item Id="6">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>139cdf78e54f44458888a54830a90dc2</CategoryID>
+    <CategoryType>Best Pop Duo/Group Performance</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>9b11723e-ed0e-8862-ba4d-43a4c64ccb0c</SatoriID>
+        <Name>Closer</Name>
+        <Query>The Chainsmokers ft. Halsey Closer</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Aedc2eea1f3a24ba93da68818b9548483</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>The Chainsmokers ft. Halsey</Url>
+              <Text>The Chainsmokers ft. Halsey</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>d85b067c-8a3e-a1d3-020b-76e8bb70bc4a</SatoriID>
+        <Name>7 Years</Name>
+        <Query>Lukas Graham 7 Years</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Af6cd3eb9df8634eb5cd2ca4ff0458a65</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Lukas Graham</Url>
+              <Text>Lukas Graham</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>c233cff5-1ac4-5b1e-2b6c-8681a0401d4d</SatoriID>
+        <Name>Work</Name>
+        <Query>Rihanna ft. Drake Work</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A3858320abed7dc0a2e90b21d7eadcbb7</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Rihanna ft. Drake</Url>
+              <Text>Rihanna ft. Drake</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>ff5270e1-9059-7620-960e-921810888366</SatoriID>
+        <Name>Cheap Thrills</Name>
+        <Query>Sia Cheap Thrills</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A6a1717da963dc5bb4047219a95ef462d</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Sia ft. Sean Paul</Url>
+              <Text>Sia ft. Sean Paul</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>e64ca721-59e1-319f-4de4-c71a60305137</SatoriID>
+        <Name>Stressed Out</Name>
+        <Query>Twenty One Pilots Stressed Out</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A48e4d114036a2b4ac24f7fadb44a3c4d</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Twenty One Pilots</Url>
+              <Text>Twenty One Pilots</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Pop Duo/Group Performance nominees</Trigger>
+  </Item>
+  <Item Id="7">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>36ef094d1cd34391b63c1b220bc34059</CategoryID>
+    <CategoryType>Best Pop Vocal Album</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>c70897b2-a9e0-40e5-8c34-c34dd7bb23f2</SatoriID>
+        <Name>25</Name>
+        <Query>Adele 25</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A29b94b78e09c04d76ba041ede26fd2f4</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Adele</Url>
+              <Text>Adele</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>31858f59-0ede-edd6-aa8c-6c04e8b9bbd1</SatoriID>
+        <Name>Purpose</Name>
+        <Query>Justin Bieber Purpose</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ac9c1a34f3d143aa40d9b82f81656b857</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Justin Bieber</Url>
+              <Text>Justin Bieber</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>774bf950-ce50-4a5c-8272-ab1e7083b085</SatoriID>
+        <Name>Dangerous Woman</Name>
+        <Query>Ariana Grande Dangerous Woman</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Aaa0d665473d0841d11137c620659e467</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Ariana Grande</Url>
+              <Text>Ariana Grande</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>4bc4909a-563b-4a56-8f42-449d2a9edda5</SatoriID>
+        <Name>Confident</Name>
+        <Query>Demi Lovato Confident</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A099c87c6b817aabe1fec04c76259e28b</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Demi Lovato</Url>
+              <Text>Demi Lovato</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>318883f0-1509-4fbc-985b-791492d7cb8c</SatoriID>
+        <Name>This Is Acting</Name>
+        <Query>Sia This Is Acting</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A6a1717da963dc5bb4047219a95ef462d</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Sia</Url>
+              <Text>Sia</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Pop Vocal Album nominees</Trigger>
+  </Item>
+  <Item Id="8">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>d636966dadd548d3850c5076724040ba</CategoryID>
+    <CategoryType>Best Country Song</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>bb306bfa-50f8-5923-c1e5-164217a8333c</SatoriID>
+        <Name>Blue Ain’t Your Color</Name>
+        <Query>Blue Ain’t Your Color Keith Urban</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A0f42b4461539cd08991cecb3f658e2af</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Keith Urban</Url>
+              <Text>Keith Urban</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>f49dcf8a-c5fa-faca-62d3-602b35bb841f</SatoriID>
+        <Name>Die A Happy Man</Name>
+        <Query>Thomas Rhett Die A Happy Man</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Aae79d2c1c805b70bb497a0139b7e440e</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Thomas Rhett</Url>
+              <Text>Thomas Rhett</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>f1a199d2-60b9-48c7-83f2-800839ef221e</SatoriID>
+        <Name>Humble and Kind</Name>
+        <Query>Tim McGraw Humble and Kind</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A701a02a28f13d3b96b557282213b0442</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Tim McGraw</Url>
+              <Text>Tim McGraw</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>a9c98ed9-2c9c-1e68-ed95-147cf0247b9f</SatoriID>
+        <Name>My Church</Name>
+        <Query>Maren Morris My Church</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ac08232cc9170e5c179f1e9ff682e992a</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Maren Morris</Url>
+              <Text>Maren Morris</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>f49e97d0-a7cf-69ea-b3ea-3b96d24af973</SatoriID>
+        <Name>Vice</Name>
+        <Query>Miranda Lambert Vice</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A7d4eab20d76b335c98e6350e169bf551</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Miranda Lambert</Url>
+              <Text>Miranda Lambert</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Country Song nominees</Trigger>
+  </Item>
+  <Item Id="9">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>424c726b69b84c0989a7e500d2f022ab</CategoryID>
+    <CategoryType>Best Country Album</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>64dfbe3a-096c-e87f-b516-46c7e6cfc1ca</SatoriID>
+        <Name>Big Day in a Small Town</Name>
+        <Query>Brandy Clark Big Day in a Small Town album</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ae9fc64285c9ea39cd7c2e01204af67d1</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Brandy Clark</Url>
+              <Text>Brandy Clark</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>73444830-9591-f7fe-5a65-1550a04d01c3</SatoriID>
+        <Name>Full Circle</Name>
+        <Query>Loretta Lynn Full Circle</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A8568041d2d00c214b9e2013d3713f0dd</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Loretta Lynn</Url>
+              <Text>Loretta Lynn</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>6dc8ad42-718e-2a9b-89f8-b6389a204fe5</SatoriID>
+        <Name>Hero</Name>
+        <Query>Maren Morris Hero</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ac08232cc9170e5c179f1e9ff682e992a</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Maren Morris</Url>
+              <Text>Maren Morris</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>037645ca-0573-105f-be04-eea4ad63e879</SatoriID>
+        <Name>A Sailor’s Guide to Earth</Name>
+        <Query>Sturgill Simpson A Sailor’s Guide to Earth</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A1e6e7f11561affd418ae35bbbaf2a682</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Sturgill Simpson</Url>
+              <Text>Sturgill Simpson</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>a497614c-2ea6-ee43-c795-0f5b4bead39f</SatoriID>
+        <Name>Ripcord</Name>
+        <Query>Keith Urban Ripcord</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A0f42b4461539cd08991cecb3f658e2af</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Keith Urban</Url>
+              <Text>Keith Urban</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Country Album nominees</Trigger>
+  </Item>
+  <Item Id="10">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>d24588425eb44526b34b786023a4ae09</CategoryID>
+    <CategoryType>Best R&amp;B Song</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>aebc128e-709d-2327-7d77-33e1a53c4284</SatoriID>
+        <Name>Come See Me</Name>
+        <Query>PartyNextDoor Come See Me</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A7fbb86cf01496ec0ca961a544f1ce34c</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>PartyNextDoor ft. Drake</Url>
+              <Text>PartyNextDoor ft. Drake</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>2518ee7e-a1e0-9791-7711-5595bdf7c895</SatoriID>
+        <Name>Exchange</Name>
+        <Query>Bryson Tiller Exchange</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A995d258d984fa9c624ab035e44700017</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Bryson Tiller</Url>
+              <Text>Bryson Tiller</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>61955a1c-1de7-d4ce-9299-7604dd280b0b</SatoriID>
+        <Name>Kiss it Better</Name>
+        <Query>Rihanna Kiss it Better</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A4a2a145240da860d5c0251c9ccce34c8</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Rihanna</Url>
+              <Text>Rihanna</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>b7b93ff7-98b8-eeb2-2a03-05d2a64982b1</SatoriID>
+        <Name>Lake by the Ocean</Name>
+        <Query>Maxwell Lake by the Ocean</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ad32ee14d55cd3306c99e854b982bfed0</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Maxwell</Url>
+              <Text>Maxwell</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>ac954132-9650-319c-77e5-6b165eeeccc2</SatoriID>
+        <Name>Luv</Name>
+        <Query>Tory Lanez Luv</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A312e5b95d3518b5451300ef613243ce0</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Tory Lanez</Url>
+              <Text>Tory Lanez</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best R&amp;B Song nominees</Trigger>
+  </Item>
+  <Item Id="11">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>9626eb3b314943ae9a7f0b54a95a52a6</CategoryID>
+    <CategoryType>Best Rap Song</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>c5428b22-4550-7503-4fb3-549a27e863ab</SatoriID>
+        <Name>All the Way Up</Name>
+        <Query>Fat Joe &amp; Remy Ma All the Way Up</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A216e212b66ce42adc9e584be1a8007b3</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Fat Joe &amp; Remy Ma ft. French Montana &amp; Infared</Url>
+              <Text>Fat Joe &amp; Remy Ma</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>486abbcc-2a79-6b78-6d2c-d4b79c01a00e</SatoriID>
+        <Name>Famous</Name>
+        <Query>Kanye West Famous song</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Aa0933482b0ec72acb54ad939eb1eba00</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Kanye West ft. Rihanna</Url>
+              <Text>Kanye West ft. Rihanna</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>53da2272-22a9-fc37-9f25-cc0749d47c81</SatoriID>
+        <Name>Hotline Bling</Name>
+        <Query>Drake Hotline Bling</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A100b85322f44224494ed5fd8eb3a864e</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Drake</Url>
+              <Text>Drake</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>da1d7b24-2ac4-a75b-1d8e-612684d3395b</SatoriID>
+        <Name>No Problem</Name>
+        <Query>Chance The Rapper No Problem</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A5f0f7741bc7f77dea5eabbe367ce4f2a</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Chance The Rapper ft. Lil Wayne &amp; 2 Chainz</Url>
+              <Text>Chance The Rapper ft. Lil Wayne &amp; 2 Chainz</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>51090531-d040-94ee-0568-d7196ecc9c19</SatoriID>
+        <Name>Ultralight Beam</Name>
+        <Query>Kanye West Ultralight Beam</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A49e09f9a44643f6dde15736d7b464b7c</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Kanye West ft. Chance The Rapper, Kelly Price, Kirk Franklin &amp; The-Dream</Url>
+              <Text>Kanye West ft. Chance The Rapper, Kelly Price, Kirk Franklin &amp; The-Dream</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Rap Song nominees</Trigger>
+  </Item>
+  <Item Id="12">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>1846294bdec543eaa7da790a278642a2</CategoryID>
+    <CategoryType>Best Rap Album</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>8cd6bc8e-6d9d-b0ca-f3a6-a24c5c81de35</SatoriID>
+        <Name>Coloring Book</Name>
+        <Query>Chance the Rapper Coloring Book</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A5f0f7741bc7f77dea5eabbe367ce4f2a</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Chance the Rapper</Url>
+              <Text>Chance the Rapper</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>ad20d39b-4033-0220-50bd-b240e1b3fe01</SatoriID>
+        <Name>and the Anonymous Nobody</Name>
+        <Query>De La Soul and the Anonymous Nobody</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ad1587ea914d1d8b9c476b023e228ecb8</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>De La Soul</Url>
+              <Text>De La Soul</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>99e4f8d3-d899-1f57-5350-75eca315d8ed</SatoriID>
+        <Name>Major Key</Name>
+        <Query>DJ Khaled Major Key</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A3b52c764184ef7760ce9d00f086888ff</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>DJ Khaled</Url>
+              <Text>DJ Khaled</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>3bdc3c8d-3595-acbf-1b75-d6439f97ad53</SatoriID>
+        <Name>Views</Name>
+        <Query>Drake Views</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A08e7adb17026e7a41e665712dec950af</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Drake</Url>
+              <Text>Drake</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>26b42b78-aca8-49cd-9add-9e02ed7829ef</SatoriID>
+        <Name>Blank Face LP</Name>
+        <Query>ScHoolboy Q Blank Face LP</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ade3c14fd8700d2d9966301a056ba8536</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>ScHoolboy Q</Url>
+              <Text>ScHoolboy Q</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>02af22a0-ecf2-a491-ec26-174b16d8f553</SatoriID>
+        <Name>The Life of Pablo</Name>
+        <Query>Kanye West The Life of Pablo</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A49e09f9a44643f6dde15736d7b464b7c</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Kanye West</Url>
+              <Text>Kanye West</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Rap Album nominees</Trigger>
+  </Item>
+  <Item Id="13">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>b22959635bf04585bdba82b9d4485cee</CategoryID>
+    <CategoryType>Best Rock Song</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>170c34af-d8ce-bde3-307f-1da169a32dd5</SatoriID>
+        <Name>Blackstar</Name>
+        <Query>David Bowie Blackstar song</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A4823ae79ae64ce1eddb596c22c0b1313</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>David Bowie</Url>
+              <Text>David Bowie</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>6934cabc-f3e1-a234-915b-491517a13c31</SatoriID>
+        <Name>Burn The Witch</Name>
+        <Query>Radiohead Burn The Witch</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A3562001682ca8ab66e1f5e80d666e538</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Radiohead</Url>
+              <Text>Radiohead</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>eb79198c-2710-c040-0292-6551f32463e1</SatoriID>
+        <Name>Hardwired</Name>
+        <Query>Metallica Hardwired song</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ab3e64cb71f7204bfeb4e83b7bdc08e33</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Metallica</Url>
+              <Text>Metallica</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>22ede697-92ee-deed-4859-b389f3bbaedc</SatoriID>
+        <Name>Heathens</Name>
+        <Query>Twenty One Pilots Heathens</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A552f4b953a02ecb92268b1c7a80d9b2d</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Twenty One Pilots</Url>
+              <Text>Twenty One Pilots</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>6a644af7-a260-a93d-389e-0272a5c7a82a</SatoriID>
+        <Name>My Name is Human</Name>
+        <Query>Highly Suspect My Name is Human</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A55715e93bbada5e848d98aa50092aca7</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Highly Suspect</Url>
+              <Text>Highly Suspect</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Rock Song nominees</Trigger>
+  </Item>
+  <Item Id="14">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>dbb6c34aa3a745e795c7c44855e48c64</CategoryID>
+    <CategoryType>Best Rock Performance</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>2b50434d-2c07-f2c4-1110-e56a69bcdf75</SatoriID>
+        <Name>Joe (Live from Austin City Limits)</Name>
+        <Query>Alabama Shakes Joe (Live from Austin City Limits)</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ac1c3dc577a56345a20ef1ffd690cb0df</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Alabama Shakes</Url>
+              <Text>Alabama Shakes</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>7e0b332a-10ae-57c0-b45b-d332d09f0234</SatoriID>
+        <Name>Don’t Hurt Yourself</Name>
+        <Query>Beyoncé Don’t Hurt Yourself</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A9b6723052f8e4c263c094f317f98c6a2</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Beyoncé ft. Jack White</Url>
+              <Text>Beyoncé ft. Jack White</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>170c34af-d8ce-bde3-307f-1da169a32dd5</SatoriID>
+        <Name>Blackstar</Name>
+        <Query>David Bowie Blackstar song</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A4823ae79ae64ce1eddb596c22c0b1313</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>David Bowie</Url>
+              <Text>David Bowie</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>62dd24f5-defc-cf64-7f64-c220bced1ca5</SatoriID>
+        <Name>The Sound of Silence (Live on Conan)</Name>
+        <Query>Disturbed The Sound of Silence (Live on Conan)</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A2a2c96f3229aee0e1f2601f8b1d5420d</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Disturbed</Url>
+              <Text>Disturbed band</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>22ede697-92ee-deed-4859-b389f3bbaedc</SatoriID>
+        <Name>Heathens</Name>
+        <Query>Twenty One Pilots Heathens</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A552f4b953a02ecb92268b1c7a80d9b2d</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Twenty One Pilots</Url>
+              <Text>Twenty One Pilots</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Rock performance nominees</Trigger>
+  </Item>
+  <Item Id="15">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>e3382ddea870450a957fc8f86b36930c</CategoryID>
+    <CategoryType>Best Rock Album</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>00b1f8ff-bb38-f6a4-81b3-8a265f692755</SatoriID>
+        <Name>California</Name>
+        <Query>Blink-182 California album</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A0e9156b28429ff06b9b6cf1ab9603d58</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Blink-182</Url>
+              <Text>Blink-182</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>1217ad3d-4f64-d814-6ba0-031eb55fcdfa</SatoriID>
+        <Name>Tell Me I’m Pretty</Name>
+        <Query>Cage The Elephant Tell Me I’m Pretty</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A12a827c063376aa0b4da9f587fb2fc38</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Cage The Elephant</Url>
+              <Text>Cage The Elephant</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>a578dcd7-24b6-2ffd-cd0b-a87b062eaadc</SatoriID>
+        <Name>Magma</Name>
+        <Query>Gojira Magma</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Acc9b867b6847741d0b64b79f85982f1d</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Gojira band</Url>
+              <Text>Gojira</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>88c7e7ac-5b23-ded3-eaff-23c31ad4599e</SatoriID>
+        <Name>Death of a Bachelor</Name>
+        <Query>Panic! At The Disco Death of a Bachelor</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A5ba1732aebd78f1a99a96d137197c9d5</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Panic! At The Disco</Url>
+              <Text>Panic! At The Disco</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>be055e2a-4e75-7445-e3eb-142e28f1d9a9</SatoriID>
+        <Name>Weezer</Name>
+        <Query>Weezer 2016 album</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A957bd9bd3afa4b7d096afa934ce786a2</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Weezer</Url>
+              <Text>Weezer</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Rock Album nominees</Trigger>
+  </Item>
+  <Item Id="16">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>54a3259e871a441099f84255bafc1b8f</CategoryID>
+    <CategoryType>Best Alternative Music Album</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>468ef795-43b8-2194-6b74-f208d7e4baab</SatoriID>
+        <Name>22, A Million</Name>
+        <Query>22, A Million Bon Iver</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A83a07a46483089528fe27d5024b274cb</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Bon Iver</Url>
+              <Text>Bon Iver</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>1a169dd2-b2fc-913a-cad9-6929b17960cf</SatoriID>
+        <Name>Blackstar</Name>
+        <Query>David Bowie Blackstar album</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A4823ae79ae64ce1eddb596c22c0b1313</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>David Bowie</Url>
+              <Text>David Bowie</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>271b6160-5002-29f2-037f-08b26b4d0836</SatoriID>
+        <Name>The Hope Six Demolition Project</Name>
+        <Query>PJ Harvey The Hope Six Demolition Project</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A58867fbed2075b40bf41f54556ee71be</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>PJ Harvey</Url>
+              <Text>PJ Harvey</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>77588fd7-07d0-389f-3f39-9890fba05600</SatoriID>
+        <Name>Post Pop Depression</Name>
+        <Query>Post Pop Depression</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Aba9e4683da42464dc2376810b2fcf1eb</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Iggy Pop</Url>
+              <Text>Iggy Pop</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>72746476-4e74-01c7-a9fa-fd7df8a3119b</SatoriID>
+        <Name>A Moon Shaped Pool</Name>
+        <Query>Radiohead A Moon Shaped Pool</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A7d3be6e679c51b8fa9133ca91f47beb2</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Radiohead</Url>
+              <Text>Radiohead</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Alternative Music Album nominees</Trigger>
+  </Item>
+  <Item Id="17">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>2b7e9ad883c342f18b86f64afe72ce5b</CategoryID>
+    <CategoryType>Best R&amp;B Performance</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>aa311cee-ccc8-8cb1-8c93-e738ad6c258a</SatoriID>
+        <Name>Turning’ Me Up</Name>
+        <Query>BJ The Chicago Kid Turning’ Me Up</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Aa9572d52a620dd7bfb963e9d18b1ee0b</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>BJ The Chicago Kid</Url>
+              <Text>BJ The Chicago Kid</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>b4ea1614-6e07-76dc-6dd1-21e0ce163174</SatoriID>
+        <Name>Permission</Name>
+        <Query>Ro James Permission</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A559dee4b99a936127ff9839878e0bf62</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Ro James</Url>
+              <Text>Ro James</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>0c7f9a4b-eb57-e33a-6c0b-52c598a3ec30</SatoriID>
+        <Name>I Do</Name>
+        <Query>Musiq Soulchild I Do</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A746890f3323006d99dbf60c433499e00</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Musiq Soulchild</Url>
+              <Text>Musiq Soulchild</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>c247e94b-1309-cdb7-6840-06eb04028c16</SatoriID>
+        <Name>Needed Me</Name>
+        <Query>Rihanna Needed Me</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A4a2a145240da860d5c0251c9ccce34c8</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Rihanna</Url>
+              <Text>Rihanna</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>4aa6bf45-e762-418b-948d-eabb648fb115</SatoriID>
+        <Name>Cranes In The Sky</Name>
+        <Query>Solange Cranes In The Sky</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A56bc85e5b898780dead6598619ab4e33</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Solange</Url>
+              <Text>Solange</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best R&amp;B Performance nominees</Trigger>
+  </Item>
+  <Item Id="18">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>fad87ce2ab154691acaa23940487e965</CategoryID>
+    <CategoryType>Best Urban Contemporary Album</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>f4ca7e3d-6323-5b0c-a883-0c7a5a240e28</SatoriID>
+        <Name>Lemonade</Name>
+        <Query>Beyoncé Lemonade</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A8674aa8bd04a0479e8235203dd4b8e6a</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Beyoncé</Url>
+              <Text>Beyoncé</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>716802c3-ec08-8433-f846-6c02581659b6</SatoriID>
+        <Name>Ology</Name>
+        <Query>Gallant Ology</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A27f729bfad1f5ebc7e77a6d6f2946d5b</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Gallant singer</Url>
+              <Text>Gallant</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>8d3a599e-c4c7-2126-bb7b-2d3ae7ab4259</SatoriID>
+        <Name>We Are King</Name>
+        <Query>KING We Are King album</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A54e5c27f8855be461a74f74dfa5580f5</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>KING pop band</Url>
+              <Text>KING</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>9eed75bc-b923-c911-ed18-dbcc3b27357d</SatoriID>
+        <Name>Malibu</Name>
+        <Query>Anderson .Paak Malibu</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A9daf90cef2179fee92bb1d0af67e0846</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Anderson .Paak</Url>
+              <Text>Anderson .Paak</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>062fc3d7-9512-796e-a325-016f9353d9e8</SatoriID>
+        <Name>Anti</Name>
+        <Query>Rihanna, Anti</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A4a2a145240da860d5c0251c9ccce34c8</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Rihanna</Url>
+              <Text>Rihanna</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Urban Contemporary Album nominees</Trigger>
+  </Item>
+  <Item Id="19">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>24878a5745944bf88b5741d5bc2ec5f9</CategoryID>
+    <CategoryType>Best Rap Performance</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>da1d7b24-2ac4-a75b-1d8e-612684d3395b</SatoriID>
+        <Name>No Problem</Name>
+        <Query>Chance The Rapper No Problem</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A5f0f7741bc7f77dea5eabbe367ce4f2a</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Chance The Rapper ft. Lil Wayne &amp; 2 Chainz</Url>
+              <Text>Chance The Rapper ft. Lil Wayne &amp; 2 Chainz</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>701eaa84-c571-44d2-1ab1-adbe28496690</SatoriID>
+        <Name>Panda </Name>
+        <Query>Desiigner Panda</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Abd415ca71c494792964b27ad8020f3f5</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Desiigner Panda</Url>
+              <Text>Panda</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>7b93c2a9-8f83-95fc-094f-1d263ccf6d2d</SatoriID>
+        <Name>Pop Style</Name>
+        <Query>Drake Pop Style</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A6d711ab3ef377536890cbb4c7601468f</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Drake ft. The Throne</Url>
+              <Text>Drake ft. The Throne</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>c5428b22-4550-7503-4fb3-549a27e863ab</SatoriID>
+        <Name>All The Way Up</Name>
+        <Query>Fat Joe &amp; Remy Ma All The Way Up</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A216e212b66ce42adc9e584be1a8007b3</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Fat Joe &amp; Remy Ma ft. French Montana &amp; Infared</Url>
+              <Text>Fat Joe &amp; Remy Ma</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>0c2927ce-ce3c-13c6-e430-d0377855cdaa</SatoriID>
+        <Name>THat Part</Name>
+        <Query>ScHoolboy Q THat Part</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ade3c14fd8700d2d9966301a056ba8536</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>ScHoolboy Q ft. Kanye West</Url>
+              <Text>ScHoolboy Q ft. Kanye West</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Rap Performance nominees</Trigger>
+  </Item>
+  <Item Id="20">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>af80518a38614478a658af68c19b782d</CategoryID>
+    <CategoryType>Best Rap/Sung Performance</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>fa3451f7-c908-4094-f1af-ad3f61ba8d38</SatoriID>
+        <Name>Freedom</Name>
+        <Query>Beyoncé Freedom</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A122636c8e43c34167a7cfd2a53bd5b1d</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Beyoncé ft. Kendrick Lamar</Url>
+              <Text>Beyoncé ft. Kendrick Lamar</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>53da2272-22a9-fc37-9f25-cc0749d47c81</SatoriID>
+        <Name>Hotline Bling</Name>
+        <Query>Drake Hotline Bling</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A100b85322f44224494ed5fd8eb3a864e</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Drake</Url>
+              <Text>Drake</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>23ce88da-deb6-8a85-9120-73a7a48d79bf</SatoriID>
+        <Name>Broccoli</Name>
+        <Query>DRAM Broccoli</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ad3a85eabb211c6d5a7c45f26f4eb271a</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>DRAM ft. Lil Yachty</Url>
+              <Text>DRAM ft. Lil Yachty</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>51090531-d040-94ee-0568-d7196ecc9c19</SatoriID>
+        <Name>Ultralight Beam</Name>
+        <Query>Kanye West Ultralight Beam</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A49e09f9a44643f6dde15736d7b464b7c</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Kanye West ft. Chance The Rapper, Kelly Price, Kirk Franklin &amp; The-Dream</Url>
+              <Text>Kanye West ft. Chance The Rapper, Kelly Price, Kirk Franklin &amp; The-Dream</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>486abbcc-2a79-6b78-6d2c-d4b79c01a00e</SatoriID>
+        <Name>Famous</Name>
+        <Query>Kanye West Famous song</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Aa0933482b0ec72acb54ad939eb1eba00</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Kanye West ft. Rihanna</Url>
+              <Text>Kanye West ft. Rihanna</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Rap/Sung Performance nominees</Trigger>
+  </Item>
+  <Item Id="21">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>1b425c72f99d49e391e492aa4868142e</CategoryID>
+    <CategoryType>Best Country Solo Performance</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>fd7b0ee7-c399-a7d7-db85-8e6d2f690a37</SatoriID>
+        <Name>Love Can Go To Hell</Name>
+        <Query>Brandy Clark Love Can Go To Hell</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A10fa21d6fa395c75a8c516a35ee531ca</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Brandy Clark</Url>
+              <Text>Brandy Clark</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>f49e97d0-a7cf-69ea-b3ea-3b96d24af973</SatoriID>
+        <Name>Vice</Name>
+        <Query>Miranda Lambert Vice</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A7d4eab20d76b335c98e6350e169bf551</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Miranda Lambert</Url>
+              <Text>Miranda Lambert</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>a9c98ed9-2c9c-1e68-ed95-147cf0247b9f</SatoriID>
+        <Name>My Church</Name>
+        <Query>Maren Morris My Church</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ac08232cc9170e5c179f1e9ff682e992a</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Maren Morris</Url>
+              <Text>Maren Morris</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>857f328a-2d5a-a505-34f5-64fd15222c9e</SatoriID>
+        <Name>Church Bells</Name>
+        <Query>Carrie Underwood Church Bells</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A5260f7544ab7168b23473643bff02041</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Carrie Underwood</Url>
+              <Text>Carrie Underwood</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>bb306bfa-50f8-5923-c1e5-164217a8333c</SatoriID>
+        <Name>Blue Ain’t Your Color</Name>
+        <Query>Blue Ain’t Your Color Keith Urban</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A0f42b4461539cd08991cecb3f658e2af</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Keith Urban</Url>
+              <Text>Keith Urban</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Country Solo Performance nominees</Trigger>
+  </Item>
+  <Item Id="22">
+    <AwardID>1</AwardID>
+    <AwardType>2017 Grammy Awards</AwardType>
+    <CategoryID>e5ac826e24504dfea0ff6b0cef8dbdeb</CategoryID>
+    <CategoryType>Best Country Duo/Group Performance</CategoryType>
+    <Nominees>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>5a815383-8a0f-0b22-ea19-33fbc04af778</SatoriID>
+        <Name>Different For Girls</Name>
+        <Query>Dierks Bentley ft. Elle King Different For Girls</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ae31b37f516c94e46a9170a4a3e345a9b</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Dierks Bentley ft. Elle King</Url>
+              <Text>Dierks Bentley ft. Elle King</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>60a8cabf-5fc2-c5bf-238e-741c82d02535</SatoriID>
+        <Name>21 Summer</Name>
+        <Query>Brothers Osborne 21 Summer</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A933d5dec32bde18e1effeb2d2345155f</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Brothers Osborne</Url>
+              <Text>Brothers Osborne</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>1778c2df-a13f-72f5-79f7-535c87964eba</SatoriID>
+        <Name>Setting the World on Fire</Name>
+        <Query>Kenny Chesney ft. P!nk Setting the World on Fire</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Ad65c1fe7f4aae26ce3ba819ca55cb840</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Kenny Chesney ft. P!nk</Url>
+              <Text>Kenny Chesney ft. P!nk</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>d24de896-7d2c-9272-53fb-055ac82fde6d</SatoriID>
+        <Name>Jolene</Name>
+        <Query>Pentatonix ft. Dolly Parton Jolene</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>Af6eb288ce2587d77fea845dc2c1bc2b4</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Pentatonix ft. Dolly Parton</Url>
+              <Text>Pentatonix ft. Dolly Parton</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+      <EntertainmentAwards.Recipient>
+        <SatoriID>45f60519-6c66-0316-1988-e53ea7b0bc90</SatoriID>
+        <Name>Think of You</Name>
+        <Query>Chris Young with Cassadee Pope Think of You</Query>
+        <Image>
+          <SourceUrl />
+          <Title />
+          <CreativeCommons>0</CreativeCommons>
+          <ThumbnailId>A21f58d07a59d54d47d34e59098045db1</ThumbnailId>
+          <ThumbnailWidth>0</ThumbnailWidth>
+          <ThumbnailHeight>0</ThumbnailHeight>
+          <DisableCropping>false</DisableCropping>
+        </Image>
+        <PredictionScore>0</PredictionScore>
+        <PrimaryContext>
+          <EntertainmentAwards.Context>
+            <MentionType>Artist</MentionType>
+            <Url>
+              <Url>Chris Young with Cassadee Pope</Url>
+              <Text>Chris Young with Cassadee Pope</Text>
+            </Url>
+          </EntertainmentAwards.Context>
+        </PrimaryContext>
+      </EntertainmentAwards.Recipient>
+    </Nominees>
+    <Trigger>2017 Grammy Best Country Duo/Group Performance nominees</Trigger>
+  </Item>
+</Items>
