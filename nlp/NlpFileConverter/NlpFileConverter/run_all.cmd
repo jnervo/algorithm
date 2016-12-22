@@ -1,0 +1,1 @@
+NlpFileConverter.exe -t all -lf "D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\test.txt" -sf "D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\segtest.txt" -pf "D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\postest.txt" -d ".\output" -fn "test" -split true

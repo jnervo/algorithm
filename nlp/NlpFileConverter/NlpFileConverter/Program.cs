@@ -33,6 +33,44 @@ namespace NlpFileConverter
                     CrfConverter.Convert2Crf(labelInputFile, segInputFile, posInputFile, outptuDir, type, true);
                 }
             }
+            else
+            {
+                switch (cmdParameters.Type.ToLower())
+                {
+                    case "crfsplit":
+                        CrfConverter.ConvertCrf2TagFiles(cmdParameters.CrfFile);
+                        if (string.IsNullOrEmpty(cmdParameters.CrfFile) || !File.Exists(cmdParameters.CrfFile))
+                        {
+                            Console.WriteLine("CrfFile is null or not exist.");
+                            return;
+                        }
+                        break;
+                    case "all":
+                        if (string.IsNullOrEmpty(cmdParameters.LabelFile) || !File.Exists(cmdParameters.LabelFile))
+                        {
+                            Console.WriteLine("LabelFile is null or not exist.");
+                            return;
+                        }
+                        if (string.IsNullOrEmpty(cmdParameters.SegFile) || !File.Exists(cmdParameters.SegFile))
+                        {
+                            Console.WriteLine("SegFile is null or not exist.");
+                            return;
+                        }
+                        if (string.IsNullOrEmpty(cmdParameters.PosFile) || !File.Exists(cmdParameters.PosFile))
+                        {
+                            Console.WriteLine("PosFile is null or not exist.");
+                            return;
+                        }
+                        CrfConverter.Convert2Crf(
+                            cmdParameters.LabelFile,
+                            cmdParameters.SegFile,
+                            cmdParameters.PosFile,
+                            cmdParameters.Directory,
+                            cmdParameters.FileName,
+                            cmdParameters.NeedToSplitTags);
+                        break;
+                }
+            }
         }
 
         class CmdParameters
@@ -75,9 +113,16 @@ namespace NlpFileConverter
             [CommandLineParameter(
                 Name = "CrfOutputFile",
                 ShortName = "crf",
-                Help = "[OPTIONAL] The absolut path of the CrfOutputFile. Defaultly, it will use LabelFile + '.crf' as the output path. "
+                Help = "[REQUIRED] The absolut path of the CrfOutputFile."
             )]
-            public string CrfOutputFile = null;
+            public string CrfFile = null;
+
+            [CommandLineParameter(
+                Name = "FileName",
+                ShortName = "fn",
+                Help = "[REQUIRED] The FileName of output files."
+            )]
+            public string FileName = "output";
 
             [CommandLineParameter(
                 Name = "NeedToSplitTags",
