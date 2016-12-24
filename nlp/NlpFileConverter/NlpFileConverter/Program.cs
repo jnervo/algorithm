@@ -12,6 +12,7 @@ namespace NlpFileConverter
     {
         static void Main(string[] args)
         {
+            Move500FromDev2Train();
             CommandLine<CmdParameters> cmdLine = new CommandLine<CmdParameters>();
             CmdParameters cmdParameters = cmdLine.Parse(args);
 
@@ -23,12 +24,12 @@ namespace NlpFileConverter
 
             if (args.Length == 0) // no args, run default function
             {
-                var outptuDir = @"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\output";
+                var outptuDir = @"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\output";
                 foreach (var type in new string[] { "dev", "test", "train" })
                 {
-                    var labelInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\{0}.txt", type);
-                    var segInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\seg{0}.txt", type);
-                    var posInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\pos{0}.txt", type);
+                    var labelInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\{0}.txt", type);
+                    var segInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\seg{0}.txt", type);
+                    var posInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\pos{0}.txt", type);
 
                     CrfConverter.Convert2Crf(labelInputFile, segInputFile, posInputFile, outptuDir, type, true);
                 }
@@ -130,6 +131,59 @@ namespace NlpFileConverter
                 Help = "[OPTIONAL] The absolut path of the CrfOutputFile. Defaultly, it will use LabelFile + '.crf' as the output path. "
             )]
             public bool NeedToSplitTags = true;
+
+        }
+
+        private static void Move500FromDev2Train()
+        {
+            var labelInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\{0}.txt", "dev");
+            var segInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\seg{0}.txt", "dev");
+            var posInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\pos{0}.txt", "dev");
+
+            var labelInputFile2 = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\{0}.txt", "train");
+            var segInputFile2 = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\seg{0}.txt", "train");
+            var posInputFile2 = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\pos{0}.txt", "train");
+
+
+            //read
+            var labelingResults = File.ReadAllLines(labelInputFile).ToList();
+            var segResults = CrfConverter.ReadSegInputV1(segInputFile);
+            var posInfoList = CrfConverter.ReadPosInfoList(posInputFile);
+
+            var labelingResults2 = File.ReadAllLines(labelInputFile2).ToList();
+            var segResults2 = CrfConverter.ReadSegInputV1(segInputFile2);
+            var posInfoList2 = CrfConverter.ReadPosInfoList(posInputFile2);
+
+            Random random = new Random();
+            for (int i = 0; i < 500; i++)
+            {
+                var index = random.Next(labelingResults.Count);
+
+                labelingResults2.Add(labelingResults[index]);
+                segResults2.Add(segResults[index]);
+                posInfoList2.Add(posInfoList[index]);
+
+                labelingResults.RemoveAt(index);
+                segResults.RemoveAt(index);
+                posInfoList.RemoveAt(index);
+            }
+
+            var labelOutputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\{0}.txt", "dev");
+            var segOutputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\seg{0}.txt", "dev");
+            var posOutputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\pos{0}.txt", "dev");
+            
+            File.WriteAllLines(labelOutputFile, labelingResults);
+            File.WriteAllLines(segOutputFile, segResults.Select(q => string.Join("\t", q)));
+            File.WriteAllLines(posOutputFile, posInfoList.Select(q => string.Join("\t", q.Words.Select(w => string.Join("/", w.Word, w.Pos)))));
+
+            var labelOutputFile2 = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\{0}.txt", "train");
+            var segOutputFile2 = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\seg{0}.txt", "train");
+            var posOutputFile2 = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\pos{0}.txt", "train");
+
+            File.WriteAllLines(labelOutputFile2, labelingResults2);
+            File.WriteAllLines(segOutputFile2, segResults2.Select(q => string.Join("\t", q)));
+            File.WriteAllLines(posOutputFile2, posInfoList2.Select(q => string.Join("\t", q.Words.Select(w => string.Join("/", w.Word, w.Pos)))));
+
 
         }
 

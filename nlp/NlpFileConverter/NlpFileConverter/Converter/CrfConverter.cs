@@ -412,7 +412,7 @@ namespace NlpFileConverter
         /// </summary>
         /// <param name="segInput"></param>
         /// <returns></returns>
-        private static List<List<string>> ReadSegInputV1(string segInput)
+        public static List<List<string>> ReadSegInputV1(string segInput)
         {
             List<List<string>> sentences = new List<List<string>>();
 
@@ -655,7 +655,7 @@ namespace NlpFileConverter
             return list;
         }
 
-        private static List<PosInfo> ReadPosInfoList(string posInput)
+        public static List<PosInfo> ReadPosInfoList(string posInput)
         {
             List<PosInfo> list = new List<PosInfo>();
 
