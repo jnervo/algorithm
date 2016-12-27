@@ -12,7 +12,6 @@ namespace NlpFileConverter
     {
         static void Main(string[] args)
         {
-            Move500FromDev2Train();
             CommandLine<CmdParameters> cmdLine = new CommandLine<CmdParameters>();
             CmdParameters cmdParameters = cmdLine.Parse(args);
 

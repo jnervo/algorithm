@@ -114,8 +114,8 @@ namespace NlpFileConverter
                         sw.WriteLine(
                             string.Join("\t",
                                 crfWord.WordStr,
-                                crfWord.CrfPos,
-                                crfWord.CrfCategoryPosition
+                                crfWord.CrfCategoryPosition,
+                                crfWord.CrfPos
                             ));
                     }
                     sw.WriteLine();
@@ -199,8 +199,8 @@ namespace NlpFileConverter
                         sw.WriteLine(
                             string.Join("\t",
                                 crfWord.WordStr,
-                                "NA",
-                                crfWord.CrfCategory == CrfCategory.O ? "O" : string.Format("{0}-{1}", crfWord.CrfPosition.ToString(), crfWord.CrfCategory.ToString())
+                                crfWord.CrfCategory == CrfCategory.O ? "O" : string.Format("{0}-{1}", crfWord.CrfPosition.ToString(), crfWord.CrfCategory.ToString()),
+                                "NA"
                             ));
                     }
                     sw.WriteLine();
@@ -721,7 +721,7 @@ namespace NlpFileConverter
 
         #region CRF => Property + Evaluate + Expression
 
-        public static void ConvertCrf2TagFiles(string crfFile)
+        public static void ConvertCrf2TagFiles(string crfFile, bool need2FilterFailedCase = false)
         {
             var crfResults = ReadCrfResults(crfFile);
 
@@ -737,7 +737,8 @@ namespace NlpFileConverter
 
                 DetectTags(crfResult, out attributes, out evaluations, out expressions);
 
-                if (expressions.Count > 0)
+                // if no need to filter failed case, or it has expressions result indeed, add it to output list
+                if (!need2FilterFailedCase || expressions.Count > 0)
                 {
                     attributesList.Add(attributes);
                     evaluationsList.Add(evaluations);
@@ -747,7 +748,10 @@ namespace NlpFileConverter
                 }
             }
 
-            OutputCrfResults(crfFile, filteredCrfResults);
+            if (need2FilterFailedCase)
+            {
+                OutputCrfResults(crfFile, filteredCrfResults);
+            }
 
             File.WriteAllLines(crfFile + ".attributes", attributesList.Select(q => string.Join("\t", q)));
             File.WriteAllLines(crfFile + ".evaluations", evaluationsList.Select(q => string.Join("\t", q)));
@@ -776,12 +780,28 @@ namespace NlpFileConverter
                 }
                 else
                 {
-                    do
+                    try
                     {
-                        fullWord += crfResult.CrfWords[i].WordStr;
+                        do
+                        {
+                            fullWord += crfResult.CrfWords[i].WordStr;
+                        }
+                        while (!crfResult.CrfWords[i++].CrfCategoryPosition.StartsWith("E-"));
+                        i--;
                     }
-                    while (!crfResult.CrfWords[i++].CrfCategoryPosition.StartsWith("E-"));
-                    i--;
+                    catch
+                    {
+                        if (i > 1
+                            && (crfResult.CrfWords[i - 1].CrfCategoryPosition.StartsWith("M-") || crfResult.CrfWords[i - 1].CrfCategoryPosition.StartsWith("S-")))
+                        {
+                            Console.WriteLine("Seems it misses 'E-'... I will let it go...");
+                        }
+                        else
+                        {
+                            Console.WriteLine("I really don't know how to handle this...");
+                            return;
+                        }
+                    }
                 }
 
                 switch (type)
@@ -797,7 +817,16 @@ namespace NlpFileConverter
         {
             var crfResults = new List<CrfResult>();
             CrfResult crfResult = new CrfResult();
-            foreach (var line in File.ReadAllLines(crfFile))
+
+            var lines = File.ReadAllLines(crfFile);
+
+            var separator = DetectCrfSeparator(lines);
+            if (string.IsNullOrEmpty(separator))
+            {
+                Console.WriteLine("Failed to DetectCrfSeparator for: {0}", lines.FirstOrDefault());
+                return crfResults;
+            }
+            foreach (var line in lines)
             {
                 if (string.IsNullOrWhiteSpace(line))
                 {
@@ -806,13 +835,13 @@ namespace NlpFileConverter
                     continue;
                 }
 
-                var tokens = line.Split('\t');
+                var tokens = line.Split(new string[] { separator }, StringSplitOptions.RemoveEmptyEntries);
 
                 var crfWord = new CrfWord()
                 {
                     WordStr = tokens[0],
-                    CrfPos = tokens[1],
-                    CrfCategoryPosition = tokens[2]
+                    CrfCategoryPosition = tokens[1],
+                    CrfPos = tokens.Length > 2 ? tokens[2] : null
                 };
                 crfResult.CrfWords.Add(crfWord);
             }
@@ -821,6 +850,21 @@ namespace NlpFileConverter
                 crfResults.Add(crfResult);
             }
             return crfResults;
+        }
+
+        private static string DetectCrfSeparator(string[] lines, int minFieldsCount = 1)
+        {
+            var firstLine = lines.First();
+
+            foreach (var separator in new string[] { " ", "\t", "," })
+            {
+                var tokens = firstLine.Split(new string[] { separator }, StringSplitOptions.RemoveEmptyEntries);
+                if (tokens.Length > minFieldsCount)
+                {
+                    return separator;
+                }
+            }
+            return null;
         }
 
         #endregion
