@@ -11,6 +11,7 @@ namespace Parsers
     {
         static void Main(string[] args)
         {
+            ImageVerticalParser.GetThumbnailIdsForAllTopics();
             MitParser.Parse();
             UtilizationReportParser.Parse();
         }

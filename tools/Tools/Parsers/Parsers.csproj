@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Parser\ImageVerticalParser.cs" />
     <Compile Include="Parser\MitParser.cs" />
     <Compile Include="Parser\UtilizationReportParser.cs" />
     <Compile Include="Program.cs" />
