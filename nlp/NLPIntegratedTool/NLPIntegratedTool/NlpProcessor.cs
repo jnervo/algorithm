@@ -25,7 +25,7 @@ namespace NLPIntegratedTool
                 throw new Exception("Input file doesn't exist.");
             }
 
-            var outputFile = inputFile + ".seg";
+            var outputFile = Path.ChangeExtension(inputFile, ".seg");
 
             var cmdTemplatePath = "seg_template.cmd";
             var cmdPath = "seg_run.cmd";
@@ -44,6 +44,41 @@ namespace NLPIntegratedTool
             else
             {
                 throw new Exception("Failed to seg input file.");
+            }
+        }
+
+        public static string Pos(string segFile)
+        {
+            if (string.IsNullOrEmpty(segFile))
+            {
+                throw new Exception("Please specify seg file.");
+            }
+            segFile = segFile.Trim("\"".ToCharArray());
+
+            if (!File.Exists(segFile))
+            {
+                throw new Exception("Seg file doesn't exist.");
+            }
+
+            var outputFile = Path.ChangeExtension(segFile, ".pos");
+
+            var cmdTemplatePath = "pos_template.cmd";
+            var cmdPath = "pos_run.cmd";
+
+            File.WriteAllText(cmdPath, File.ReadAllText(cmdTemplatePath).Replace("##INPUTFILE##", segFile).Replace("##OUTPUTFILE##", outputFile));
+
+            var str = ProcessEx.Execute(AppDomain.CurrentDomain.BaseDirectory, cmdPath);
+
+            LogHelper.Log(str);
+
+            if (File.Exists(outputFile))
+            {
+                LogHelper.Log("Pos output: " + outputFile);
+                return outputFile;
+            }
+            else
+            {
+                throw new Exception("Failed to pos seg file.");
             }
         }
     }

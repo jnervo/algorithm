@@ -41,13 +41,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.segFileTb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.posBtn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.posFileTb = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // startBtn
             // 
-            this.startBtn.Location = new System.Drawing.Point(105, 98);
+            this.startBtn.Location = new System.Drawing.Point(211, 123);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(75, 23);
             this.startBtn.TabIndex = 0;
@@ -90,6 +95,11 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.posFileTb);
+            this.tabPage1.Controls.Add(this.posBtn);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.segFileTb);
             this.tabPage1.Controls.Add(this.segBtn);
@@ -123,15 +133,15 @@
             // 
             this.inputFileSelectBtn.Location = new System.Drawing.Point(702, 15);
             this.inputFileSelectBtn.Name = "inputFileSelectBtn";
-            this.inputFileSelectBtn.Size = new System.Drawing.Size(75, 23);
+            this.inputFileSelectBtn.Size = new System.Drawing.Size(30, 23);
             this.inputFileSelectBtn.TabIndex = 7;
-            this.inputFileSelectBtn.Text = "打开";
+            this.inputFileSelectBtn.Text = "...";
             this.inputFileSelectBtn.UseVisualStyleBackColor = true;
             this.inputFileSelectBtn.Click += new System.EventHandler(this.inputFileSelectBtn_Click);
             // 
             // segBtn
             // 
-            this.segBtn.Location = new System.Drawing.Point(9, 98);
+            this.segBtn.Location = new System.Drawing.Point(9, 123);
             this.segBtn.Name = "segBtn";
             this.segBtn.Size = new System.Drawing.Size(75, 23);
             this.segBtn.TabIndex = 8;
@@ -142,7 +152,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 53);
+            this.label2.Location = new System.Drawing.Point(6, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 9;
@@ -150,7 +160,7 @@
             // 
             // segFileTb
             // 
-            this.segFileTb.Location = new System.Drawing.Point(70, 50);
+            this.segFileTb.Location = new System.Drawing.Point(70, 48);
             this.segFileTb.Name = "segFileTb";
             this.segFileTb.Size = new System.Drawing.Size(626, 20);
             this.segFileTb.TabIndex = 10;
@@ -163,6 +173,50 @@
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "执行日志:";
+            // 
+            // posBtn
+            // 
+            this.posBtn.Location = new System.Drawing.Point(110, 123);
+            this.posBtn.Name = "posBtn";
+            this.posBtn.Size = new System.Drawing.Size(75, 23);
+            this.posBtn.TabIndex = 11;
+            this.posBtn.Text = "词性标注";
+            this.posBtn.UseVisualStyleBackColor = true;
+            this.posBtn.Click += new System.EventHandler(this.posBtn_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 82);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "词性标注:";
+            // 
+            // posFileTb
+            // 
+            this.posFileTb.Location = new System.Drawing.Point(70, 79);
+            this.posFileTb.Name = "posFileTb";
+            this.posFileTb.Size = new System.Drawing.Size(626, 20);
+            this.posFileTb.TabIndex = 13;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(702, 46);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(30, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(702, 77);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(30, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "...";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -197,6 +251,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox segFileTb;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button posBtn;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox posFileTb;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

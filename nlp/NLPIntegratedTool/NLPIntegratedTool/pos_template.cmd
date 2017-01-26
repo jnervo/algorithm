@@ -1,0 +1,1 @@
+pos_cmdline.exe --threads 3 --input ##INPUTFILE## > ##OUTPUTFILE##

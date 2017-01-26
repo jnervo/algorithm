@@ -41,5 +41,18 @@ namespace NLPIntegratedTool
                 LogHelper.Log("Catched exception: " + ex.Message);
             }
         }
+
+        private void posBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                LogHelper.Log("Start to pos: " + segFileTb.Text);
+                posFileTb.Text = NlpProcessor.Pos(segFileTb.Text);
+            }
+            catch (Exception ex)
+            {
+                LogHelper.Log("Catched exception: " + ex.Message);
+            }
+        }
     }
 }
