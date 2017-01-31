@@ -38,12 +38,21 @@ namespace NlpFileConverter
                 switch (cmdParameters.Type.ToLower())
                 {
                     case "crfsplit":
-                        CrfConverter.ConvertCrf2TagFiles(cmdParameters.CrfFile);
                         if (string.IsNullOrEmpty(cmdParameters.CrfFile) || !File.Exists(cmdParameters.CrfFile))
                         {
                             Console.WriteLine("CrfFile is null or not exist.");
                             return;
                         }
+                        CrfConverter.ConvertCrf2TagFiles(cmdParameters.CrfFile);
+                        break;
+
+                    case "pos2crf":
+                        if (string.IsNullOrEmpty(cmdParameters.PosFile) || !File.Exists(cmdParameters.PosFile))
+                        {
+                            Console.WriteLine("PosFile is null or not exist.");
+                            return;
+                        }
+                        CrfConverter.ConvertPos2Crf(cmdParameters.PosFile, cmdParameters.PosCrfFile);
                         break;
                     case "all":
                         if (string.IsNullOrEmpty(cmdParameters.LabelFile) || !File.Exists(cmdParameters.LabelFile))
@@ -102,6 +111,13 @@ namespace NlpFileConverter
                 Help = "[REQUIRED] The absolut path of the PosFile. e.g. posdev.txt, postest.txt, postrain.txt"
             )]
             public string PosFile = null;
+
+            [CommandLineParameter(
+                Name = "PosCrfFile",
+                ShortName = "pcf",
+                Help = "[OPTIONAL] The absolut path of the output file of PosCrfFile."
+            )]
+            public string PosCrfFile = null;
 
             [CommandLineParameter(
                 Name = "Directory",

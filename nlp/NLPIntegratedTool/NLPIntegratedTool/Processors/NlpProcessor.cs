@@ -39,6 +39,7 @@ namespace NLPIntegratedTool
             if (File.Exists(outputFile))
             {
                 LogHelper.Log("Seg output: " + outputFile);
+                LogHelper.Enter();
                 return outputFile;
             }
             else
@@ -74,6 +75,7 @@ namespace NLPIntegratedTool
             if (File.Exists(outputFile))
             {
                 LogHelper.Log("Pos output: " + outputFile);
+                LogHelper.Enter();
                 return outputFile;
             }
             else

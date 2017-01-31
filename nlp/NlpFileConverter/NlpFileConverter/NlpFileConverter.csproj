@@ -67,9 +67,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
-    <Content Include="Data\Stanford\seg.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="run_crfsplit.cmd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -77,11 +74,7 @@
   <ItemGroup>
     <Folder Include="Data\CRF\" />
     <Folder Include="Data\POS2CRF\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Data\Stanford\parser.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Folder Include="Data\Stanford\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

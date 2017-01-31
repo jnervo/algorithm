@@ -504,7 +504,7 @@ namespace NlpFileConverter
         /// <param name="posInput"></param>
         /// <param name="output"></param>
         /// <param name="wordBreakerInput"></param>
-        public static void ConvertPos2Crf(string posInput, string output, string labelInput)
+        public static void ConvertPos2Crf(string posInput, string output = null, string labelInput = null)
         {
             //read
             List<PosInfo> posInfoList = ReadPosInfoList(posInput);
@@ -514,6 +514,10 @@ namespace NlpFileConverter
             //process
             List<CrfInfo> crfInfoList = GenerateCrfInfoList(posInfoList, commentInfoList);
 
+            if (string.IsNullOrEmpty(output))
+            {
+                output = Path.ChangeExtension(posInput, ".poscrf");
+            }
             //output
             File.WriteAllLines(output, crfInfoList.Select(crfInfo => string.Join("\t", crfInfo.Word, crfInfo.Pos, crfInfo.Type)));
         }
@@ -617,6 +621,13 @@ namespace NlpFileConverter
                     }
                 }
             }
+            else
+            {
+                wordList.ForEach(w =>
+                {
+                    w.Type = "O";
+                });
+            }
             list.AddRange(wordList);
         }
 
@@ -669,9 +680,14 @@ namespace NlpFileConverter
                 var words = line.Split('\t');
                 foreach (string word in words)
                 {
-                    var tokens = word.Split('/');
+                    var tokens = word.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
                     if (tokens.Length != 2)
                     {
+                        tokens = word.Split(new char[] { '_' }, StringSplitOptions.RemoveEmptyEntries);
+                    }
+                    if (tokens.Length != 2)
+                    {
+                        continue;
                     }
                     WordInfo wordInfo = new WordInfo()
                     {

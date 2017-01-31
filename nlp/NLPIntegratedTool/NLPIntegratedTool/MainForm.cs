@@ -54,5 +54,26 @@ namespace NLPIntegratedTool
                 LogHelper.Log("Catched exception: " + ex.Message);
             }
         }
+
+        private void pos2CrfBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                LogHelper.Log("Start to convert POS to CRF: " + posFileTb.Text);
+                CrfProcessor.Pos2Crf(posFileTb.Text);
+            }
+            catch (Exception ex)
+            {
+                LogHelper.Log("Catched exception: " + ex.Message);
+            }
+
+        }
+
+        private void startBtn_Click(object sender, EventArgs e)
+        {
+            segBtn_Click(null, null);
+            posBtn_Click(null, null);
+            pos2CrfBtn_Click(null, null);
+        }
     }
 }

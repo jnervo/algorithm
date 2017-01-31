@@ -46,18 +46,20 @@
             this.posFileTb = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.pos2CrfBtn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // startBtn
             // 
-            this.startBtn.Location = new System.Drawing.Point(211, 123);
+            this.startBtn.Location = new System.Drawing.Point(312, 123);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(75, 23);
             this.startBtn.TabIndex = 0;
             this.startBtn.Text = "所有步骤";
             this.startBtn.UseVisualStyleBackColor = true;
+            this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
             // logTb
             // 
@@ -95,6 +97,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.pos2CrfBtn);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label4);
@@ -218,6 +221,16 @@
             this.button2.Text = "...";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // pos2CrfBtn
+            // 
+            this.pos2CrfBtn.Location = new System.Drawing.Point(211, 123);
+            this.pos2CrfBtn.Name = "pos2CrfBtn";
+            this.pos2CrfBtn.Size = new System.Drawing.Size(75, 23);
+            this.pos2CrfBtn.TabIndex = 16;
+            this.pos2CrfBtn.Text = "POS=>CRF";
+            this.pos2CrfBtn.UseVisualStyleBackColor = true;
+            this.pos2CrfBtn.Click += new System.EventHandler(this.pos2CrfBtn_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,6 +269,7 @@
         private System.Windows.Forms.TextBox posFileTb;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button pos2CrfBtn;
     }
 }
 

@@ -19,5 +19,10 @@ namespace NLPIntegratedTool.Util
         {
             LogTb.Text += log + "\r\n";
         }
+
+        public static void Enter()
+        {
+            LogTb.Text += "\r\n";
+        }
     }
 }

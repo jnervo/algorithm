@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>-t crfsplit -crf "D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\devdebug\10dev.debug"</StartArguments>
+    <StartArguments>-t pos2crf -pf "D:\yuzhu\src\git\github\algorithm\nlp\NLPIntegratedTool\NLPIntegratedTool\bin\Debug\input_test.pos"</StartArguments>
   </PropertyGroup>
 </Project>
