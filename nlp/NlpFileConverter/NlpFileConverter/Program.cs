@@ -54,7 +54,21 @@ namespace NlpFileConverter
                         }
                         CrfConverter.ConvertPos2Crf(cmdParameters.PosFile, cmdParameters.PosCrfFile);
                         break;
+                    case "atomfeat2feattemp":
+                        if (string.IsNullOrEmpty(cmdParameters.PosCrfFile) || !File.Exists(cmdParameters.PosCrfFile))
+                        {
+                            Console.WriteLine("PosCrfFile is null or not exist.");
+                            return;
+                        }
+                        if (string.IsNullOrEmpty(cmdParameters.FeatureTempFile) || !File.Exists(cmdParameters.FeatureTempFile))
+                        {
+                            Console.WriteLine("FeatureTempFile is null or not exist.");
+                            return;
+                        }
+                        Atomfeat2featTemp.ConvertFeature(cmdParameters.PosCrfFile, cmdParameters.FeatureTempFile, cmdParameters.FeatureTempOutputFile);
+                        break;
                     case "all":
+
                         if (string.IsNullOrEmpty(cmdParameters.LabelFile) || !File.Exists(cmdParameters.LabelFile))
                         {
                             Console.WriteLine("LabelFile is null or not exist.");
@@ -118,6 +132,20 @@ namespace NlpFileConverter
                 Help = "[OPTIONAL] The absolut path of the output file of PosCrfFile."
             )]
             public string PosCrfFile = null;
+
+            [CommandLineParameter(
+                Name = "FeatureTempFile",
+                ShortName = "ft",
+                Help = "[OPTIONAL] The absolut path of the output file of FeatureTempFile."
+            )]
+            public string FeatureTempFile = null;
+
+            [CommandLineParameter(
+                Name = "FeatureTempOutputFile",
+                ShortName = "ftout",
+                Help = "[OPTIONAL] The absolut path of the output file of FeatureTempOutputFile."
+            )]
+            public string FeatureTempOutputFile = null;
 
             [CommandLineParameter(
                 Name = "Directory",
@@ -186,7 +214,7 @@ namespace NlpFileConverter
             var labelOutputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\{0}.txt", "dev");
             var segOutputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\seg{0}.txt", "dev");
             var posOutputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\pos{0}.txt", "dev");
-            
+
             File.WriteAllLines(labelOutputFile, labelingResults);
             File.WriteAllLines(segOutputFile, segResults.Select(q => string.Join("\t", q)));
             File.WriteAllLines(posOutputFile, posInfoList.Select(q => string.Join("\t", q.Words.Select(w => string.Join("/", w.Word, w.Pos)))));
