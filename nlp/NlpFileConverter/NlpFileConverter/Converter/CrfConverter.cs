@@ -519,7 +519,7 @@ namespace NlpFileConverter
                 output = Path.ChangeExtension(posInput, ".poscrf");
             }
             //output
-            File.WriteAllLines(output, crfInfoList.Select(crfInfo => string.Join("\t", crfInfo.Word, crfInfo.Pos, crfInfo.Type)));
+            File.WriteAllLines(output, crfInfoList.Select(crfInfo => string.IsNullOrEmpty(crfInfo.Word) ? string.Empty : string.Join("\t", crfInfo.Word, crfInfo.Pos, crfInfo.Type)));
         }
 
         private static List<CrfInfo> GenerateCrfInfoList(List<PosInfo> posInfoList, List<CommentInfo> commentInfoList)
