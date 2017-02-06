@@ -1,0 +1,1 @@
+NNCRFSegmentor.exe -test "D:\yuzhu\src\git\github\algorithm\nlp\NLPIntegratedTool\NLPIntegratedTool\bin\Debug\input_test.crf2lstm" -model "D:\yuzhu\src\git\github\algorithm\nlp\NLPIntegratedTool\NLPIntegratedTool\bin\Debug\Exe\NNCRFSegmentor\model" -output "D:\yuzhu\src\git\github\algorithm\nlp\NLPIntegratedTool\NLPIntegratedTool\bin\Debug\input_test.output"

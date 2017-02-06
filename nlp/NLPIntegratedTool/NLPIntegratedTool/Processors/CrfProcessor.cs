@@ -14,6 +14,10 @@ namespace NLPIntegratedTool
 
         private static string ExePath = Path.Combine(ExeDir, "NlpFileConverter.exe");
 
+        private static string Feat_temp2File = Path.Combine(ExeDir, "feat_temp2");
+
+        private static string AdNeuralCharTagFeatFile = Path.Combine(ExeDir, "adNeuralCharTagFeat.py");
+
         public static string Pos2Crf(string posFile)
         {
             if (string.IsNullOrEmpty(posFile))
@@ -45,5 +49,52 @@ namespace NLPIntegratedTool
                 throw new Exception("Failed to convert pos to crf.");
             }
         }
+
+        public static string Crf2Lstm(string posCrfFile)
+        {
+            if (string.IsNullOrEmpty(posCrfFile))
+            {
+                throw new Exception("Please specify crf file.");
+            }
+            posCrfFile = posCrfFile.Trim("\"".ToCharArray());
+
+            if (!File.Exists(posCrfFile))
+            {
+                throw new Exception("Crf file doesn't exist.");
+            }
+
+            //Step 1
+            var ftout = Path.ChangeExtension(posCrfFile, ".crf2lstm");
+
+            var arguments = string.Format("-t atomfeat2featTemp -pcf \"{0}\" -ft \"{1}\" -ftout \"{2}\"", posCrfFile, Feat_temp2File, ftout);
+            var str = ProcessEx.Execute(ExeDir, ExePath, arguments);
+            LogHelper.Log(str);
+
+            if (!File.Exists(ftout))
+            {
+                throw new Exception("Failed to run atomfeat2featTemp");
+            }
+
+            //Step 2
+            var outputForLstm = Path.ChangeExtension(ftout, ".lstm");
+            var pythonCmdTemplatePath = Path.Combine(ExeDir, "adNeuralCharTagFeatTemplate.cmd");
+            var pythonCmdPath = Path.Combine(ExeDir, "adNeuralCharTagFeat.cmd");
+            File.WriteAllText(pythonCmdPath, File.ReadAllText(pythonCmdTemplatePath).Replace("##INPUTFILE##", ftout).Replace("##OUTPUTFILE##", outputForLstm));
+
+            str = ProcessEx.Execute(ExeDir, pythonCmdPath);
+            LogHelper.Log(str);
+
+            if (File.Exists(outputForLstm))
+            {
+                LogHelper.Log("Output for LSTM: " + outputForLstm);
+                LogHelper.Enter();
+                return outputForLstm;
+            }
+            else
+            {
+                throw new Exception("Failed to run adNeuralCharTagFeat.py");
+            }
+        }
+
     }
 }

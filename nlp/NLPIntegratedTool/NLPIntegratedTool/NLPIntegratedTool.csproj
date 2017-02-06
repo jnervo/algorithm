@@ -52,6 +52,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Processors\LstmProcessor.cs" />
     <Compile Include="Processors\CrfProcessor.cs" />
     <Compile Include="Processors\NlpProcessor.cs" />
     <Compile Include="Program.cs" />
@@ -72,6 +73,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Exe\CrfConverter\adNeuralCharTagFeatTemplate.cmd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Exe\CrfConverter\adNeuralCharTagFeat.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -79,6 +83,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Exe\CrfConverter\NlpFileConverter.exe.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Exe\NNCRFSegmentor\model">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="ltp_data\changelog">
@@ -139,6 +146,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Exe\CrfConverter\NlpFileConverter.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Exe\NNCRFSegmentor\NNCRFSegmentor.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ltp_data\md5.txt">
