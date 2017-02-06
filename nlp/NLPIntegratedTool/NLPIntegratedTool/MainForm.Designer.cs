@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.logTb = new System.Windows.Forms.TextBox();
             this.inputFileOpenDialog = new System.Windows.Forms.OpenFileDialog();
             this.label3 = new System.Windows.Forms.Label();
@@ -299,6 +300,7 @@
             this.Controls.Add(this.inputFileTb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.logTb);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "NLP Integrated Tool";
             this.ResumeLayout(false);

@@ -8,3 +8,5 @@ nlp/NlpFileConverter/NlpFileConverter/Data/CRF/devdebug.zip
 *.zip
 nlp/NLPIntegratedTool/NLPIntegratedTool/ltp_data/
 pingme.txt
+nlp/NLPIntegratedTool/NLPIntegratedTool/bin/
+nlp/NLPIntegratedTool/NLPIntegratedTool/obj/
