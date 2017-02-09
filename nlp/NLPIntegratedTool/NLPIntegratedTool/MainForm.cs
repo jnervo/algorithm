@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static NLPIntegratedTool.LstmProcessor;
 
 namespace NLPIntegratedTool
 {
@@ -17,11 +18,49 @@ namespace NLPIntegratedTool
         {
             InitializeComponent();
 
-            LogHelper.Init(logTb);
+            LogHelper.Init(resultTb);
 
-            modelFileTb.Text = LstmProcessor.DefaultModelFile;
+            InitModelType(LstmProcessor.ModelType.Mobile);
         }
 
+        private void InitModelType(LstmProcessor.ModelType modelType)
+        {
+            switch (modelType)
+            {
+                case ModelType.Mobile:
+                    mobileModelBtn.BackColor = System.Drawing.Color.LightSkyBlue;
+                    hotelModelBtn.BackColor = System.Drawing.SystemColors.Control;
+                    hotelModelBtn.UseVisualStyleBackColor = true;
+                    LstmProcessor.SetModelType(modelType);
+                    break;
+                case ModelType.Hotel:
+                    mobileModelBtn.BackColor = System.Drawing.SystemColors.Control;
+                    mobileModelBtn.UseVisualStyleBackColor = true;
+                    hotelModelBtn.BackColor = System.Drawing.Color.LightSkyBlue;
+                    LstmProcessor.SetModelType(modelType);
+                    break;
+            }
+        }
+        private void startBtn_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void propertyCb_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mobileModelBtn_Click(object sender, EventArgs e)
+        {
+            InitModelType(LstmProcessor.ModelType.Mobile);
+        }
+
+        private void hotelModelBtn_Click(object sender, EventArgs e)
+        {
+            InitModelType(LstmProcessor.ModelType.Hotel);
+        }
+
+        /*
         private void inputFileSelectBtn_Click(object sender, EventArgs e)
         {
             DialogResult result = inputFileOpenDialog.ShowDialog();
@@ -125,6 +164,6 @@ namespace NLPIntegratedTool
             lstm2OutputBtn_Click(null, null);
             LogHelper.Log("#### Finish!!! ####");
         }
-
+        */
     }
 }

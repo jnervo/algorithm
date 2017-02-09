@@ -10,13 +10,40 @@ namespace NLPIntegratedTool
 {
     public class LstmProcessor
     {
+        public enum ModelType
+        {
+            Mobile,
+            Hotel
+        }
+
+        public static string ModelFilePath
+        {
+            get
+            {
+                switch (CurrentModelType)
+                {
+                    case ModelType.Mobile:
+                        return Path.Combine(ExeDir, "model");
+                    case ModelType.Hotel:
+                        return Path.Combine(ExeDir, "model");
+                    default:
+                        return Path.Combine(ExeDir, "model");
+                }
+            }
+        }
+
+        internal static void SetModelType(ModelType modelType)
+        {
+            CurrentModelType = modelType;
+        }
+
         private static string ExeDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Exe", "NNCRFSegmentor");
 
         private static string ExePath = Path.Combine(ExeDir, "NNCRFSegmentor.exe");
 
-        public static string DefaultModelFile = Path.Combine(ExeDir, "model");
+        private static ModelType CurrentModelType = ModelType.Mobile;
 
-        public static string Lstm2FinalOutput(string lstmFile, string modelFile = null)
+        public static string Lstm2FinalOutput(string lstmFile)
         {
             if (string.IsNullOrEmpty(lstmFile))
             {
@@ -29,14 +56,9 @@ namespace NLPIntegratedTool
                 throw new Exception("LSTM file doesn't exist.");
             }
 
-            if (string.IsNullOrEmpty(modelFile))
-            {
-                modelFile = DefaultModelFile;
-            }
-
             var finalOutputFile = Path.ChangeExtension(lstmFile, ".output");
 
-            var arguments = string.Format("-test \"{0}\" -model \"{1}\" -output \"{2}\"", lstmFile, modelFile, finalOutputFile);
+            var arguments = string.Format("-test \"{0}\" -model \"{1}\" -output \"{2}\"", lstmFile, ModelFilePath, finalOutputFile);
             var str = ProcessEx.Execute(ExeDir, ExePath, arguments);
 
             LogHelper.Log(str);
