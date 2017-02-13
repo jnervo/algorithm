@@ -41,15 +41,16 @@
             this.expressionCb = new System.Windows.Forms.CheckBox();
             this.evaluateCb = new System.Windows.Forms.CheckBox();
             this.resultTree = new System.Windows.Forms.TreeView();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // resultTb
             // 
-            this.resultTb.Location = new System.Drawing.Point(369, 276);
+            this.resultTb.Location = new System.Drawing.Point(344, 248);
             this.resultTb.Multiline = true;
             this.resultTb.Name = "resultTb";
             this.resultTb.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.resultTb.Size = new System.Drawing.Size(195, 250);
+            this.resultTb.Size = new System.Drawing.Size(320, 278);
             this.resultTb.TabIndex = 1;
             // 
             // inputFileOpenDialog
@@ -59,9 +60,9 @@
             // startBtn
             // 
             this.startBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.startBtn.Location = new System.Drawing.Point(485, 174);
+            this.startBtn.Location = new System.Drawing.Point(589, 139);
             this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(75, 44);
+            this.startBtn.Size = new System.Drawing.Size(75, 79);
             this.startBtn.TabIndex = 23;
             this.startBtn.Text = "识别";
             this.startBtn.UseVisualStyleBackColor = true;
@@ -108,7 +109,7 @@
             this.inputTextBox.Multiline = true;
             this.inputTextBox.Name = "inputTextBox";
             this.inputTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.inputTextBox.Size = new System.Drawing.Size(450, 168);
+            this.inputTextBox.Size = new System.Drawing.Size(567, 168);
             this.inputTextBox.TabIndex = 47;
             // 
             // attributeCb
@@ -116,7 +117,7 @@
             this.attributeCb.AutoSize = true;
             this.attributeCb.Checked = true;
             this.attributeCb.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.attributeCb.Location = new System.Drawing.Point(16, 253);
+            this.attributeCb.Location = new System.Drawing.Point(18, 225);
             this.attributeCb.Name = "attributeCb";
             this.attributeCb.Size = new System.Drawing.Size(50, 17);
             this.attributeCb.TabIndex = 48;
@@ -129,7 +130,7 @@
             this.expressionCb.AutoSize = true;
             this.expressionCb.Checked = true;
             this.expressionCb.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.expressionCb.Location = new System.Drawing.Point(140, 253);
+            this.expressionCb.Location = new System.Drawing.Point(142, 225);
             this.expressionCb.Name = "expressionCb";
             this.expressionCb.Size = new System.Drawing.Size(74, 17);
             this.expressionCb.TabIndex = 49;
@@ -142,7 +143,7 @@
             this.evaluateCb.AutoSize = true;
             this.evaluateCb.Checked = true;
             this.evaluateCb.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.evaluateCb.Location = new System.Drawing.Point(78, 253);
+            this.evaluateCb.Location = new System.Drawing.Point(80, 225);
             this.evaluateCb.Name = "evaluateCb";
             this.evaluateCb.Size = new System.Drawing.Size(50, 17);
             this.evaluateCb.TabIndex = 50;
@@ -152,16 +153,26 @@
             // 
             // resultTree
             // 
-            this.resultTree.Location = new System.Drawing.Point(12, 276);
+            this.resultTree.Location = new System.Drawing.Point(18, 248);
             this.resultTree.Name = "resultTree";
-            this.resultTree.Size = new System.Drawing.Size(320, 250);
+            this.resultTree.Size = new System.Drawing.Size(320, 278);
             this.resultTree.TabIndex = 51;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(341, 229);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "处理日志：";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 538);
+            this.ClientSize = new System.Drawing.Size(670, 538);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.resultTree);
             this.Controls.Add(this.evaluateCb);
             this.Controls.Add(this.expressionCb);
@@ -193,6 +204,7 @@
         private System.Windows.Forms.CheckBox expressionCb;
         private System.Windows.Forms.CheckBox evaluateCb;
         private System.Windows.Forms.TreeView resultTree;
+        private System.Windows.Forms.Label label1;
     }
 }
 

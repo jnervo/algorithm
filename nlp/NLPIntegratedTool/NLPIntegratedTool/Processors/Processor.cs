@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLPIntegratedTool.Util;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -46,14 +47,24 @@ namespace NLPIntegratedTool
             var result = new ProcessResult();
             File.WriteAllText(result.InputFile, text);
 
-            if (NlpProcessor.Seg(result)
-                && NlpProcessor.Pos(result)
-                && CrfProcessor.Pos2Crf(result)
-                && CrfProcessor.Crf2Lstm(result)
-                && LstmProcessor.Lstm2FinalOutput(result)
-                && result.Read())
-            {
-            }
+            LogHelper.Log("#### Step 1 : input => seg ####");
+            NlpProcessor.Seg(result);
+            LogHelper.Log("#### Step 2 : seg => pos ####");
+            NlpProcessor.Pos(result);
+            LogHelper.Log("#### Step 3 : skip ####");
+            LogHelper.Enter();
+            LogHelper.Log("#### Step 4 : pos => crf ####");
+            CrfProcessor.Pos2Crf(result);
+            LogHelper.Log("#### Step 5 : skip ####");
+            LogHelper.Log("#### Step 6 : skip ####");
+            LogHelper.Enter();
+            LogHelper.Log("#### Step 7 : crf => lstm ####");
+            CrfProcessor.Crf2Lstm(result);
+            LogHelper.Log("#### Step 8 : lstm => final output ####");
+            LstmProcessor.Lstm2FinalOutput(result);
+            LogHelper.Log("#### Finish!!! ####");
+            result.Read();
+
             return result;
         }
     }

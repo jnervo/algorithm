@@ -50,6 +50,8 @@ namespace NLPIntegratedTool
             this.inputTextBox.Text = File.ReadAllText(Processor.DefaultDataFilePath);
         }
 
+        private ProcessResult FinalResult;
+
         private void startBtn_Click(object sender, EventArgs e)
         {
             var text = this.inputTextBox.Text;
@@ -60,9 +62,16 @@ namespace NLPIntegratedTool
 
             try
             {
-                var result = Processor.ProcessText(text);
+                FinalResult = Processor.ProcessText(text);
 
-                DisplayProcessResult(result);
+                if (FinalResult?.Sentences == null)
+                {
+                    MessageBox.Show("处理失败。请检查日志。");
+                }
+                else
+                {
+                    DisplayProcessResult();
+                }
             }
             catch (Exception ex)
             {
@@ -70,37 +79,56 @@ namespace NLPIntegratedTool
             }
         }
 
-        private void DisplayProcessResult(ProcessResult result)
+        private void DisplayProcessResult()
         {
             resultTree.Nodes.Clear();
             TreeNode rootNode = new TreeNode("处理结果");
 
-            foreach (var sentence in result.Sentences)
+            bool showAttribute = attributeCb.Checked;
+            bool showEvaluate = evaluateCb.Checked;
+            bool showExpression = expressionCb.Checked;
+
+            foreach (var sentence in FinalResult.Sentences)
             {
                 TreeNode sentenceNode = new TreeNode();
                 sentenceNode.Text = sentence.SentenceStr;
 
-                TreeNode attributeNode = new TreeNode("属性");
-                attributeNode.Nodes.Add(new TreeNode(string.Join(";", sentence.Attributes)));
+                if (showAttribute)
+                {
+                    TreeNode attributeNode = new TreeNode("属性");
+                    attributeNode.Nodes.Add(new TreeNode(string.Join(";", sentence.Attributes)));
+                    sentenceNode.Nodes.Add(attributeNode);
+                }
 
-                TreeNode evaluationNode = new TreeNode("评价");
-                evaluationNode.Nodes.Add(new TreeNode(string.Join(";", sentence.Evaluations)));
+                if (showEvaluate)
+                {
+                    TreeNode evaluationNode = new TreeNode("评价");
+                    evaluationNode.Nodes.Add(new TreeNode(string.Join(";", sentence.Evaluations)));
+                    sentenceNode.Nodes.Add(evaluationNode);
+                }
 
-                TreeNode expressionNode = new TreeNode("意见解释");
-                expressionNode.Nodes.Add(new TreeNode(string.Join(";", sentence.Expressions)));
-
-                sentenceNode.Nodes.Add(attributeNode);
-                sentenceNode.Nodes.Add(evaluationNode);
-                sentenceNode.Nodes.Add(expressionNode);
+                if (showExpression)
+                {
+                    TreeNode expressionNode = new TreeNode("意见解释");
+                    expressionNode.Nodes.Add(new TreeNode(string.Join(";", sentence.Expressions)));
+                    sentenceNode.Nodes.Add(expressionNode);
+                }
 
                 rootNode.Nodes.Add(sentenceNode);
             }
             resultTree.Nodes.Add(rootNode);
+
+            MessageBox.Show("完成。");
         }
 
         private void propertyCb_CheckedChanged(object sender, EventArgs e)
         {
+            if (FinalResult?.Sentences == null)
+            {
+                return;
+            }
 
+            DisplayProcessResult();
         }
 
         private void mobileModelBtn_Click(object sender, EventArgs e)

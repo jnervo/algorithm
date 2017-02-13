@@ -29,6 +29,7 @@ namespace NLPIntegratedTool.Util
             process.StartInfo.WorkingDirectory = workingDirectory;
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.CreateNoWindow = true;
             process.Start();
             if (timeOut != -1)
             {
