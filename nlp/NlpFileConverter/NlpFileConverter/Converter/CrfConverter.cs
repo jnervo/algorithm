@@ -774,7 +774,7 @@ namespace NlpFileConverter
             File.WriteAllLines(crfFile + ".expressions", expressionsList.Select(q => string.Join("\t", q)));
         }
 
-        private static void DetectTags(CrfResult crfResult, out List<string> attributes, out List<string> evaluations, out List<string> expressions)
+        public static void DetectTags(CrfResult crfResult, out List<string> attributes, out List<string> evaluations, out List<string> expressions)
         {
             attributes = new List<string>();
             evaluations = new List<string>();
@@ -829,7 +829,7 @@ namespace NlpFileConverter
             }
         }
 
-        private static List<CrfResult> ReadCrfResults(string crfFile)
+        public static List<CrfResult> ReadCrfResults(string crfFile)
         {
             var crfResults = new List<CrfResult>();
             CrfResult crfResult = new CrfResult();
@@ -868,7 +868,7 @@ namespace NlpFileConverter
             return crfResults;
         }
 
-        private static string DetectCrfSeparator(string[] lines, int minFieldsCount = 1)
+        public static string DetectCrfSeparator(string[] lines, int minFieldsCount = 1)
         {
             var firstLine = lines.First();
 

@@ -12,8 +12,11 @@ namespace NLPIntegratedTool
     {
         private static string ExeDir = AppDomain.CurrentDomain.BaseDirectory;
 
-        public static string Seg(string inputFile)
+        public static bool Seg(ProcessResult result)
         {
+            var inputFile = result.InputFile;
+            var outputFile = result.SegFile;
+
             if (string.IsNullOrEmpty(inputFile))
             {
                 throw new Exception("Please specify input file.");
@@ -24,8 +27,6 @@ namespace NLPIntegratedTool
             {
                 throw new Exception("Input file doesn't exist.");
             }
-
-            var outputFile = Path.ChangeExtension(inputFile, ".seg");
 
             var cmdTemplatePath = "seg_template.cmd";
             var cmdPath = "seg_run.cmd";
@@ -40,7 +41,7 @@ namespace NLPIntegratedTool
             {
                 LogHelper.Log("Seg output: " + outputFile);
                 LogHelper.Enter();
-                return outputFile;
+                return true;
             }
             else
             {
@@ -48,8 +49,11 @@ namespace NLPIntegratedTool
             }
         }
 
-        public static string Pos(string segFile)
+        public static bool Pos(ProcessResult result)
         {
+            var segFile = result.SegFile;
+            var outputFile = result.PosFile;
+
             if (string.IsNullOrEmpty(segFile))
             {
                 throw new Exception("Please specify seg file.");
@@ -60,8 +64,6 @@ namespace NLPIntegratedTool
             {
                 throw new Exception("Seg file doesn't exist.");
             }
-
-            var outputFile = Path.ChangeExtension(segFile, ".pos");
 
             var cmdTemplatePath = "pos_template.cmd";
             var cmdPath = "pos_run.cmd";
@@ -76,7 +78,7 @@ namespace NLPIntegratedTool
             {
                 LogHelper.Log("Pos output: " + outputFile);
                 LogHelper.Enter();
-                return outputFile;
+                return true;
             }
             else
             {

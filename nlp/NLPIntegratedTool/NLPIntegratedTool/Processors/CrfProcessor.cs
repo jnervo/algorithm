@@ -18,8 +18,11 @@ namespace NLPIntegratedTool
 
         private static string AdNeuralCharTagFeatFile = Path.Combine(ExeDir, "adNeuralCharTagFeat.py");
 
-        public static string Pos2Crf(string posFile)
+        public static bool Pos2Crf(ProcessResult result)
         {
+            var posFile = result.PosFile;
+            var outputFile = result.PosCrfFile;
+
             if (string.IsNullOrEmpty(posFile))
             {
                 throw new Exception("Please specify pos file.");
@@ -31,18 +34,16 @@ namespace NLPIntegratedTool
                 throw new Exception("Pos file doesn't exist.");
             }
 
-            var posCrfFile = Path.ChangeExtension(posFile, ".poscrf");
-
-            var arguments = string.Format("-t pos2crf -pf \"{0}\" -pcf \"{1}\"", posFile, posCrfFile);
+            var arguments = string.Format("-t pos2crf -pf \"{0}\" -pcf \"{1}\"", posFile, outputFile);
             var str = ProcessEx.Execute(ExeDir, ExePath, arguments);
 
             LogHelper.Log(str);
 
-            if (File.Exists(posCrfFile))
+            if (File.Exists(outputFile))
             {
-                LogHelper.Log("PosCrf output: " + posCrfFile);
+                LogHelper.Log("PosCrf output: " + outputFile);
                 LogHelper.Enter();
-                return posCrfFile;
+                return true;
             }
             else
             {
@@ -50,8 +51,11 @@ namespace NLPIntegratedTool
             }
         }
 
-        public static string Crf2Lstm(string posCrfFile)
+        public static bool Crf2Lstm(ProcessResult result)
         {
+            var posCrfFile = result.PosCrfFile;
+            var outputFile = result.LstmFile;
+
             if (string.IsNullOrEmpty(posCrfFile))
             {
                 throw new Exception("Please specify crf file.");
@@ -76,19 +80,18 @@ namespace NLPIntegratedTool
             }
 
             //Step 2
-            var outputForLstm = Path.ChangeExtension(ftout, ".lstm");
             var pythonCmdTemplatePath = Path.Combine(ExeDir, "adNeuralCharTagFeatTemplate.cmd");
             var pythonCmdPath = Path.Combine(ExeDir, "adNeuralCharTagFeat.cmd");
-            File.WriteAllText(pythonCmdPath, File.ReadAllText(pythonCmdTemplatePath).Replace("##INPUTFILE##", ftout).Replace("##OUTPUTFILE##", outputForLstm));
+            File.WriteAllText(pythonCmdPath, File.ReadAllText(pythonCmdTemplatePath).Replace("##INPUTFILE##", ftout).Replace("##OUTPUTFILE##", outputFile));
 
             str = ProcessEx.Execute(ExeDir, pythonCmdPath);
             LogHelper.Log(str);
 
-            if (File.Exists(outputForLstm))
+            if (File.Exists(outputFile))
             {
-                LogHelper.Log("Output for LSTM: " + outputForLstm);
+                LogHelper.Log("Output for LSTM: " + outputFile);
                 LogHelper.Enter();
-                return outputForLstm;
+                return true;
             }
             else
             {

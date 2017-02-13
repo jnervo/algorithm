@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,9 +41,61 @@ namespace NLPIntegratedTool
                     LstmProcessor.SetModelType(modelType);
                     break;
             }
+
+            LoadDefaultData();
         }
+
+        private void LoadDefaultData()
+        {
+            this.inputTextBox.Text = File.ReadAllText(Processor.DefaultDataFilePath);
+        }
+
         private void startBtn_Click(object sender, EventArgs e)
         {
+            var text = this.inputTextBox.Text;
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                MessageBox.Show("输入为空。请重新输入。");
+            }
+
+            try
+            {
+                var result = Processor.ProcessText(text);
+
+                DisplayProcessResult(result);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("异常：" + ex.Message + " \r\n StackTrace:" + ex.StackTrace);
+            }
+        }
+
+        private void DisplayProcessResult(ProcessResult result)
+        {
+            resultTree.Nodes.Clear();
+            TreeNode rootNode = new TreeNode("处理结果");
+
+            foreach (var sentence in result.Sentences)
+            {
+                TreeNode sentenceNode = new TreeNode();
+                sentenceNode.Text = sentence.SentenceStr;
+
+                TreeNode attributeNode = new TreeNode("属性");
+                attributeNode.Nodes.Add(new TreeNode(string.Join(";", sentence.Attributes)));
+
+                TreeNode evaluationNode = new TreeNode("评价");
+                evaluationNode.Nodes.Add(new TreeNode(string.Join(";", sentence.Evaluations)));
+
+                TreeNode expressionNode = new TreeNode("意见解释");
+                expressionNode.Nodes.Add(new TreeNode(string.Join(";", sentence.Expressions)));
+
+                sentenceNode.Nodes.Add(attributeNode);
+                sentenceNode.Nodes.Add(evaluationNode);
+                sentenceNode.Nodes.Add(expressionNode);
+
+                rootNode.Nodes.Add(sentenceNode);
+            }
+            resultTree.Nodes.Add(rootNode);
         }
 
         private void propertyCb_CheckedChanged(object sender, EventArgs e)

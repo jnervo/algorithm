@@ -31,7 +31,6 @@ namespace NLPIntegratedTool
                 }
             }
         }
-
         internal static void SetModelType(ModelType modelType)
         {
             CurrentModelType = modelType;
@@ -41,10 +40,13 @@ namespace NLPIntegratedTool
 
         private static string ExePath = Path.Combine(ExeDir, "NNCRFSegmentor.exe");
 
-        private static ModelType CurrentModelType = ModelType.Mobile;
+        public static ModelType CurrentModelType = ModelType.Mobile;
 
-        public static string Lstm2FinalOutput(string lstmFile)
+        public static bool Lstm2FinalOutput(ProcessResult result)
         {
+            var lstmFile = result.LstmFile;
+            var outputFile = result.OutputFile;
+
             if (string.IsNullOrEmpty(lstmFile))
             {
                 throw new Exception("Please specify LSTM file.");
@@ -56,18 +58,16 @@ namespace NLPIntegratedTool
                 throw new Exception("LSTM file doesn't exist.");
             }
 
-            var finalOutputFile = Path.ChangeExtension(lstmFile, ".output");
-
-            var arguments = string.Format("-test \"{0}\" -model \"{1}\" -output \"{2}\"", lstmFile, ModelFilePath, finalOutputFile);
+            var arguments = string.Format("-test \"{0}\" -model \"{1}\" -output \"{2}\"", lstmFile, ModelFilePath, outputFile);
             var str = ProcessEx.Execute(ExeDir, ExePath, arguments);
 
             LogHelper.Log(str);
 
-            if (File.Exists(finalOutputFile))
+            if (File.Exists(outputFile))
             {
-                LogHelper.Log("Final output: " + finalOutputFile);
+                LogHelper.Log("Final output: " + outputFile);
                 LogHelper.Enter();
-                return finalOutputFile;
+                return true;
             }
             else
             {

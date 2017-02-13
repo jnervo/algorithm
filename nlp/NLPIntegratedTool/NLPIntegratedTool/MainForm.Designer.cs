@@ -36,19 +36,20 @@
             this.modelFileOpenDialog = new System.Windows.Forms.OpenFileDialog();
             this.mobileModelBtn = new System.Windows.Forms.Button();
             this.hotelModelBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.inputTextBox = new System.Windows.Forms.TextBox();
             this.attributeCb = new System.Windows.Forms.CheckBox();
             this.expressionCb = new System.Windows.Forms.CheckBox();
             this.evaluateCb = new System.Windows.Forms.CheckBox();
+            this.resultTree = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
             // resultTb
             // 
-            this.resultTb.Location = new System.Drawing.Point(16, 276);
+            this.resultTb.Location = new System.Drawing.Point(369, 276);
             this.resultTb.Multiline = true;
             this.resultTb.Name = "resultTb";
             this.resultTb.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.resultTb.Size = new System.Drawing.Size(450, 212);
+            this.resultTb.Size = new System.Drawing.Size(195, 250);
             this.resultTb.TabIndex = 1;
             // 
             // inputFileOpenDialog
@@ -101,14 +102,14 @@
             this.hotelModelBtn.UseVisualStyleBackColor = true;
             this.hotelModelBtn.Click += new System.EventHandler(this.hotelModelBtn_Click);
             // 
-            // textBox1
+            // inputTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 50);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(450, 168);
-            this.textBox1.TabIndex = 47;
+            this.inputTextBox.Location = new System.Drawing.Point(16, 50);
+            this.inputTextBox.Multiline = true;
+            this.inputTextBox.Name = "inputTextBox";
+            this.inputTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.inputTextBox.Size = new System.Drawing.Size(450, 168);
+            this.inputTextBox.TabIndex = 47;
             // 
             // attributeCb
             // 
@@ -149,15 +150,23 @@
             this.evaluateCb.UseVisualStyleBackColor = true;
             this.evaluateCb.CheckedChanged += new System.EventHandler(this.propertyCb_CheckedChanged);
             // 
+            // resultTree
+            // 
+            this.resultTree.Location = new System.Drawing.Point(12, 276);
+            this.resultTree.Name = "resultTree";
+            this.resultTree.Size = new System.Drawing.Size(320, 250);
+            this.resultTree.TabIndex = 51;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(576, 538);
+            this.Controls.Add(this.resultTree);
             this.Controls.Add(this.evaluateCb);
             this.Controls.Add(this.expressionCb);
             this.Controls.Add(this.attributeCb);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.inputTextBox);
             this.Controls.Add(this.hotelModelBtn);
             this.Controls.Add(this.mobileModelBtn);
             this.Controls.Add(this.label7);
@@ -179,10 +188,11 @@
         private System.Windows.Forms.OpenFileDialog modelFileOpenDialog;
         private System.Windows.Forms.Button mobileModelBtn;
         private System.Windows.Forms.Button hotelModelBtn;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox inputTextBox;
         private System.Windows.Forms.CheckBox attributeCb;
         private System.Windows.Forms.CheckBox expressionCb;
         private System.Windows.Forms.CheckBox evaluateCb;
+        private System.Windows.Forms.TreeView resultTree;
     }
 }
 
