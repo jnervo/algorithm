@@ -5,7 +5,6 @@ Debug/
 nlp/NlpFileConverter.zip
 nlp/NlpFileConverter/NlpFileConverter/Data/CRF/output/
 nlp/NlpFileConverter/NlpFileConverter/Data/CRF/devdebug.zip
-*.zip
 nlp/NLPIntegratedTool/NLPIntegratedTool/ltp_data/
 pingme.txt
 nlp/NLPIntegratedTool/NLPIntegratedTool/bin/
