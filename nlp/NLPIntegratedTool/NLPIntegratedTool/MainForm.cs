@@ -19,7 +19,7 @@ namespace NLPIntegratedTool
         {
             InitializeComponent();
 
-            LogHelper.Init(resultTb);
+            LogHelper.Init(logTb);
 
             InitModelType(LstmProcessor.ModelType.Mobile);
         }
@@ -58,6 +58,7 @@ namespace NLPIntegratedTool
             if (string.IsNullOrWhiteSpace(text))
             {
                 MessageBox.Show("输入为空。请重新输入。");
+                return;
             }
 
             try
@@ -139,6 +140,13 @@ namespace NLPIntegratedTool
         private void hotelModelBtn_Click(object sender, EventArgs e)
         {
             InitModelType(LstmProcessor.ModelType.Hotel);
+        }
+
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            inputTextBox.Text = string.Empty;
+            logTb.Text = string.Empty;
+            resultTree.Nodes.Clear();
         }
 
         /*

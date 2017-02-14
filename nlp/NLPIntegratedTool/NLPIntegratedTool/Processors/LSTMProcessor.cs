@@ -25,7 +25,7 @@ namespace NLPIntegratedTool
                     case ModelType.Mobile:
                         return Path.Combine(ExeDir, "model");
                     case ModelType.Hotel:
-                        return Path.Combine(ExeDir, "model");
+                        return Path.Combine(ExeDir, "hotelmodel");
                     default:
                         return Path.Combine(ExeDir, "model");
                 }

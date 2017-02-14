@@ -13,7 +13,7 @@ namespace NLPIntegratedTool
     {
         private static string DefaultDataDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Exe", "DefaultData");
 
-        private static string TempDataDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Exe", "TempData");
+        private static string ResultDataDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ResultData");
 
         public static string DefaultDataFilePath
         {
@@ -33,7 +33,7 @@ namespace NLPIntegratedTool
 
         public static string GetTempInputFile()
         {
-            var dir = Path.Combine(TempDataDir, DateTime.Now.ToString("yyyyMMdd_HHmmss"));
+            var dir = Path.Combine(ResultDataDir, DateTime.Now.ToString("yyyyMMdd_HHmmss"));
             if (!Directory.Exists(dir))
             {
                 Directory.CreateDirectory(dir);

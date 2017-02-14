@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.resultTb = new System.Windows.Forms.TextBox();
+            this.logTb = new System.Windows.Forms.TextBox();
             this.inputFileOpenDialog = new System.Windows.Forms.OpenFileDialog();
-            this.startBtn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.modelFileOpenDialog = new System.Windows.Forms.OpenFileDialog();
             this.mobileModelBtn = new System.Windows.Forms.Button();
@@ -42,31 +41,22 @@
             this.evaluateCb = new System.Windows.Forms.CheckBox();
             this.resultTree = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
+            this.clearBtn = new System.Windows.Forms.Button();
+            this.startBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // resultTb
             // 
-            this.resultTb.Location = new System.Drawing.Point(344, 248);
-            this.resultTb.Multiline = true;
-            this.resultTb.Name = "resultTb";
-            this.resultTb.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.resultTb.Size = new System.Drawing.Size(320, 278);
-            this.resultTb.TabIndex = 1;
+            this.logTb.Location = new System.Drawing.Point(344, 248);
+            this.logTb.Multiline = true;
+            this.logTb.Name = "resultTb";
+            this.logTb.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.logTb.Size = new System.Drawing.Size(320, 278);
+            this.logTb.TabIndex = 1;
             // 
             // inputFileOpenDialog
             // 
             this.inputFileOpenDialog.FileName = "Input.txt";
-            // 
-            // startBtn
-            // 
-            this.startBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.startBtn.Location = new System.Drawing.Point(589, 139);
-            this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(75, 79);
-            this.startBtn.TabIndex = 23;
-            this.startBtn.Text = "识别";
-            this.startBtn.UseVisualStyleBackColor = true;
-            this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
             // label7
             // 
@@ -167,11 +157,35 @@
             this.label1.TabIndex = 52;
             this.label1.Text = "处理日志：";
             // 
+            // clearBtn
+            // 
+            this.clearBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.clearBtn.Location = new System.Drawing.Point(589, 181);
+            this.clearBtn.Name = "clearBtn";
+            this.clearBtn.Size = new System.Drawing.Size(75, 37);
+            this.clearBtn.TabIndex = 53;
+            this.clearBtn.Text = "重置";
+            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
+            // 
+            // startBtn
+            // 
+            this.startBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.startBtn.Location = new System.Drawing.Point(589, 50);
+            this.startBtn.Name = "startBtn";
+            this.startBtn.Size = new System.Drawing.Size(75, 125);
+            this.startBtn.TabIndex = 54;
+            this.startBtn.Text = "识别";
+            this.startBtn.UseVisualStyleBackColor = true;
+            this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(670, 538);
+            this.Controls.Add(this.startBtn);
+            this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.resultTree);
             this.Controls.Add(this.evaluateCb);
@@ -181,8 +195,7 @@
             this.Controls.Add(this.hotelModelBtn);
             this.Controls.Add(this.mobileModelBtn);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.startBtn);
-            this.Controls.Add(this.resultTb);
+            this.Controls.Add(this.logTb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "解释性意见要素识别系统";
@@ -192,9 +205,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox resultTb;
+        private System.Windows.Forms.TextBox logTb;
         private System.Windows.Forms.OpenFileDialog inputFileOpenDialog;
-        private System.Windows.Forms.Button startBtn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.OpenFileDialog modelFileOpenDialog;
         private System.Windows.Forms.Button mobileModelBtn;
@@ -205,6 +217,8 @@
         private System.Windows.Forms.CheckBox evaluateCb;
         private System.Windows.Forms.TreeView resultTree;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button clearBtn;
+        private System.Windows.Forms.Button startBtn;
     }
 }
 

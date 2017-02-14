@@ -18,11 +18,15 @@ namespace NLPIntegratedTool.Util
         public static void Log(string log)
         {
             LogTb.Text += log + "\r\n";
+            LogTb.SelectionStart = LogTb.Text.Length;
+            LogTb.ScrollToCaret();
         }
 
         public static void Enter()
         {
             LogTb.Text += "\r\n";
+            LogTb.SelectionStart = LogTb.Text.Length;
+            LogTb.ScrollToCaret();
         }
     }
 }
