@@ -12,7 +12,7 @@ namespace Parsers.Parser
     {
         public static void GetThumbnailIdsForAllTopics()
         {
-            var lines = File.ReadAllLines(@"D:\yuzhu\src\git\github\algorithm\tools\Tools\Parsers\Data\InaugurationQuries.txt");
+            var lines = File.ReadAllLines(@"D:\data\CarouselV2DataGenerator\OscarImageDetail.txt");
 
 
             Dictionary<string, string> dic = new Dictionary<string, string>();
@@ -43,7 +43,7 @@ namespace Parsers.Parser
                 }
                 Console.WriteLine(dic.Count);
             }
-            File.WriteAllLines("GetThumbnailIdsForAllTopics_InaugurationQuries.txt", dic.Select(d => string.Join("\t", d.Key, d.Value)));
+            File.WriteAllLines(@"D:\data\CarouselV2DataGenerator\OscarImage.txt", dic.Select(d => string.Join("\t", d.Key, d.Value)));
 
         }
     }
