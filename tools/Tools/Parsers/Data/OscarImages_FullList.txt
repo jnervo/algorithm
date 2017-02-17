@@ -1,0 +1,122 @@
+Arrival	http://www.bing.com/images/search?view=detailV2&ccid=G%2b%2bGdkp5&id=D8A1CB450E8FBA26D58128EB60DAA8E636A27030&q=arrival+amy+adams&simid=608035278745043495&selectedIndex=1&ajaxhist=0	TRUE	Best Picture	Arrival Oscars
+Fences	http://www.bing.com/images/search?view=detailV2&ccid=QQMqor%2fP&id=E8DE6C910524CA16900867E753E81DF9CA779021&q=fences+denzel+washington&simid=608006734398098744&selectedIndex=0&ajaxhist=0	TRUE	Best Picture	Fences Oscars
+Hacksaw Ridge	http://www.bing.com/images/search?view=detailV2&ccid=aS%2bPtUzN&id=17611C3A5BF8FAC716888F14067656BFBFBD3337&q=Hacksaw+Ridge&simid=608054541686736386&selectedIndex=8&ajaxhist=0	TRUE	Best Picture	Hacksaw Ridge Oscars
+Hell or High Water	http://www.bing.com/images/search?view=detailV2&ccid=1aJY%2fqHD&id=BDF85587ECB04B1BCCBF3F996E391CDA47BE2EBA&q=hell+or+high+water&simid=608050418502602042&selectedIndex=7&ajaxhist=0	TRUE	Best Picture	Hell or High Water Oscars
+Hidden Figures	http://www.bing.com/images/search?view=detailV2&ccid=TfnHCTva&id=09E8C054DC7BC3C00E61B4289F44C8B14FFB8539&q=hidden+figures&simid=608026989463015417&selectedIndex=9&ajaxhist=0	TRUE	Best Picture	Hidden Figures Oscars
+La La Land	http://www.bing.com/images/search?view=detailV2&ccid=l6ig1rLY&id=2BE51B86100D0B155811D89D086F6F2646C353E3&q=la+la+land&simid=608040681825962069&selectedIndex=27&ajaxhist=0	TRUE	Best Picture	La La Land Oscars
+Lion	http://www.bing.com/images/search?view=detailV2&ccid=yMVEl9BK&id=E164EF4076604427BF08754A01CE4EF31558584B&q=lion+oscars&simid=608048163649816603&selectedIndex=15&ajaxhist=0	TRUE	Best Picture	Lion Oscars
+Manchester By the Sea	https://www.bing.com/images/search?view=detailV2&ccid=lXK953Q6&id=462B0D37F8293F5FAA10CEF0C1E34295625390EC&q=Manchester+By+the+Sea&simid=608007795253970461&selectedIndex=9&ajaxhist=0	TRUE	Best Picture	Manchester By the Sea Oscars
+Moonlight	https://www.bing.com/images/search?view=detailV2&ccid=wluPT2w9&id=A42B75821433473D86A458460ABE4A23FE4E8F83&q=moonlight+oscars&simid=608023639381968252&selectedIndex=0&ajaxhist=0	TRUE	Best Picture	Moonlight Oscars
+Casey Affleck	https://www.bing.com/images/search?view=detailV2&ccid=eN%2bWBTtd&id=B93263713C431F848DD35AF9D392A5F15AE0F31B&q=Casey+Affleck&simid=607996039939885949&selectedIndex=9&ajaxhist=0	TRUE	Best Actor	Casey Affleck Oscars
+Andrew Garfield	http://www.bing.com/images/search?view=detailV2&ccid=7mQXJJG0&id=DD6CCF8F6A04C02F01B2D97CD98EC3C5C7EEAC8F&q=Andrew+Garfield&simid=608029497736956579&selectedIndex=5&ajaxhist=0	TRUE	Best Actor	Andrew Garfield Oscars
+Ryan Gosling	https://www.bing.com/images/search?view=detailV2&ccid=IqpVL9pH&id=C0859753ECA82C89FA84375ABEB1788B06D696AA&q=Ryan+Gosling&simid=607996039937657517&selectedIndex=18&ajaxhist=0	TRUE	Best Actor	Ryan Gosling Oscars
+Viggo Mortenson	https://www.bing.com/images/search?view=detailV2&ccid=KtafLNzz&id=68157D6D453F603F2D7F866887FD812BB09C78E0&q=Viggo+Mortenson&simid=608042717637837284&selectedIndex=0&ajaxhist=0	TRUE	Best Actor	Viggo Mortenson Oscars
+Denzel Washington	http://www.bing.com/images/search?view=detailV2&ccid=DmqGj%2bhA&id=8DFFC31E6E520D49F4EE16F3BEB579EC807783C6&q=Denzel+Washington&simid=608008074428416922&selectedIndex=7&ajaxhist=0	TRUE	Best Actor	Denzel Washington Oscars
+Isabelle Huppert	https://www.bing.com/images/search?view=detailV2&ccid=yxzMByMm&id=FCEEAB7908BC99F201BA40521C4689B4110898EB&q=Isabelle+Huppert&simid=608028814830996766&selectedIndex=12&qft=+filterui%3aaspect-wide&ajaxhist=0	TRUE	Best Actress	Isabelle Huppert Oscars
+Ruth Negga	https://www.bing.com/images/search?view=detailV2&ccid=enztVq1H&id=633A2A0AC04914D7F60E987C4D155A48CBFA831B&q=Ruth+Negga&simid=608019529103246631&selectedIndex=0&qft=+filterui%3aaspect-wide&ajaxhist=0	TRUE	Best Actress	Ruth Negga Oscars
+Emma Stone	http://www.bing.com/images/search?view=detailV2&ccid=rIy6Kk2X&id=60B971FA5C63A70743CDAB7AF445115A91F6861B&q=Emma+Stone&simid=608054021984813206&selectedIndex=1&ajaxhist=0	TRUE	Best Actress	Emma Stone Oscars
+Natalie Portman	https://www.bing.com/images/search?view=detailV2&ccid=2OtaZDQP&id=5FBA290353181CB8526B9B3005B9632F1789D2E2&q=Natalie+Portman&simid=608038865057418120&selectedIndex=7&qft=+filterui%3aaspect-wide&ajaxhist=0	TRUE	Best Actress	Natalie Portman Oscars
+Meryl Streep	https://www.bing.com/images/search?view=detailV2&ccid=w8QN%2bifA&id=5427C85F68E83238089B7FE0C6CEB08C13F2D16A&q=Meryl+Streep&simid=607998685619356468&selectedIndex=1&ajaxhist=0	TRUE	Best Actress	Meryl Streep Oscars
+Mahershala Ali	http://www.bing.com/images/search?view=detailV2&ccid=laS6DnDM&id=8C7AB41B124B9D9816E5445C12D76207F93F2AAF&q=Mahershala+Ali&simid=608039354689653416&selectedIndex=0&ajaxhist=0	TRUE	Best Supporting Actor	Mahershala Ali Oscars
+Jeff Bridges	https://www.bing.com/images/search?view=detailV2&ccid=9TC37XXw&id=6E4E56177518165116AD52807C4D5D416706E39B&q=Jeff+Bridges&simid=607993729246038621&selectedIndex=1&ajaxhist=0	TRUE	Best Supporting Actor	Jeff Bridges Oscars
+Lucas Hedges	https://www.bing.com/images/search?view=detailV2&ccid=kI4o5olE&id=69DD7B43E2B14C5FFCC0E3792AF948FF44C11F35&q=Lucas+Hedges&simid=608025533473687101&selectedIndex=9&qft=+filterui%3aaspect-wide&ajaxhist=0	TRUE	Best Supporting Actor	Lucas Hedges Oscars
+Dev Patel	https://www.bing.com/images/search?view=detailV2&ccid=Ry%2fW6VbG&id=D72007E42AA8410A236117DA6F599177470B7FD8&q=Dev+Patel&simid=608051303276546001&selectedIndex=3&ajaxhist=0	TRUE	Best Supporting Actor	Dev Patel Oscars
+Michael Shannon	http://www.bing.com/images/search?view=detailV2&ccid=9yZv0ogF&id=922F6CCF18B38295EE3558E01ED88D058CBE8643&q=Michael+Shannon&simid=608035497794997297&selectedIndex=2&ajaxhist=0	TRUE	Best Supporting Actor	Michael Shannon Oscars
+Viola Davis	https://www.bing.com/images/search?view=detailV2&ccid=mZezi7Kh&id=7D5A4C1BF60FEB71D1C730CE9A191FF74A1EEE70&q=Viola+Davis&simid=607994923252518161&selectedIndex=42&ajaxhist=0	TRUE	Best Supporting Actress	Viola Davis Oscars
+Naomie Harris	https://www.bing.com/images/search?view=detailV2&ccid=Y%2brrGaON&id=7D39CC6D45A4AFC093A9F8CB784E1EF3A39B9EA0&q=Naomie+Harris&simid=608002250464954583&selectedIndex=1&qft=+filterui%3aaspect-wide&ajaxhist=0	TRUE	Best Supporting Actress	Naomie Harris Oscars
+Nicole Kidman	http://www.bing.com/images/search?view=detailV2&ccid=FKLSrBnJ&id=6D7D2E1D5DDC22BB2D13969CFFD148C1F6E2B889&q=Nicole+Kidman&simid=608025825524714690&selectedIndex=6&qft=+filterui%3aaspect-wide&ajaxhist=0	TRUE	Best Supporting Actress	Nicole Kidman Oscars
+Octavia Spencer	https://www.bing.com/images/search?view=detailV2&ccid=FEkkH6HL&id=C4DEA1DAD333B55048DDB836637620AF3431837D&q=Octavia+Spencer&simid=608049241691981967&selectedIndex=7&qft=+filterui%3aaspect-wide&ajaxhist=0	TRUE	Best Supporting Actress	Octavia Spencer Oscars
+Michelle Williams	https://www.bing.com/images/search?view=detailV2&ccid=8gtrodYf&id=E9B05BE150CD04140707722E4C0883C629B4181A&q=Michelle+Williams&simid=608055950426836246&selectedIndex=2&qft=+filterui%3aaspect-wide&ajaxhist=0	TRUE	Best Supporting Actress	Michelle Williams Oscars
+Denis Villeneuve	https://www.bing.com/images/search?view=detailV2&ccid=b9D%2f3B48&id=031172BCDF5EFFB91638F58D3639F75C5BE87F6A&q=Denis+Villeneuve&simid=608031529244888426&selectedIndex=1&ajaxhist=0	TRUE	Best Director	Denis Villeneuve Oscars
+Mel Gibson	https://www.bing.com/images/search?view=detailV2&ccid=97gv%2br0P&id=565DADEBD9242ABB83BC73146012C86BF90A711A&q=Mel+Gibson&simid=608011523285715216&selectedIndex=1&ajaxhist=0	TRUE	Best Director	Mel Gibson Oscars
+Damien Chazelle	http://www.bing.com/images/search?view=detailV2&ccid=gZK9UZw3&id=3853D2111D2ACE3B690DEAD88F9F3B4E8FB9CF8C&q=Damien+Chazelle&simid=608042988218091694&selectedIndex=0&qft=+filterui%3aaspect-wide&ajaxhist=0	TRUE	Best Director	Damien Chazelle Oscars
+Kenneth Lonergan	https://www.bing.com/images/search?view=detailV2&ccid=5nAw%2fMDH&id=6DCAB85A1ADBBDF12036CA809532BE37844059E0&q=Kenneth+Lonergan&simid=608009337156931176&selectedIndex=9&ajaxhist=0	TRUE	Best Director	Kenneth Lonergan Oscars
+Barry Jenkins	https://www.bing.com/images/search?view=detailV2&ccid=OMMfxiIw&id=F07F1E678F8CF98E75A30237A60FADEAA06EE4C9&q=Barry+Jenkins&simid=608029703889030104&selectedIndex=10&ajaxhist=0	TRUE	Best Director	Barry Jenkins Oscars
+Arrival		TRUE	Best Adapted Screenplay	Arrival Oscars
+Fences		TRUE	Best Adapted Screenplay	Fences Oscars
+Hidden Figures		TRUE	Best Adapted Screenplay	Hidden Figures Oscars
+Lion		TRUE	Best Adapted Screenplay	Lion Oscars
+Moonlight		TRUE	Best Adapted Screenplay	Moonlight Oscars
+Hell or High Water		TRUE	Best Original Screenplay	Hell or High Water Oscars
+La La Land		TRUE	Best Original Screenplay	La La Land Oscars
+The Lobster		TRUE	Best Original Screenplay	The Lobster Oscars
+Manchester By the Sea		TRUE	Best Original Screenplay	Manchester By the Sea Oscars
+20th Century Women		TRUE	Best Original Screenplay	20th Century Women Oscars
+Kubo and the Two Strings	http://www.bing.com/images/search?view=detailV2&ccid=az0uUVVi&id=82CD198B0164A4C6103646EB05E0A210B2DA91C6&q=Kubo+and+the+Two+Strings&simid=608007030752479181&selectedIndex=3&ajaxhist=0		Best Animated Feature	Kubo and the Two Strings Oscars
+Moana	https://www.bing.com/images/search?view=detailV2&ccid=iw3kTTAD&id=3A7A612E738663B5C4B908C2BCD66519E0721CCD&q=Moana&simid=608008332122982434&selectedIndex=3&ajaxhist=0		Best Animated Feature	Moana Oscars
+My Life as a Zucchini	https://www.bing.com/images/search?view=detailV2&ccid=3SparWfI&id=C04896EA05C936871A10ED01C4328795A66E7386&q=My+Life+as+a+Zucchini&simid=608044238060782431&selectedIndex=2&ajaxhist=0		Best Animated Feature	My Life as a Zucchini Oscars
+The Red Turtle	https://www.bing.com/images/search?view=detailV2&ccid=dlWMJX1d&id=84A3578E00B439449971D70EEA677B0FE8C06B94&q=The+Red+Turtle&simid=608012124583168881&selectedIndex=0&ajaxhist=0		Best Animated Feature	The Red Turtle Oscars
+Zootopia	https://www.bing.com/images/search?view=detailV2&ccid=HlF767jM&id=3AEF560682CEFF8370C7A26D6F0883310A642F12&q=Zootopia&simid=608024021635435101&selectedIndex=4&ajaxhist=0		Best Animated Feature	Zootopia Oscars
+Fire at Sea	http://www.bing.com/images/search?view=detailV2&ccid=aKtLXQQX&id=ED0E1B1042FC983BF971F734EC89D91CA513EAE7&q=Fire+at+Sea+Documentary&simid=608010612755597891&selectedIndex=4&ajaxhist=0		Best Documentary	Fire at Sea Oscars
+I Am Not Your Negro	https://www.bing.com/images/search?view=detailV2&ccid=kus1tBsS&id=404C93B1DC17921EBD0C9A90D50EF1D52ED1C714&q=I+Am+Not+Your+Negro&simid=608048223791156925&selectedIndex=11&ajaxhist=0		Best Documentary	I Am Not Your Negro Oscars
+Life, Animated	https://www.bing.com/images/search?view=detailV2&ccid=W%2fVzl6m1&id=D33B76FAB94748CB8BD08BDB3156BCAB6183AC32&q=Life%2c+Animated+documentary&simid=607990477948324806&selectedIndex=13&ajaxhist=0		Best Documentary	Life, Animated Oscars
+OJ: Made in America	https://www.bing.com/images/search?view=detailV2&ccid=Kjl9PsQg&id=C01F00ACF54BFFA63A1F7C20C0E2BEC65B1F54C1&q=OJ%3a+Made+in+America&simid=607994661246339704&selectedIndex=14&ajaxhist=0		Best Documentary	OJ: Made in America Oscars
+13th	https://www.bing.com/images/search?view=detailV2&ccid=I11pPPOt&id=73F7E5C3E5DA9F1371DE20D964A7392E1D90F85B&q=13th+documentary+oscars&simid=608054928230974523&selectedIndex=8&ajaxhist=0		Best Documentary	13th Oscars
+Land of Mine	https://www.bing.com/images/search?view=detailV2&ccid=kSULGWN1&id=7DA25126C5ACDB7A16ACA302A748BE1DAACE9816&q=Land+of+Mine+movie&simid=608023248553050427&selectedIndex=2&ajaxhist=0		Best Foreign Language Film	Land of Mine Oscars
+A Man Called Ove	https://www.bing.com/images/search?view=detailV2&ccid=zKkGbxFJ&id=78751E16119744CCB257771B4035EFAC95956868&q=A+Man+Called+Ove&simid=207428322738&selectedIndex=6&ajaxhist=0		Best Foreign Language Film	A Man Called Ove Oscars
+The Salesman	https://www.bing.com/images/search?view=detailV2&ccid=k7xbvN3j&id=D31122878A6D99464980DDB6E9A14837A3F45858&q=The+Salesman+movie&simid=608007863978036838&selectedIndex=1&ajaxhist=0		Best Foreign Language Film	The Salesman Oscars
+Tanna	http://www.bing.com/images/search?view=detailV2&ccid=lCu2BMbQ&id=E722F9A3B261A5C70EC967B298BEAD8183ADB046&q=Tanna+movie&simid=608031722521821726&selectedIndex=3&ajaxhist=0		Best Foreign Language Film	Tanna Oscars
+Toni Erdmann	https://www.bing.com/images/search?view=detailV2&ccid=TOmENX01&id=2C65702FF0E2723E36343AF2A0EE1808350E153D&q=Toni+Erdmann&simid=608055516640182741&selectedIndex=2&ajaxhist=0		Best Foreign Language Film	Toni Erdmann Oscars
+Arrival			Best Cinematography	Arrival Oscars
+La La Land			Best Cinematography	La La Land Oscars
+Lion			Best Cinematography	Lion Oscars
+Moonlight			Best Cinematography	Moonlight Oscars
+Silence			Best Cinematography	Silence Oscars
+Allied			Best Costume Design	Allied Oscars
+Fantastic Beasts and Where to Find Them			Best Costume Design	Fantastic Beasts and Where to Find Them Oscars
+Florence Foster Jenkins			Best Costume Design	Florence Foster Jenkins Oscars
+Jackie			Best Costume Design	Jackie Oscars
+La La Land			Best Costume Design	La La Land Oscars
+Arrival			Best Film Editing	Arrival Oscars
+Hacksaw Ridge			Best Film Editing	Hacksaw Ridge Oscars
+Hell or High Water			Best Film Editing	Hell or High Water Oscars
+La La Land			Best Film Editing	La La Land Oscars
+Moonlight			Best Film Editing	Moonlight Oscars
+A Man Called Ove			Best Makeup and Hairstyling	A Man Called Ove Oscars
+Star Trek Beyond			Best Makeup and Hairstyling	Star Trek Beyond Oscars
+Suicide Squad			Best Makeup and Hairstyling	Suicide Squad Oscars
+Jackie			Best Original Score	Jackie Oscars
+La La Land			Best Original Score	La La Land Oscars
+Lion			Best Original Score	Lion Oscars
+Moonlight			Best Original Score	Moonlight Oscars
+Passengers			Best Original Score	Passengers Oscars
+Audition			Best Original Song	Audition Oscars
+Can’t Stop the Feeling!			Best Original Song	Can t Stop the Feeling Oscars
+City of Stars			Best Original Song	City of Stars Oscars
+The Empty Chair			Best Original Song	The Empty Chair Oscars
+How Far I’ll Go			Best Original Song	How Far I ll Go Oscars
+Arrival			Best Production Design	Arrival Oscars
+Fantastic Beasts and Where to Find Them			Best Production Design	Fantastic Beasts and Where to Find Them Oscars
+Hail Caesar			Best Production Design	Hail Caesar Oscars
+La La Land			Best Production Design	La La Land Oscars
+Passengers			Best Production Design	Passengers Oscars
+Arrival			Best Sound Editing	Arrival Oscars
+Deepwater Horizon			Best Sound Editing	Deepwater Horizon Oscars
+Hacksaw Ridge			Best Sound Editing	Hacksaw Ridge Oscars
+La La Land			Best Sound Editing	La La Land Oscars
+Sully			Best Sound Editing	Sully Oscars
+Arrival			Best Sound Mixing	Arrival Oscars
+Hacksaw Ridge			Best Sound Mixing	Hacksaw Ridge Oscars
+La La Land			Best Sound Mixing	La La Land Oscars
+Rogue One: A Star Wars Story			Best Sound Mixing	Rogue One A Star Wars Story Oscars
+13 Hours			Best Sound Mixing	13 Hours Oscars
+Deepwater Horizon			Best Visual Effects	Deepwater Horizon Oscars
+Doctor Strange			Best Visual Effects	Doctor Strange Oscars
+The Jungle Book			Best Visual Effects	The Jungle Book Oscars
+Kubo and the Two Strings			Best Visual Effects	Kubo and the Two Strings Oscars
+Rogue One: A Star Wars Story			Best Visual Effects	Rogue One A Star Wars Story Oscars
+4.1 Miles			Best Documentary Short	4 1 Miles Oscars
+Extremis			Best Documentary Short	Extremis Oscars
+Joe’s Violin			Best Documentary Short	Joe s Violin Oscars
+Watani: My Homeland			Best Documentary Short	Watani My Homeland Oscars
+The White Helmets			Best Documentary Short	The White Helmets Oscars
+Blind Vaysha			Best Animated Short	Blind Vaysha Oscars
+Borrowed Time			Best Animated Short	Borrowed Time Oscars
+Pear Cider and Cigarettes			Best Animated Short	Pear Cider and Cigarettes Oscars
+Pearl			Best Animated Short	Pearl Oscars
+Piper			Best Animated Short	Piper Oscars
+Ennemis Intérieurs			Best Live Action Short	Ennemis Intérieurs Oscars
+La Femme et le TGV			Best Live Action Short	La Femme et le TGV Oscars
+Silent Nights			Best Live Action Short	Silent Nights Oscars
+Sing			Best Live Action Short	Sing Oscars
+Timecode			Best Live Action Short	Timecode Oscars

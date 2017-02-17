@@ -1,0 +1,80 @@
+Arrival	http://ts4.mm.bing.net/th?id=OIP.M1bef86764a792f2a0fec638b9095441do0&pid=15.1	TRUE	Best Picture	Arrival Oscars
+Fences	http://ts1.mm.bing.net/th?id=OIP.M41032aa2bfcf1bb7606867c0fc751ec9o0&pid=15.1	TRUE	Best Picture	Fences Oscars
+Hacksaw Ridge	http://ts3.mm.bing.net/th?id=OIP.M692f8fb54ccd09671163aada5ccd4621o0&pid=15.1	TRUE	Best Picture	Hacksaw Ridge Oscars
+Hell or High Water	http://ts3.mm.bing.net/th?id=OIP.1aJY_qHDokTyMay9IJyMNQEsCo&pid=15.1	TRUE	Best Picture	Hell or High Water Oscars
+Hidden Figures	http://ts2.mm.bing.net/th?id=OIP.TfnHCTvacUnQ0AzgGuMdZQEsCh&pid=15.1	TRUE	Best Picture	Hidden Figures Oscars
+La La Land	http://ts2.mm.bing.net/th?id=OIP.l6ig1rLYRzlrw5JnYcRxAwEsCW&pid=15.1	TRUE	Best Picture	La La Land Oscars
+Lion	http://ts4.mm.bing.net/th?id=OIP.yMVEl9BKHwIEyloWmJOcGwEsCM&pid=15.1	TRUE	Best Picture	Lion Oscars
+Manchester By the Sea	http://ts2.mm.bing.net/th?id=OIP.lXK953Q6s4Wl_rGvMjIpHgEsCo&pid=15.1	TRUE	Best Picture	Manchester By the Sea Oscars
+Moonlight	http://ts1.mm.bing.net/th?id=OIP.wluPT2w9ueJhZhCczndxGAEsCp&pid=15.1	TRUE	Best Picture	Moonlight Oscars
+Casey Affleck	http://ts2.mm.bing.net/th?id=OIP.M78df96053b5d412b47a9eea2ead8a294o0&pid=15.1	TRUE	Best Actor	Casey Affleck Oscars
+Andrew Garfield	http://ts4.mm.bing.net/th?id=OIP.Mee64172491b4043072f364189d2a74bdo2&pid=15.1	TRUE	Best Actor	Andrew Garfield Oscars
+Ryan Gosling	http://ts2.mm.bing.net/th?id=OIP.IqpVL9pHXMgOJXNPZxFx5gEsC6&pid=15.1	TRUE	Best Actor	Ryan Gosling Oscars
+Viggo Mortenson	http://ts1.mm.bing.net/th?id=OIP.KtafLNzz4Md5fP081sNDFgEsC7&pid=15.1	TRUE	Best Actor	Viggo Mortenson Oscars
+Denzel Washington	http://ts3.mm.bing.net/th?id=OIP.DmqGj-hAcBhFtP0Ii9XVuQEsCo&pid=15.1	TRUE	Best Actor	Denzel Washington Oscars
+Isabelle Huppert	http://ts3.mm.bing.net/th?id=OIP.Mcb1ccc072326f78aa9626c84bb026edbo1&pid=15.1	TRUE	Best Actress	Isabelle Huppert Oscars
+Ruth Negga	http://ts4.mm.bing.net/th?id=OIP.enztVq1HXXQc3C8FdM3ynQEsDI&pid=15.1	TRUE	Best Actress	Ruth Negga Oscars
+Emma Stone	http://ts3.mm.bing.net/th?id=OIP.Mac8cba2a4d9798be59711618802ed3ddo2&pid=15.1	TRUE	Best Actress	Emma Stone Oscars
+Natalie Portman	http://ts1.mm.bing.net/th?id=OIP.2OtaZDQP-sHZvWrtlu6kwAEsDI&pid=15.1	TRUE	Best Actress	Natalie Portman Oscars
+Meryl Streep	http://ts1.mm.bing.net/th?id=OIP.Mc3c40dfa27c08db8aca31d7f5937b4b0o2&pid=15.1	TRUE	Best Actress	Meryl Streep Oscars
+Mahershala Ali	http://ts1.mm.bing.net/th?id=OIP.laS6DnDMa_Smd6SpdTey6AEsCo&pid=15.1	TRUE	Best Supporting Actor	Mahershala Ali Oscars
+Jeff Bridges	http://ts2.mm.bing.net/th?id=OIP.Mf530b7ed75f0c4075a96417167ca5d08o2&pid=15.1	TRUE	Best Supporting Actor	Jeff Bridges Oscars
+Lucas Hedges	http://ts2.mm.bing.net/th?id=OIP.M908e28e689441562c1f74df66ed4d8f4o2&pid=15.1	TRUE	Best Supporting Actor	Lucas Hedges Oscars
+Dev Patel	http://ts3.mm.bing.net/th?id=OIP.Ry_W6VbGbwcQuRlQuolBsQEsDH&pid=15.1	TRUE	Best Supporting Actor	Dev Patel Oscars
+Michael Shannon	http://ts2.mm.bing.net/th?id=OIP.Mf7266fd28805587bd07e5380c32d8a18o1&pid=15.1	TRUE	Best Supporting Actor	Michael Shannon Oscars
+Viola Davis	http://ts2.mm.bing.net/th?id=OIP.M9997b38bb2a1de916b3cd6fdd810b732o1&pid=15.1	TRUE	Best Supporting Actress	Viola Davis Oscars
+Naomie Harris	http://ts4.mm.bing.net/th?id=OIP.M63eaeb19a38dd998c0753c14089e2fa0o1&pid=15.1	TRUE	Best Supporting Actress	Naomie Harris Oscars
+Nicole Kidman	http://ts2.mm.bing.net/th?id=OIP.M14a2d2ac19c94bb45b51497013882491o2&pid=15.1	TRUE	Best Supporting Actress	Nicole Kidman Oscars
+Octavia Spencer	http://ts4.mm.bing.net/th?id=OIP.M1449241fa1cbb31c464798524903f02ao1&pid=15.1	TRUE	Best Supporting Actress	Octavia Spencer Oscars
+Michelle Williams	http://ts3.mm.bing.net/th?id=OIP.Mf20b6ba1d61fccfa084b8607548f092ao2&pid=15.1	TRUE	Best Supporting Actress	Michelle Williams Oscars
+Denis Villeneuve	http://ts3.mm.bing.net/th?id=OIP.b9D_3B48OM-nHy3fjPo36gEsDJ&pid=15.1	TRUE	Best Director	Denis Villeneuve Oscars
+Mel Gibson	http://ts1.mm.bing.net/th?id=OIP.Mf7b82ffabd0fe4a4ae98ca099fb2a925o1&pid=15.1	TRUE	Best Director	Mel Gibson Oscars
+Damien Chazelle	http://ts3.mm.bing.net/th?id=OIP.M8192bd519c375f0b7fce9e902f2cc3bao2&pid=15.1	TRUE	Best Director	Damien Chazelle Oscars
+Kenneth Lonergan	http://ts1.mm.bing.net/th?id=OIP.Me67030fcc0c7c4477c3a79790f56649ao2&pid=15.1	TRUE	Best Director	Kenneth Lonergan Oscars
+Barry Jenkins	http://ts1.mm.bing.net/th?id=OIP.M38c31fc62230ecc76d751fbf395f657eo2&pid=15.1	TRUE	Best Director	Barry Jenkins Oscars
+Arrival	http://ts4.mm.bing.net/th?id=OIP.M1bef86764a792f2a0fec638b9095441do0&pid=15.1	TRUE	Best Adapted Screenplay	Arrival Oscars
+Fences	http://ts1.mm.bing.net/th?id=OIP.M41032aa2bfcf1bb7606867c0fc751ec9o0&pid=15.1	TRUE	Best Adapted Screenplay	Fences Oscars
+Hidden Figures	http://ts2.mm.bing.net/th?id=OIP.TfnHCTvacUnQ0AzgGuMdZQEsCh&pid=15.1	TRUE	Best Adapted Screenplay	Hidden Figures Oscars
+Lion	http://ts4.mm.bing.net/th?id=OIP.yMVEl9BKHwIEyloWmJOcGwEsCM&pid=15.1	TRUE	Best Adapted Screenplay	Lion Oscars
+Moonlight	http://ts1.mm.bing.net/th?id=OIP.wluPT2w9ueJhZhCczndxGAEsCp&pid=15.1	TRUE	Best Adapted Screenplay	Moonlight Oscars
+Hell or High Water	http://ts3.mm.bing.net/th?id=OIP.1aJY_qHDokTyMay9IJyMNQEsCo&pid=15.1	TRUE	Best Original Screenplay	Hell or High Water Oscars
+La La Land	http://ts2.mm.bing.net/th?id=OIP.l6ig1rLYRzlrw5JnYcRxAwEsCW&pid=15.1	TRUE	Best Original Screenplay	La La Land Oscars
+Manchester By the Sea	http://ts2.mm.bing.net/th?id=OIP.lXK953Q6s4Wl_rGvMjIpHgEsCo&pid=15.1	TRUE	Best Original Screenplay	Manchester By the Sea Oscars
+Kubo and the Two Strings	http://www.bing.com/images/search?view=detailV2&ccid=az0uUVVi&id=82CD198B0164A4C6103646EB05E0A210B2DA91C6&q=Kubo+and+the+Two+Strings&simid=608007030752479181&selectedIndex=3&ajaxhist=0		Best Animated Feature	Kubo and the Two Strings Oscars
+Moana	http://ts3.mm.bing.net/th?id=OIP.iw3kTTAD05nC0bAhwOI3gQEsDV&pid=15.1		Best Animated Feature	Moana Oscars
+My Life as a Zucchini	http://ts4.mm.bing.net/th?id=OIP.3SparWfIYGHdfpZYDH1P6QEsCo&pid=15.1		Best Animated Feature	My Life as a Zucchini Oscars
+The Red Turtle	http://ts2.mm.bing.net/th?id=OIP.dlWMJX1dU-1SmYyYGkwC3QEsCo&pid=15.1		Best Animated Feature	The Red Turtle Oscars
+Zootopia	http://ts2.mm.bing.net/th?id=OIP.HlF767jMha3nczB2PiEVMQEsCo&pid=15.1		Best Animated Feature	Zootopia Oscars
+Fire at Sea	http://ts4.mm.bing.net/th?id=OIP.M68ab4b5d04172793f476d7464052d875o0&pid=15.1		Best Documentary	Fire at Sea Oscars
+I Am Not Your Negro	http://ts2.mm.bing.net/th?id=OIP.kus1tBsS3G4eMuqDPx-PmwEsCW&pid=15.1		Best Documentary	I Am Not Your Negro Oscars
+Life, Animated	http://ts3.mm.bing.net/th?id=OIP.W_Vzl6m1KIDnBzd5UZzLsQEsCo&pid=15.1		Best Documentary	Life, Animated Oscars
+OJ: Made in America	http://ts1.mm.bing.net/th?id=OIP.Kjl9PsQgCUz5bpSruYSamQEsDI&pid=15.1		Best Documentary	OJ: Made in America Oscars
+13th	http://ts4.mm.bing.net/th?id=OIP.I11pPPOtAiX4uRXzpQ-EkwEsCo&pid=15.1		Best Documentary	13th Oscars
+Land of Mine	http://ts4.mm.bing.net/th?id=OIP.kSULGWN1up-OCDHyFMoO4gEsCo&pid=15.1		Best Foreign Language Film	Land of Mine Oscars
+A Man Called Ove	http://ts3.mm.bing.net/th?id=OIF.x7RjYC458a6dXF2PYiFIhQ&pid=15.1		Best Foreign Language Film	A Man Called Ove Oscars
+The Salesman	http://ts3.mm.bing.net/th?id=OIP.k7xbvN3jh-u9rdz6IVPjhQEsDL&pid=15.1		Best Foreign Language Film	The Salesman Oscars
+Tanna	http://ts3.mm.bing.net/th?id=OIP.M942bb604c6d0fd2001b389f54d2dedd2o0&pid=15.1		Best Foreign Language Film	Tanna Oscars
+Toni Erdmann	http://ts2.mm.bing.net/th?id=OIP.M4ce984357d358080eaa772428babe5cao2&pid=15.1		Best Foreign Language Film	Toni Erdmann Oscars
+Arrival	http://ts4.mm.bing.net/th?id=OIP.M1bef86764a792f2a0fec638b9095441do0&pid=15.1		Best Cinematography	Arrival Oscars
+La La Land	http://ts2.mm.bing.net/th?id=OIP.l6ig1rLYRzlrw5JnYcRxAwEsCW&pid=15.1		Best Cinematography	La La Land Oscars
+Lion	http://ts4.mm.bing.net/th?id=OIP.yMVEl9BKHwIEyloWmJOcGwEsCM&pid=15.1		Best Cinematography	Lion Oscars
+Moonlight	http://ts1.mm.bing.net/th?id=OIP.wluPT2w9ueJhZhCczndxGAEsCp&pid=15.1		Best Cinematography	Moonlight Oscars
+La La Land	http://ts2.mm.bing.net/th?id=OIP.l6ig1rLYRzlrw5JnYcRxAwEsCW&pid=15.1		Best Costume Design	La La Land Oscars
+Arrival	http://ts4.mm.bing.net/th?id=OIP.M1bef86764a792f2a0fec638b9095441do0&pid=15.1		Best Film Editing	Arrival Oscars
+Hacksaw Ridge	http://ts3.mm.bing.net/th?id=OIP.M692f8fb54ccd09671163aada5ccd4621o0&pid=15.1		Best Film Editing	Hacksaw Ridge Oscars
+Hell or High Water	http://ts3.mm.bing.net/th?id=OIP.1aJY_qHDokTyMay9IJyMNQEsCo&pid=15.1		Best Film Editing	Hell or High Water Oscars
+La La Land	http://ts2.mm.bing.net/th?id=OIP.l6ig1rLYRzlrw5JnYcRxAwEsCW&pid=15.1		Best Film Editing	La La Land Oscars
+Moonlight	http://ts1.mm.bing.net/th?id=OIP.wluPT2w9ueJhZhCczndxGAEsCp&pid=15.1		Best Film Editing	Moonlight Oscars
+A Man Called Ove	http://ts3.mm.bing.net/th?id=OIF.x7RjYC458a6dXF2PYiFIhQ&pid=15.1		Best Makeup and Hairstyling	A Man Called Ove Oscars
+La La Land	http://ts2.mm.bing.net/th?id=OIP.l6ig1rLYRzlrw5JnYcRxAwEsCW&pid=15.1		Best Original Score	La La Land Oscars
+Lion	http://ts4.mm.bing.net/th?id=OIP.yMVEl9BKHwIEyloWmJOcGwEsCM&pid=15.1		Best Original Score	Lion Oscars
+Moonlight	http://ts1.mm.bing.net/th?id=OIP.wluPT2w9ueJhZhCczndxGAEsCp&pid=15.1		Best Original Score	Moonlight Oscars
+Arrival	http://ts4.mm.bing.net/th?id=OIP.M1bef86764a792f2a0fec638b9095441do0&pid=15.1		Best Production Design	Arrival Oscars
+La La Land	http://ts2.mm.bing.net/th?id=OIP.l6ig1rLYRzlrw5JnYcRxAwEsCW&pid=15.1		Best Production Design	La La Land Oscars
+Arrival	http://ts4.mm.bing.net/th?id=OIP.M1bef86764a792f2a0fec638b9095441do0&pid=15.1		Best Sound Editing	Arrival Oscars
+Hacksaw Ridge	http://ts3.mm.bing.net/th?id=OIP.M692f8fb54ccd09671163aada5ccd4621o0&pid=15.1		Best Sound Editing	Hacksaw Ridge Oscars
+La La Land	http://ts2.mm.bing.net/th?id=OIP.l6ig1rLYRzlrw5JnYcRxAwEsCW&pid=15.1		Best Sound Editing	La La Land Oscars
+Arrival	http://ts4.mm.bing.net/th?id=OIP.M1bef86764a792f2a0fec638b9095441do0&pid=15.1		Best Sound Mixing	Arrival Oscars
+Hacksaw Ridge	http://ts3.mm.bing.net/th?id=OIP.M692f8fb54ccd09671163aada5ccd4621o0&pid=15.1		Best Sound Mixing	Hacksaw Ridge Oscars
+La La Land	http://ts2.mm.bing.net/th?id=OIP.l6ig1rLYRzlrw5JnYcRxAwEsCW&pid=15.1		Best Sound Mixing	La La Land Oscars
+Kubo and the Two Strings	http://www.bing.com/images/search?view=detailV2&ccid=az0uUVVi&id=82CD198B0164A4C6103646EB05E0A210B2DA91C6&q=Kubo+and+the+Two+Strings&simid=608007030752479181&selectedIndex=3&ajaxhist=0		Best Visual Effects	Kubo and the Two Strings Oscars

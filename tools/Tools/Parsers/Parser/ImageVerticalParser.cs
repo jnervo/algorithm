@@ -12,8 +12,7 @@ namespace Parsers.Parser
     {
         public static void GetThumbnailIdsForAllTopics()
         {
-            var lines = File.ReadAllLines(@"D:\data\CarouselV2DataGenerator\OscarImageDetail.txt");
-
+            var lines = File.ReadAllLines(@"D:\yuzhu\src\git\github\algorithm\tools\Tools\Parsers\Data\OscarImages_FullList.txt");
 
             Dictionary<string, string> dic = new Dictionary<string, string>();
             foreach (var line in lines)
@@ -43,8 +42,23 @@ namespace Parsers.Parser
                 }
                 Console.WriteLine(dic.Count);
             }
-            File.WriteAllLines(@"D:\data\CarouselV2DataGenerator\OscarImage.txt", dic.Select(d => string.Join("\t", d.Key, d.Value)));
 
+            List<string> newLines = new List<string>();
+            foreach (var line in lines)
+            {
+                var tokens = line.Split('\t');
+                var topic = tokens[0];
+
+                if (dic.ContainsKey(topic))
+                {
+                    tokens[1] = dic[topic];
+                    newLines.Add(string.Join("\t", tokens));
+                }
+                else
+                {
+                }
+            }
+            File.WriteAllLines(@"D:\yuzhu\src\git\github\algorithm\tools\Tools\Parsers\Data\OscarImages_FullList_real.txt", newLines);
         }
     }
 }
