@@ -47,6 +47,19 @@ namespace NLPIntegratedTool.Util
             return process.StandardOutput.ReadToEnd();
         }
 
+
+        public static Process RunProcess(string workingDirectory, string filename, string arguments = null, int timeOut = -1)
+        {
+            Process process = new Process();
+            process.StartInfo.FileName = filename;
+            process.StartInfo.Arguments = arguments;
+            process.StartInfo.WorkingDirectory = workingDirectory;
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.CreateNoWindow = true;
+            process.Start();
+            return process;
+        }
         /// <summary>
         /// Starts a process resource by specifying the working directory, the name of an application and a
         /// set of command-line arguments.

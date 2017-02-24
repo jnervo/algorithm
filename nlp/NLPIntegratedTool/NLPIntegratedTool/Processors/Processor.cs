@@ -78,7 +78,8 @@ namespace NLPIntegratedTool
 
             LogHelper.Log("#### Step 1 : input => seg ####");
             NlpProcessor.Seg(result);
-            LogHelper.Log("#### Step 2 : seg => pos ####");
+            LogHelper.Log("#### Step 2 : seg => label ####");
+            LogHelper.Log("这可能需要一些时间，请耐心等待...");
             NNPoolingProcessor.Label(result);
             LogHelper.Log("#### Finish!!! ####");
             result.ReadLabel();
