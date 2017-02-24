@@ -41,6 +41,7 @@
       <HintPath>Exe\CrfConverter\NlpFileConverter.exe</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,6 +62,7 @@
     </Compile>
     <Compile Include="Processors\LstmProcessor.cs" />
     <Compile Include="Processors\CrfProcessor.cs" />
+    <Compile Include="Processors\NNPoolingProcessor.cs" />
     <Compile Include="Processors\NlpProcessor.cs" />
     <Compile Include="Processors\Processor.cs" />
     <Compile Include="Program.cs" />
@@ -93,10 +95,19 @@
     <None Include="Exe\CrfConverter\NlpFileConverter.exe.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Exe\NNPooling\hotel.model">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Exe\NNPooling\phone.model">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Exe\NNCRFSegmentor\hotelmodel">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Exe\NNCRFSegmentor\model">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Exe\NNPooling\pooling_template.cmd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="ltp_data\changelog">
@@ -163,6 +174,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Exe\DefaultData\mobile.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Exe\NNPooling\NNCNNTriReluPoolLabeler.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Exe\NNPooling\NNCNNTriTanhPoolLabeler.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Exe\NNCRFSegmentor\NNCRFSegmentor.exe">

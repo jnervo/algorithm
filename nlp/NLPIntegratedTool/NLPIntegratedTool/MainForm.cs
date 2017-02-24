@@ -21,10 +21,22 @@ namespace NLPIntegratedTool
 
             LogHelper.Init(logTb);
 
-            InitModelType(LstmProcessor.ModelType.Mobile);
+            InitModelType(ModelType.Mobile);
+
+            AdjustLayout();
         }
 
-        private void InitModelType(LstmProcessor.ModelType modelType)
+        private void AdjustLayout()
+        {
+            if (Processor.IsLin)
+            {
+                attributeCb.Visible = false;
+                evaluateCb.Visible = false;
+                expressionCb.Visible = false;
+            }
+        }
+
+        private void InitModelType(ModelType modelType)
         {
             switch (modelType)
             {
@@ -32,13 +44,13 @@ namespace NLPIntegratedTool
                     mobileModelBtn.BackColor = System.Drawing.Color.LightSkyBlue;
                     hotelModelBtn.BackColor = System.Drawing.SystemColors.Control;
                     hotelModelBtn.UseVisualStyleBackColor = true;
-                    LstmProcessor.SetModelType(modelType);
+                    Processor.SetModelType(modelType);
                     break;
                 case ModelType.Hotel:
                     mobileModelBtn.BackColor = System.Drawing.SystemColors.Control;
                     mobileModelBtn.UseVisualStyleBackColor = true;
                     hotelModelBtn.BackColor = System.Drawing.Color.LightSkyBlue;
-                    LstmProcessor.SetModelType(modelType);
+                    Processor.SetModelType(modelType);
                     break;
             }
 
@@ -63,7 +75,7 @@ namespace NLPIntegratedTool
 
             try
             {
-                FinalResult = Processor.ProcessText(text);
+                FinalResult = Processor.IsLin ? Processor.ProcessText_Lin(text) : Processor.ProcessText(text);
 
                 if (FinalResult?.Sentences == null)
                 {
@@ -71,7 +83,14 @@ namespace NLPIntegratedTool
                 }
                 else
                 {
-                    DisplayProcessResult();
+                    if (Processor.IsLin)
+                    {
+                        DisplayProcessResultLin();
+                    }
+                    else
+                    {
+                        DisplayProcessResult();
+                    }
                 }
             }
             catch (Exception ex)
@@ -122,6 +141,23 @@ namespace NLPIntegratedTool
             MessageBox.Show("完成。");
         }
 
+        private void DisplayProcessResultLin()
+        {
+            resultTree.Nodes.Clear();
+            TreeNode rootNode = new TreeNode("处理结果");
+
+            foreach (var sentence in FinalResult.Sentences)
+            {
+                TreeNode sentenceNode = new TreeNode();
+                sentenceNode.Text = string.Join("\t", sentence.LabelResult, sentence.SentenceStr);
+
+                rootNode.Nodes.Add(sentenceNode);
+            }
+            resultTree.Nodes.Add(rootNode);
+
+            MessageBox.Show("完成。");
+        }
+
         private void propertyCb_CheckedChanged(object sender, EventArgs e)
         {
             if (FinalResult?.Sentences == null)
@@ -134,12 +170,12 @@ namespace NLPIntegratedTool
 
         private void mobileModelBtn_Click(object sender, EventArgs e)
         {
-            InitModelType(LstmProcessor.ModelType.Mobile);
+            InitModelType(ModelType.Mobile);
         }
 
         private void hotelModelBtn_Click(object sender, EventArgs e)
         {
-            InitModelType(LstmProcessor.ModelType.Hotel);
+            InitModelType(ModelType.Hotel);
         }
 
         private void clearBtn_Click(object sender, EventArgs e)

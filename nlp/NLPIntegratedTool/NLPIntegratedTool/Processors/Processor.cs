@@ -1,6 +1,7 @@
 ﻿using NLPIntegratedTool.Util;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,8 @@ namespace NLPIntegratedTool
 {
     public class Processor
     {
+        public static bool IsLin = Convert.ToBoolean(ConfigurationManager.AppSettings["isLin"]);
+
         private static string DefaultDataDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Exe", "DefaultData");
 
         private static string ResultDataDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ResultData");
@@ -19,7 +22,7 @@ namespace NLPIntegratedTool
         {
             get
             {
-                switch (LstmProcessor.CurrentModelType)
+                switch (CurrentModelType)
                 {
                     case ModelType.Mobile:
                         return Path.Combine(DefaultDataDir, "mobile.txt");
@@ -42,7 +45,7 @@ namespace NLPIntegratedTool
             return Path.Combine(dir, "input.txt");
         }
 
-        internal static ProcessResult ProcessText(string text)
+        public static ProcessResult ProcessText(string text)
         {
             var result = new ProcessResult();
             File.WriteAllText(result.InputFile, text);
@@ -67,6 +70,36 @@ namespace NLPIntegratedTool
 
             return result;
         }
+
+        public static ProcessResult ProcessText_Lin(string text)
+        {
+            var result = new ProcessResult();
+            File.WriteAllText(result.InputFile, text);
+
+            LogHelper.Log("#### Step 1 : input => seg ####");
+            NlpProcessor.Seg(result);
+            LogHelper.Log("#### Step 2 : seg => pos ####");
+            NNPoolingProcessor.Label(result);
+            LogHelper.Log("#### Finish!!! ####");
+            result.ReadLabel();
+
+            return result;
+        }
+
+
+        public static ModelType CurrentModelType = ModelType.Mobile;
+
+        public static void SetModelType(ModelType modelType)
+        {
+            CurrentModelType = modelType;
+        }
+
+    }
+
+    public enum ModelType
+    {
+        Mobile,
+        Hotel
     }
 
     public class ProcessResult
@@ -117,6 +150,36 @@ namespace NLPIntegratedTool
             }
         }
 
+        public string LabelFile
+        {
+            get
+            {
+                return Path.ChangeExtension(InputFile, ".label");
+            }
+        }
+
+        public bool ReadLabel()
+        {
+            Sentences = File.ReadAllLines(InputFile).Select(l => new Sentence()
+            {
+                SentenceStr = l
+            }).ToList();
+
+            var finalResults = File.ReadAllLines(LabelFile).Select(l => l.Split('\t').First()).ToList();
+
+            if (finalResults == null || finalResults.Count != Sentences.Count)
+            {
+                throw new Exception("Failed to read final result. Please check: " + OutputFile);
+            }
+
+            for (int i = 0; i < Sentences.Count; i++)
+            {
+                Sentences[i].LabelResult =
+                    (finalResults[i] == "1" ? "是" : (finalResults[i] == "0" ? "否" : "其它"));
+            }
+            return true;
+        }
+
         public bool Read()
         {
             Sentences = File.ReadAllLines(InputFile).Select(l => new Sentence()
@@ -151,5 +214,6 @@ namespace NLPIntegratedTool
         public List<string> Attributes;
         public List<string> Evaluations;
         public List<string> Expressions;
+        public string LabelResult;
     }
 }

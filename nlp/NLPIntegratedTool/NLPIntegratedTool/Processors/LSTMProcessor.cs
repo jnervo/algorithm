@@ -10,17 +10,11 @@ namespace NLPIntegratedTool
 {
     public class LstmProcessor
     {
-        public enum ModelType
-        {
-            Mobile,
-            Hotel
-        }
-
         public static string ModelFilePath
         {
             get
             {
-                switch (CurrentModelType)
+                switch (Processor.CurrentModelType)
                 {
                     case ModelType.Mobile:
                         return Path.Combine(ExeDir, "model");
@@ -31,16 +25,10 @@ namespace NLPIntegratedTool
                 }
             }
         }
-        internal static void SetModelType(ModelType modelType)
-        {
-            CurrentModelType = modelType;
-        }
 
         private static string ExeDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Exe", "NNCRFSegmentor");
 
         private static string ExePath = Path.Combine(ExeDir, "NNCRFSegmentor.exe");
-
-        public static ModelType CurrentModelType = ModelType.Mobile;
 
         public static bool Lstm2FinalOutput(ProcessResult result)
         {
