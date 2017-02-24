@@ -60,7 +60,7 @@ namespace NLPIntegratedTool
             {
                 throw new Exception("Seg file doesn't exist.");
             }
-            File.WriteAllLines(segFile, File.ReadAllLines(segFile).Select(l => string.Format("0\t{0}", l)));
+            File.WriteAllLines(segFile, File.ReadAllLines(segFile).Select(l => string.Format("0\t{0}", l.Replace("\t", " "))));
 
             var cmdTemplatePath = Path.Combine(ExeDir, "pooling_template.cmd");
             var cmdPath = Path.Combine(ExeDir, "pooling_run.cmd");
