@@ -12,6 +12,7 @@ namespace NlpFileConverter
     {
         static void Main(string[] args)
         {
+            Split5000();
             CommandLine<CmdParameters> cmdLine = new CommandLine<CmdParameters>();
             CmdParameters cmdParameters = cmdLine.Parse(args);
 
@@ -238,7 +239,7 @@ namespace NlpFileConverter
         /// </summary>
         static void Split5000()
         {
-            var lines = File.ReadAllLines(@"D:\yuzhu\src\git\github\tools\Tools\Parsers\手机原始.txt");
+            var lines = File.ReadAllLines(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\hotel1a.txt", Encoding.GetEncoding("gb2312"));
 
             var file1 = new List<string>();
             var file2 = new List<string>();
@@ -249,7 +250,7 @@ namespace NlpFileConverter
                 {
                     file1.Add(lines[i]);
                 }
-                else if (i % 5 == 1)
+                else if (i % 5 == 1 || i % 5 == 2)
                 {
                     file2.Add(lines[i]);
                 }
@@ -258,9 +259,10 @@ namespace NlpFileConverter
                     file3.Add(lines[i]);
                 }
             }
-            File.WriteAllLines("1000_1.txt", file1);
-            File.WriteAllLines("1000_2.txt", file2);
-            File.WriteAllLines("3000_1.txt", file3);
+            //7:2:1
+            File.WriteAllLines("hotel_500.txt", file1);
+            File.WriteAllLines("hotel_1000.txt", file2);
+            File.WriteAllLines("hotel_3500.txt", file3);
         }
 
     }
