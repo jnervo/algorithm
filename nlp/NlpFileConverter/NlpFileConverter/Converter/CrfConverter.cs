@@ -465,6 +465,8 @@ namespace NlpFileConverter
             public CrfCategory CrfCategory;
             public CrfPosition CrfPosition;
 
+            public int LineNo;
+
             private string _crfCategoryPosition;
             public string CrfCategoryPosition
             {
@@ -814,7 +816,7 @@ namespace NlpFileConverter
                         }
                         else
                         {
-                            Console.WriteLine("I really don't know how to handle this...");
+                            Console.WriteLine("I really don't know how to handle this... Please check the sentence around: Line {0} ~ {1}", crfResult.CrfWords.First().LineNo, crfResult.CrfWords.Last().LineNo);
                             return;
                         }
                     }
@@ -842,8 +844,10 @@ namespace NlpFileConverter
                 Console.WriteLine("Failed to DetectCrfSeparator for: {0}", lines.FirstOrDefault());
                 return crfResults;
             }
-            foreach (var line in lines)
+
+            for (int i = 0; i < lines.Length; i++)
             {
+                var line = lines[i];
                 if (string.IsNullOrWhiteSpace(line))
                 {
                     crfResults.Add(crfResult);
@@ -857,7 +861,8 @@ namespace NlpFileConverter
                 {
                     WordStr = tokens[0],
                     CrfCategoryPosition = tokens[1],
-                    CrfPos = tokens.Length > 2 ? tokens[2] : null
+                    CrfPos = tokens.Length > 2 ? tokens[2] : null,
+                    LineNo = i
                 };
                 crfResult.CrfWords.Add(crfWord);
             }

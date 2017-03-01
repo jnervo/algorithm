@@ -12,7 +12,6 @@ namespace NlpFileConverter
     {
         static void Main(string[] args)
         {
-            Split5000();
             CommandLine<CmdParameters> cmdLine = new CommandLine<CmdParameters>();
             CmdParameters cmdParameters = cmdLine.Parse(args);
 
@@ -246,11 +245,11 @@ namespace NlpFileConverter
             var file3 = new List<string>();
             for (int i = 0; i < lines.Length; i++)
             {
-                if (i % 5 == 0)
+                if (i % 10 == 0)
                 {
                     file1.Add(lines[i]);
                 }
-                else if (i % 5 == 1 || i % 5 == 2)
+                else if (i % 10 == 1 || i % 10 == 2)
                 {
                     file2.Add(lines[i]);
                 }
