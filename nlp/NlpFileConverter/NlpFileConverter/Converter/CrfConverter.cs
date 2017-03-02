@@ -10,8 +10,9 @@ namespace NlpFileConverter
     public class CrfConverter
     {
         #region Merge
+        private List<string> ErrorLines = new List<string>();
 
-        public static void Convert2Crf(string labelInput, string segInput, string posInput, string outputDir, string fileName, bool need2Split, bool need2FilterFailedCase = false)
+        public void Convert2Crf(string labelInput, string segInput, string posInput, string outputDir, string fileName, bool need2Split, bool need2FilterFailedCase = false)
         {
             //read
             var labelingResults = File.ReadAllLines(labelInput).ToList();
@@ -68,7 +69,7 @@ namespace NlpFileConverter
                 expressionsList);
         }
 
-        private static void OutputResults(string outputDir, string fileName,
+        private void OutputResults(string outputDir, string fileName,
             List<string> labelingResults,
             List<List<string>> segResults,
             List<PosInfo> posResults,
@@ -81,6 +82,10 @@ namespace NlpFileConverter
             {
                 Directory.CreateDirectory(outputDir);
             }
+
+            //error file
+            File.WriteAllLines(Path.Combine(outputDir, fileName + ".error"),
+                ErrorLines);
 
             //label file
             File.WriteAllLines(Path.Combine(outputDir, fileName + ".labeled"),
@@ -103,7 +108,7 @@ namespace NlpFileConverter
             File.WriteAllLines(Path.Combine(outputDir, fileName + ".expressions"), expressionsList.Select(q => string.Join("\t", q)));
         }
 
-        public static void OutputCrfResults(string output, List<CrfResult> crfResults)
+        public void OutputCrfResults(string output, List<CrfResult> crfResults)
         {
             using (StreamWriter sw = new StreamWriter(output))
             {
@@ -123,7 +128,7 @@ namespace NlpFileConverter
             }
         }
 
-        private static List<CrfResult> Convert(List<string> labelingResults, List<List<string>> segResults, List<PosInfo> posResults)
+        private List<CrfResult> Convert(List<string> labelingResults, List<List<string>> segResults, List<PosInfo> posResults)
         {
             List<CrfResult> crfResultList = new List<CrfResult>();
             if (labelingResults == null
@@ -151,7 +156,7 @@ namespace NlpFileConverter
             return crfResultList;
         }
 
-        private static void FillPosInfo(PosInfo posInfo, ref CrfResult crfResult)
+        private void FillPosInfo(PosInfo posInfo, ref CrfResult crfResult)
         {
             if (crfResult.CrfWords.Count != posInfo.Words.Count)
             {
@@ -182,7 +187,7 @@ namespace NlpFileConverter
         /// <param name="input">the input file of corpus labeling result</param>
         /// <param name="output">CRF output</param>
         /// <param name="segInput">word breaker input</param>
-        public static void ConvertLabel2Crf(string input, string output, string segInput)
+        public void ConvertLabel2Crf(string input, string output, string segInput)
         {
             var labelingResults = File.ReadAllLines(input).ToList();
 
@@ -208,7 +213,7 @@ namespace NlpFileConverter
             }
         }
 
-        private static List<CrfResult> Convert(List<string> labelingResults, List<List<string>> segResults)
+        private List<CrfResult> Convert(List<string> labelingResults, List<List<string>> segResults)
         {
             List<CrfResult> crfResultList = new List<CrfResult>();
             if (labelingResults == null
@@ -230,11 +235,12 @@ namespace NlpFileConverter
             return crfResultList;
         }
 
-        private static CrfResult GenerateCrfResult(string labelingResult, List<string> words)
+        private CrfResult GenerateCrfResult(string labelingResult, List<string> words)
         {
             var subSentences = SplitLabelingResult(labelingResult);
             if (subSentences == null)
             {
+                ErrorLines.Add(labelingResult);
                 return null;
             }
 
@@ -297,7 +303,7 @@ namespace NlpFileConverter
         /// </summary>
         /// <param name="labelingResult"></param>
         /// <returns></returns>
-        public static List<CrfWord> SplitLabelingResult(string labelingResult)
+        public List<CrfWord> SplitLabelingResult(string labelingResult)
         {
             try
             {
@@ -358,7 +364,7 @@ namespace NlpFileConverter
             }
         }
 
-        private static CrfCategory GetCrfCategory(string categoryTag)
+        private CrfCategory GetCrfCategory(string categoryTag)
         {
             switch (categoryTag.ToLower())
             {
@@ -377,7 +383,7 @@ namespace NlpFileConverter
         /// </summary>
         /// <param name="segInput"></param>
         /// <returns></returns>
-        private static List<List<string>> ReadSegInputV2(string segInput)
+        private List<List<string>> ReadSegInputV2(string segInput)
         {
             List<List<string>> sentences = new List<List<string>>();
 
@@ -412,7 +418,7 @@ namespace NlpFileConverter
         /// </summary>
         /// <param name="segInput"></param>
         /// <returns></returns>
-        public static List<List<string>> ReadSegInputV1(string segInput)
+        public List<List<string>> ReadSegInputV1(string segInput)
         {
             List<List<string>> sentences = new List<List<string>>();
 
@@ -506,7 +512,7 @@ namespace NlpFileConverter
         /// <param name="posInput"></param>
         /// <param name="output"></param>
         /// <param name="wordBreakerInput"></param>
-        public static void ConvertPos2Crf(string posInput, string output = null, string labelInput = null)
+        public void ConvertPos2Crf(string posInput, string output = null, string labelInput = null)
         {
             //read
             List<PosInfo> posInfoList = ReadPosInfoList(posInput);
@@ -524,7 +530,7 @@ namespace NlpFileConverter
             File.WriteAllLines(output, crfInfoList.Select(crfInfo => string.IsNullOrEmpty(crfInfo.Word) ? string.Empty : string.Join("\t", crfInfo.Word, crfInfo.Pos, crfInfo.Type)));
         }
 
-        private static List<CrfInfo> GenerateCrfInfoList(List<PosInfo> posInfoList, List<CommentInfo> commentInfoList)
+        private List<CrfInfo> GenerateCrfInfoList(List<PosInfo> posInfoList, List<CommentInfo> commentInfoList)
         {
             List<CrfInfo> list = new List<CrfInfo>();
             for (int i = 0; i < posInfoList.Count; i++)
@@ -537,7 +543,7 @@ namespace NlpFileConverter
             return list;
         }
 
-        private static void GenerateCrfInfoList(PosInfo posInfo, CommentInfo commentInfo, ref List<CrfInfo> list)
+        private void GenerateCrfInfoList(PosInfo posInfo, CommentInfo commentInfo, ref List<CrfInfo> list)
         {
             var wordList = new List<CrfInfo>();
             for (int i = 0; i < posInfo.Words.Count; i++)
@@ -633,7 +639,7 @@ namespace NlpFileConverter
             list.AddRange(wordList);
         }
 
-        private static List<CommentInfo> ReadCommentInfoList(string labelInput)
+        private List<CommentInfo> ReadCommentInfoList(string labelInput)
         {
             List<CommentInfo> list = new List<CommentInfo>();
             if (string.IsNullOrEmpty(labelInput) || !File.Exists(labelInput))
@@ -668,7 +674,7 @@ namespace NlpFileConverter
             return list;
         }
 
-        public static List<PosInfo> ReadPosInfoList(string posInput)
+        public List<PosInfo> ReadPosInfoList(string posInput)
         {
             List<PosInfo> list = new List<PosInfo>();
 
@@ -739,7 +745,7 @@ namespace NlpFileConverter
 
         #region CRF => Property + Evaluate + Expression
 
-        public static void ConvertCrf2TagFiles(string crfFile, bool need2FilterFailedCase = false)
+        public void ConvertCrf2TagFiles(string crfFile, bool need2FilterFailedCase = false)
         {
             var crfResults = ReadCrfResults(crfFile);
 
@@ -776,7 +782,7 @@ namespace NlpFileConverter
             File.WriteAllLines(crfFile + ".expressions", expressionsList.Select(q => string.Join("\t", q)));
         }
 
-        public static void DetectTags(CrfResult crfResult, out List<string> attributes, out List<string> evaluations, out List<string> expressions)
+        public void DetectTags(CrfResult crfResult, out List<string> attributes, out List<string> evaluations, out List<string> expressions)
         {
             attributes = new List<string>();
             evaluations = new List<string>();
@@ -831,7 +837,7 @@ namespace NlpFileConverter
             }
         }
 
-        public static List<CrfResult> ReadCrfResults(string crfFile)
+        public List<CrfResult> ReadCrfResults(string crfFile)
         {
             var crfResults = new List<CrfResult>();
             CrfResult crfResult = new CrfResult();
@@ -873,7 +879,7 @@ namespace NlpFileConverter
             return crfResults;
         }
 
-        public static string DetectCrfSeparator(string[] lines, int minFieldsCount = 1)
+        public string DetectCrfSeparator(string[] lines, int minFieldsCount = 1)
         {
             var firstLine = lines.First();
 

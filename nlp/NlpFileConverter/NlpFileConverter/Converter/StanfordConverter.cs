@@ -37,7 +37,7 @@ namespace NlpFileConverter
 */
     class StanfordConverter
     {
-        public static void ConvertParserResult2Crf(string input, string output, string originalInput)
+        public void ConvertParserResult2Crf(string input, string output, string originalInput)
         {
             var sentenceList = ReadSentenceList(input);
 
@@ -48,12 +48,12 @@ namespace NlpFileConverter
             WriteSentenceList(output, sentenceList);
         }
 
-        private static List<List<string>> ReadOriginalSentenceList(string originalInput)
+        private List<List<string>> ReadOriginalSentenceList(string originalInput)
         {
             return File.ReadAllLines(originalInput).Select(l => l.Split('\t').ToList()).ToList();
         }
 
-        private static void WriteSentenceList(string output, List<Sentence> sentenceList)
+        private void WriteSentenceList(string output, List<Sentence> sentenceList)
         {
             using (StreamWriter sw = new StreamWriter(output))
             {
@@ -68,7 +68,7 @@ namespace NlpFileConverter
             }
         }
 
-        private static void AdaptSentenceList(List<Sentence> sentenceList, List<List<string>> originalSentenceList)
+        private void AdaptSentenceList(List<Sentence> sentenceList, List<List<string>> originalSentenceList)
         {
             if (sentenceList.Count <= originalSentenceList.Count)
             {
@@ -79,7 +79,7 @@ namespace NlpFileConverter
             }
         }
 
-        private static void AdaptSentence(Sentence sentence, List<string> originalWords)
+        private void AdaptSentence(Sentence sentence, List<string> originalWords)
         {
             var wordsDic = AdaptWords(sentence);
 
@@ -166,7 +166,7 @@ namespace NlpFileConverter
             sentence.words = wordsWithPunc;
         }
 
-        private static void recursion(Relation relation, Sentence sentence, Dictionary<int, Word> wordsDic, string type)
+        private void recursion(Relation relation, Sentence sentence, Dictionary<int, Word> wordsDic, string type)
         {
             if (wordsDic[relation.word1.position].tag != "n")
             {
@@ -181,7 +181,7 @@ namespace NlpFileConverter
             }
         }
 
-        private static Dictionary<int, Word> AdaptWords(Sentence sentence)
+        private Dictionary<int, Word> AdaptWords(Sentence sentence)
         {
             Dictionary<int, Word> dic = new Dictionary<int, Word>();
             foreach (var relation in sentence.relations)
@@ -198,7 +198,7 @@ namespace NlpFileConverter
             return dic;
         }
 
-        private static List<Sentence> ReadSentenceList(string input)
+        private List<Sentence> ReadSentenceList(string input)
         {
             List<Sentence> sentenceList = new List<Sentence>();
             var sentence = new Sentence();
@@ -231,9 +231,9 @@ namespace NlpFileConverter
             return sentenceList;
         }
 
-        private static Regex regex = new Regex("(?<Relation>[^\\(\\)].*?)\\((?<Word1>.*?)-(?<Position1>\\d*?), (?<Word2>.*?)-(?<Position2>\\d*?)\\)");
+        private Regex regex = new Regex("(?<Relation>[^\\(\\)].*?)\\((?<Word1>.*?)-(?<Position1>\\d*?), (?<Word2>.*?)-(?<Position2>\\d*?)\\)");
 
-        private static Relation ParseRelation(string line)
+        private Relation ParseRelation(string line)
         {
             Match match = regex.Match(line);
 

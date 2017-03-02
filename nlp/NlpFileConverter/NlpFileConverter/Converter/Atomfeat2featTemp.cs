@@ -9,7 +9,7 @@ namespace NlpFileConverter
 {
     public class Atomfeat2featTemp
     {
-        public static void ConvertFeature(string inputFile, string tempFile, string outputFile)
+        public void ConvertFeature(string inputFile, string tempFile, string outputFile)
         {
             if (string.IsNullOrEmpty(outputFile))
             {

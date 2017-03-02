@@ -23,14 +23,14 @@ namespace NlpFileConverter
 
             if (args.Length == 0) // no args, run default function
             {
-                var outptuDir = @"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\output";
+                var outptuDir = @"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\hotel_3file2crf\output";
                 foreach (var type in new string[] { "dev", "test", "train" })
                 {
-                    var labelInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\{0}.txt", type);
-                    var segInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\seg{0}.txt", type);
-                    var posInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\moved\pos{0}.txt", type);
+                    var labelInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\hotel_3file2crf\label_{0}.txt", type);
+                    var segInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\hotel_3file2crf\seg_{0}.txt", type);
+                    var posInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\hotel_3file2crf\pos_{0}.txt", type);
 
-                    CrfConverter.Convert2Crf(labelInputFile, segInputFile, posInputFile, outptuDir, type, true);
+                    new CrfConverter().Convert2Crf(labelInputFile, segInputFile, posInputFile, outptuDir, type, true);
                 }
             }
             else
@@ -43,7 +43,7 @@ namespace NlpFileConverter
                             Console.WriteLine("CrfFile is null or not exist.");
                             return;
                         }
-                        CrfConverter.ConvertCrf2TagFiles(cmdParameters.CrfFile);
+                        new CrfConverter().ConvertCrf2TagFiles(cmdParameters.CrfFile);
                         break;
 
                     case "pos2crf":
@@ -52,7 +52,7 @@ namespace NlpFileConverter
                             Console.WriteLine("PosFile is null or not exist.");
                             return;
                         }
-                        CrfConverter.ConvertPos2Crf(cmdParameters.PosFile, cmdParameters.PosCrfFile);
+                        new CrfConverter().ConvertPos2Crf(cmdParameters.PosFile, cmdParameters.PosCrfFile);
                         break;
                     case "atomfeat2feattemp":
                         if (string.IsNullOrEmpty(cmdParameters.PosCrfFile) || !File.Exists(cmdParameters.PosCrfFile))
@@ -65,7 +65,7 @@ namespace NlpFileConverter
                             Console.WriteLine("FeatureTempFile is null or not exist.");
                             return;
                         }
-                        Atomfeat2featTemp.ConvertFeature(cmdParameters.PosCrfFile, cmdParameters.FeatureTempFile, cmdParameters.FeatureTempOutputFile);
+                        new Atomfeat2featTemp().ConvertFeature(cmdParameters.PosCrfFile, cmdParameters.FeatureTempFile, cmdParameters.FeatureTempOutputFile);
                         break;
                     case "all":
 
@@ -84,7 +84,7 @@ namespace NlpFileConverter
                             Console.WriteLine("PosFile is null or not exist.");
                             return;
                         }
-                        CrfConverter.Convert2Crf(
+                        new CrfConverter().Convert2Crf(
                             cmdParameters.LabelFile,
                             cmdParameters.SegFile,
                             cmdParameters.PosFile,
@@ -177,7 +177,7 @@ namespace NlpFileConverter
 
         }
 
-        private static void Move500FromDev2Train()
+        private void Move500FromDev2Train()
         {
             var labelInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\{0}.txt", "dev");
             var segInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\seg{0}.txt", "dev");
@@ -189,13 +189,14 @@ namespace NlpFileConverter
 
 
             //read
+            var crfConverter = new CrfConverter();
             var labelingResults = File.ReadAllLines(labelInputFile).ToList();
-            var segResults = CrfConverter.ReadSegInputV1(segInputFile);
-            var posInfoList = CrfConverter.ReadPosInfoList(posInputFile);
+            var segResults = crfConverter.ReadSegInputV1(segInputFile);
+            var posInfoList = crfConverter.ReadPosInfoList(posInputFile);
 
             var labelingResults2 = File.ReadAllLines(labelInputFile2).ToList();
-            var segResults2 = CrfConverter.ReadSegInputV1(segInputFile2);
-            var posInfoList2 = CrfConverter.ReadPosInfoList(posInputFile2);
+            var segResults2 = crfConverter.ReadSegInputV1(segInputFile2);
+            var posInfoList2 = crfConverter.ReadPosInfoList(posInputFile2);
 
             Random random = new Random();
             for (int i = 0; i < 500; i++)
@@ -236,7 +237,7 @@ namespace NlpFileConverter
         /// 2,7,12,17...    File2
         /// Others          File3
         /// </summary>
-        static void Split5000()
+        void Split5000()
         {
             var lines = File.ReadAllLines(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\hotel1a.txt", Encoding.GetEncoding("gb2312"));
 

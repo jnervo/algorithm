@@ -13,3 +13,5 @@ nlp/NLPIntegratedTool/NLPIntegratedTool/Exe/NNPooling/NNpooling/
 nlp/NLPIntegratedTool/NLPIntegratedTool/Exe/NNPooling/experiment_data/
 nlp/NLPIntegratedTool/NLPIntegratedTool/Exe/林扬.zip
 nlp/NlpFileConverter/NlpFileConverter/hotel1a.txt
+nlp/NlpFileConverter/NlpFileConverter/Data/CRF/hotel_3file2crf/
+nlp/NlpFileConverter/NlpFileConverter/Data/TestData/
