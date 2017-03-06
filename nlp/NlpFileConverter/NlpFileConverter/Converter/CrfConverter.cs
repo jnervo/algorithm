@@ -119,8 +119,8 @@ namespace NlpFileConverter
                         sw.WriteLine(
                             string.Join("\t",
                                 crfWord.WordStr,
-                                crfWord.CrfCategoryPosition,
-                                crfWord.CrfPos
+                                crfWord.CrfPos,
+                                crfWord.CrfCategoryPosition
                             ));
                     }
                     sw.WriteLine();

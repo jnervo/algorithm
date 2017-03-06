@@ -23,12 +23,12 @@ namespace NlpFileConverter
 
             if (args.Length == 0) // no args, run default function
             {
-                var outptuDir = @"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\hotel_3file2crf\output";
+                var outptuDir = @"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\sentence_count_adjust\output";
                 foreach (var type in new string[] { "dev", "test", "train" })
                 {
-                    var labelInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\hotel_3file2crf\label_{0}.txt", type);
-                    var segInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\hotel_3file2crf\seg_{0}.txt", type);
-                    var posInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\hotel_3file2crf\pos_{0}.txt", type);
+                    var labelInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\sentence_count_adjust\{0}.labeled", type);
+                    var segInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\sentence_count_adjust\{0}.seg", type);
+                    var posInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\sentence_count_adjust\{0}.pos", type);
 
                     new CrfConverter().Convert2Crf(labelInputFile, segInputFile, posInputFile, outptuDir, type, true);
                 }
@@ -265,5 +265,46 @@ namespace NlpFileConverter
             File.WriteAllLines("hotel_3500.txt", file3);
         }
 
+        private static void MoveSentence()
+        {
+            var file1 = @"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\sentence_count_adjust\dev.labeled";
+            var file2 = @"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\sentence_count_adjust\test.labeled";
+            var file3 = @"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\sentence_count_adjust\train.labeled";
+
+            var lines1 = File.ReadAllLines(file1);
+            var lines2 = File.ReadAllLines(file2);
+            var lines3 = File.ReadAllLines(file3);
+
+            var newLines1 = new List<string>();
+            var newLines2 = new List<string>();
+            var newLines3 = new List<string>(lines3);
+
+            for (int i = 0; i < lines1.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    newLines1.Add(lines1[i]);
+                }
+                else
+                {
+                    newLines3.Add(lines1[i]);
+                }
+            }
+
+            for (int i = 0; i < lines2.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    newLines2.Add(lines2[i]);
+                }
+                else
+                {
+                    newLines3.Add(lines2[i]);
+                }
+            }
+            File.WriteAllLines(file1, newLines1);
+            File.WriteAllLines(file2, newLines2);
+            File.WriteAllLines(file3, newLines3);
+        }
     }
 }
