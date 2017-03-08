@@ -149,7 +149,7 @@ namespace NLPIntegratedTool
             foreach (var sentence in FinalResult.Sentences)
             {
                 TreeNode sentenceNode = new TreeNode();
-                sentenceNode.Text = string.Join("\t", sentence.LabelResult, sentence.SentenceStr);
+                sentenceNode.Text = string.Join(" ", sentence.LabelResult, sentence.SentenceStr);
 
                 rootNode.Nodes.Add(sentenceNode);
             }

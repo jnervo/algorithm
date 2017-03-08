@@ -64,6 +64,7 @@ namespace NLPIntegratedTool
 
             var cmdTemplatePath = Path.Combine(ExeDir, "pooling_template.cmd");
             var cmdPath = Path.Combine(ExeDir, "pooling_run.cmd");
+            var exeFullPath = Path.Combine(ExeDir, ExeFilePath);
 
             File.WriteAllText(cmdPath, File.ReadAllText(cmdTemplatePath)
                 .Replace("##EXEFILE##", ExeFilePath)
@@ -76,19 +77,13 @@ namespace NLPIntegratedTool
             {
                 lastOutputTime = (new FileInfo(outputFile)).CreationTime;
             }
-            var process = ProcessEx.RunProcess(ExeDir, cmdPath);
 
-            while (true)
-            {
-                if (File.Exists(outputFile) && (new FileInfo(outputFile)).CreationTime > lastOutputTime)
-                {
-                    break;
-                }
-                Thread.Sleep(5 * 1000);
-            }
-            process.Kill();
+            var arguments = string.Format("-test \"{0}\" -model \"{1}\" -output \"{2}\"", segFile, ModelFilePath, outputFile);
+            var str = ProcessEx.Execute(ExeDir, exeFullPath, arguments);
 
-            LogHelper.Log(process.StandardOutput.ReadToEnd());
+            //var str = ProcessEx.Execute(ExeDir, cmdPath);
+
+            LogHelper.Log(str);
 
             if (File.Exists(outputFile))
             {

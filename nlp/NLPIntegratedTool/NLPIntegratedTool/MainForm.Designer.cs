@@ -45,11 +45,11 @@
             this.startBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // resultTb
+            // logTb
             // 
             this.logTb.Location = new System.Drawing.Point(344, 248);
             this.logTb.Multiline = true;
-            this.logTb.Name = "resultTb";
+            this.logTb.Name = "logTb";
             this.logTb.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.logTb.Size = new System.Drawing.Size(320, 278);
             this.logTb.TabIndex = 1;
@@ -198,7 +198,7 @@
             this.Controls.Add(this.logTb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "解释性意见要素识别系统";
+            this.Text = "汉语解释意见句识别系统";
             this.ResumeLayout(false);
             this.PerformLayout();
 

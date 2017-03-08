@@ -96,10 +96,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Exe\NNPooling\hotel.model">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Exe\NNPooling\phone.model">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Exe\NNCRFSegmentor\hotelmodel">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -177,10 +177,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Exe\NNPooling\NNCNNTriReluPoolLabeler.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Exe\NNPooling\NNCNNTriTanhPoolLabeler.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Exe\NNCRFSegmentor\NNCRFSegmentor.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
