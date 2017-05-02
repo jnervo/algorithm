@@ -67,6 +67,22 @@ namespace NlpFileConverter
                         }
                         new Atomfeat2featTemp().ConvertFeature(cmdParameters.PosCrfFile, cmdParameters.FeatureTempFile, cmdParameters.FeatureTempOutputFile);
                         break;
+                    case "tagextractor":
+                        if (string.IsNullOrEmpty(cmdParameters.InputFile) || !File.Exists(cmdParameters.InputFile))
+                        {
+                            Console.WriteLine("Input file is null or not exist.");
+                            return;
+                        }
+                        new TagExtractor().Extract(cmdParameters.InputFile, cmdParameters.OutputFile);
+                        break;
+                    case "movepunctuation":
+                        if (string.IsNullOrEmpty(cmdParameters.InputFile) || !File.Exists(cmdParameters.InputFile))
+                        {
+                            Console.WriteLine("Input file is null or not exist.");
+                            return;
+                        }
+                        new TagExtractor().MovePunctuationIntoTag(cmdParameters.InputFile, cmdParameters.OutputFile);
+                        break;
                     case "all":
 
                         if (string.IsNullOrEmpty(cmdParameters.LabelFile) || !File.Exists(cmdParameters.LabelFile))
@@ -104,6 +120,20 @@ namespace NlpFileConverter
                 Help = "[REQUIRED] The Type of convert."
             )]
             public string Type = null;
+
+            [CommandLineParameter(
+                Name = "InputFile",
+                ShortName = "i",
+                Help = "[Optional] The input file for different types of converter"
+            )]
+            public string InputFile = null;
+
+            [CommandLineParameter(
+                Name = "OutputFile",
+                ShortName = "o",
+                Help = "[Optional] The output file for different types of converter"
+            )]
+            public string OutputFile = null;
 
             [CommandLineParameter(
                 Name = "LabelFile",

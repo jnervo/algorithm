@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converter\Atomfeat2featTemp.cs" />
+    <Compile Include="Converter\TagExtractor.cs" />
     <Compile Include="Converter\CrfConverter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
