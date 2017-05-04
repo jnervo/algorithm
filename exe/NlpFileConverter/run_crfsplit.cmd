@@ -1,0 +1,1 @@
+NlpFileConverter.exe -t crfsplit -crf "D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\bin\Debug\Data\CRF\dev\dev.output"
