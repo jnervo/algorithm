@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace NlpFileConverter
 {
-    public class Atomfeat2featTemp
+    public class Atomfeat2featTemp : ConverterBase
     {
+        public Atomfeat2featTemp(string encodingName) : base(encodingName)
+        {
+        }
         public void ConvertFeature(string inputFile, string tempFile, string outputFile)
         {
             if (string.IsNullOrEmpty(outputFile))

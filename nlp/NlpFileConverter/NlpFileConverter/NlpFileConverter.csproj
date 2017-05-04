@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converter\Atomfeat2featTemp.cs" />
+    <Compile Include="Converter\ConverterBase.cs" />
     <Compile Include="Converter\TagExtractor.cs" />
     <Compile Include="Converter\CrfConverter.cs" />
     <Compile Include="Program.cs" />
@@ -72,6 +73,7 @@
     <None Include="run_crfsplit.cmd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="run_tag.cmd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\CRF\" />

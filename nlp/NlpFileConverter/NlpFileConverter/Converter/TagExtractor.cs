@@ -8,8 +8,12 @@ using System.Threading.Tasks;
 
 namespace NlpFileConverter
 {
-    public class TagExtractor
+    public class TagExtractor : ConverterBase
     {
+        public TagExtractor(string encodingName) : base(encodingName)
+        {
+        }
+
         private static Regex _aRegex = new Regex("\\<a\\>(?<Value>.*?)\\</a\\>");
         private static Regex _eRegex = new Regex("\\<e\\>(?<Value>.*?)\\</e\\>");
         private static Regex _expRegex = new Regex("\\<exp.*?\\>(?<Value>.*?)\\</exp.*?\\>");
@@ -17,16 +21,16 @@ namespace NlpFileConverter
 
         private static string[] _tags = new string[] { "a", "e", "exp-1", "exp-2", "exp-3", "exp-4" };
 
-        public void Extract(string inputFile, string outputFile = null)
+        public void Extract(string inputFile, string outputFile = null, string encodingName = null)
         {
             if (string.IsNullOrEmpty(outputFile))
             {
                 outputFile = Path.ChangeExtension(inputFile, ".out");
             }
 
-            using (StreamWriter sw = new StreamWriter(outputFile))
+            using (StreamWriter sw = new StreamWriter(outputFile, false, _encoding))
             {
-                foreach (var line in File.ReadAllLines(inputFile, Encoding.GetEncoding("gb2312")))
+                foreach (var line in File.ReadAllLines(inputFile, _encoding))
                 {
                     var aList = MatchAll(line, _aRegex);
                     var eList = MatchAll(line, _eRegex);
@@ -50,7 +54,7 @@ namespace NlpFileConverter
             return ret;
         }
 
-        public void MovePunctuationIntoTag(string inputFile, string outputFile = null)
+        public void MovePunctuationIntoTag(string inputFile, string outputFile = null, string encodingName = null)
         {
             if (string.IsNullOrEmpty(outputFile))
             {
@@ -58,9 +62,9 @@ namespace NlpFileConverter
             }
 
             var punctuations = new string[] { "，", "。" };
-            using (StreamWriter sw = new StreamWriter(outputFile))
+            using (StreamWriter sw = new StreamWriter(outputFile, false, _encoding))
             {
-                foreach (var line in File.ReadAllLines(inputFile, Encoding.GetEncoding("gb2312")))
+                foreach (var line in File.ReadAllLines(inputFile, _encoding))
                 {
                     var newLine = line;
                     foreach (var tag in _tags)
@@ -79,6 +83,5 @@ namespace NlpFileConverter
                 }
             }
         }
-
     }
 }

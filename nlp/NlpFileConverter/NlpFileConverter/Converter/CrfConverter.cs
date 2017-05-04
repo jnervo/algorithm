@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 
 namespace NlpFileConverter
 {
-    public class CrfConverter
+    public class CrfConverter : ConverterBase
     {
+        public CrfConverter(string encodingName) : base(encodingName)
+        {
+        }
+
         #region Merge
         private List<string> ErrorLines = new List<string>();
 

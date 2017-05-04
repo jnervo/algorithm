@@ -21,94 +21,79 @@ namespace NlpFileConverter
                 return;
             }
 
-            if (args.Length == 0) // no args, run default function
+            switch (cmdParameters.Type.ToLower())
             {
-                var outptuDir = @"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\sentence_count_adjust\output";
-                foreach (var type in new string[] { "dev", "test", "train" })
-                {
-                    var labelInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\sentence_count_adjust\{0}.labeled", type);
-                    var segInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\sentence_count_adjust\{0}.seg", type);
-                    var posInputFile = string.Format(@"D:\yuzhu\src\git\github\algorithm\nlp\NlpFileConverter\NlpFileConverter\Data\CRF\sentence_count_adjust\{0}.pos", type);
+                case "crfsplit":
+                    if (string.IsNullOrEmpty(cmdParameters.CrfFile) || !File.Exists(cmdParameters.CrfFile))
+                    {
+                        Console.WriteLine("CrfFile is null or not exist.");
+                        return;
+                    }
+                    new CrfConverter(cmdParameters.Encoding).ConvertCrf2TagFiles(cmdParameters.CrfFile);
+                    break;
 
-                    new CrfConverter().Convert2Crf(labelInputFile, segInputFile, posInputFile, outptuDir, type, true);
-                }
-            }
-            else
-            {
-                switch (cmdParameters.Type.ToLower())
-                {
-                    case "crfsplit":
-                        if (string.IsNullOrEmpty(cmdParameters.CrfFile) || !File.Exists(cmdParameters.CrfFile))
-                        {
-                            Console.WriteLine("CrfFile is null or not exist.");
-                            return;
-                        }
-                        new CrfConverter().ConvertCrf2TagFiles(cmdParameters.CrfFile);
-                        break;
+                case "pos2crf":
+                    if (string.IsNullOrEmpty(cmdParameters.PosFile) || !File.Exists(cmdParameters.PosFile))
+                    {
+                        Console.WriteLine("PosFile is null or not exist.");
+                        return;
+                    }
+                    new CrfConverter(cmdParameters.Encoding).ConvertPos2Crf(cmdParameters.PosFile, cmdParameters.PosCrfFile);
+                    break;
+                case "atomfeat2feattemp":
+                    if (string.IsNullOrEmpty(cmdParameters.PosCrfFile) || !File.Exists(cmdParameters.PosCrfFile))
+                    {
+                        Console.WriteLine("PosCrfFile is null or not exist.");
+                        return;
+                    }
+                    if (string.IsNullOrEmpty(cmdParameters.FeatureTempFile) || !File.Exists(cmdParameters.FeatureTempFile))
+                    {
+                        Console.WriteLine("FeatureTempFile is null or not exist.");
+                        return;
+                    }
+                    new Atomfeat2featTemp(cmdParameters.Encoding).ConvertFeature(cmdParameters.PosCrfFile, cmdParameters.FeatureTempFile, cmdParameters.FeatureTempOutputFile);
+                    break;
+                case "tagextractor":
+                    if (string.IsNullOrEmpty(cmdParameters.InputFile) || !File.Exists(cmdParameters.InputFile))
+                    {
+                        Console.WriteLine("Input file is null or not exist.");
+                        return;
+                    }
+                    new TagExtractor(cmdParameters.Encoding).Extract(cmdParameters.InputFile, cmdParameters.OutputFile);
+                    break;
+                case "movepunctuation":
+                    if (string.IsNullOrEmpty(cmdParameters.InputFile) || !File.Exists(cmdParameters.InputFile))
+                    {
+                        Console.WriteLine("Input file is null or not exist.");
+                        return;
+                    }
+                    new TagExtractor(cmdParameters.Encoding).MovePunctuationIntoTag(cmdParameters.InputFile, cmdParameters.OutputFile);
+                    break;
+                case "all":
 
-                    case "pos2crf":
-                        if (string.IsNullOrEmpty(cmdParameters.PosFile) || !File.Exists(cmdParameters.PosFile))
-                        {
-                            Console.WriteLine("PosFile is null or not exist.");
-                            return;
-                        }
-                        new CrfConverter().ConvertPos2Crf(cmdParameters.PosFile, cmdParameters.PosCrfFile);
-                        break;
-                    case "atomfeat2feattemp":
-                        if (string.IsNullOrEmpty(cmdParameters.PosCrfFile) || !File.Exists(cmdParameters.PosCrfFile))
-                        {
-                            Console.WriteLine("PosCrfFile is null or not exist.");
-                            return;
-                        }
-                        if (string.IsNullOrEmpty(cmdParameters.FeatureTempFile) || !File.Exists(cmdParameters.FeatureTempFile))
-                        {
-                            Console.WriteLine("FeatureTempFile is null or not exist.");
-                            return;
-                        }
-                        new Atomfeat2featTemp().ConvertFeature(cmdParameters.PosCrfFile, cmdParameters.FeatureTempFile, cmdParameters.FeatureTempOutputFile);
-                        break;
-                    case "tagextractor":
-                        if (string.IsNullOrEmpty(cmdParameters.InputFile) || !File.Exists(cmdParameters.InputFile))
-                        {
-                            Console.WriteLine("Input file is null or not exist.");
-                            return;
-                        }
-                        new TagExtractor().Extract(cmdParameters.InputFile, cmdParameters.OutputFile);
-                        break;
-                    case "movepunctuation":
-                        if (string.IsNullOrEmpty(cmdParameters.InputFile) || !File.Exists(cmdParameters.InputFile))
-                        {
-                            Console.WriteLine("Input file is null or not exist.");
-                            return;
-                        }
-                        new TagExtractor().MovePunctuationIntoTag(cmdParameters.InputFile, cmdParameters.OutputFile);
-                        break;
-                    case "all":
-
-                        if (string.IsNullOrEmpty(cmdParameters.LabelFile) || !File.Exists(cmdParameters.LabelFile))
-                        {
-                            Console.WriteLine("LabelFile is null or not exist.");
-                            return;
-                        }
-                        if (string.IsNullOrEmpty(cmdParameters.SegFile) || !File.Exists(cmdParameters.SegFile))
-                        {
-                            Console.WriteLine("SegFile is null or not exist.");
-                            return;
-                        }
-                        if (string.IsNullOrEmpty(cmdParameters.PosFile) || !File.Exists(cmdParameters.PosFile))
-                        {
-                            Console.WriteLine("PosFile is null or not exist.");
-                            return;
-                        }
-                        new CrfConverter().Convert2Crf(
-                            cmdParameters.LabelFile,
-                            cmdParameters.SegFile,
-                            cmdParameters.PosFile,
-                            cmdParameters.Directory,
-                            cmdParameters.FileName,
-                            cmdParameters.NeedToSplitTags);
-                        break;
-                }
+                    if (string.IsNullOrEmpty(cmdParameters.LabelFile) || !File.Exists(cmdParameters.LabelFile))
+                    {
+                        Console.WriteLine("LabelFile is null or not exist.");
+                        return;
+                    }
+                    if (string.IsNullOrEmpty(cmdParameters.SegFile) || !File.Exists(cmdParameters.SegFile))
+                    {
+                        Console.WriteLine("SegFile is null or not exist.");
+                        return;
+                    }
+                    if (string.IsNullOrEmpty(cmdParameters.PosFile) || !File.Exists(cmdParameters.PosFile))
+                    {
+                        Console.WriteLine("PosFile is null or not exist.");
+                        return;
+                    }
+                    new CrfConverter(cmdParameters.Encoding).Convert2Crf(
+                        cmdParameters.LabelFile,
+                        cmdParameters.SegFile,
+                        cmdParameters.PosFile,
+                        cmdParameters.Directory,
+                        cmdParameters.FileName,
+                        cmdParameters.NeedToSplitTags);
+                    break;
             }
         }
 
@@ -134,6 +119,13 @@ namespace NlpFileConverter
                 Help = "[Optional] The output file for different types of converter"
             )]
             public string OutputFile = null;
+
+            [CommandLineParameter(
+                Name = "Encoding",
+                ShortName = "e",
+                Help = "[Optional] The encoding of your files. e.g. UTF-8, gb2312 and etc."
+            )]
+            public string Encoding = null;
 
             [CommandLineParameter(
                 Name = "LabelFile",
@@ -219,7 +211,7 @@ namespace NlpFileConverter
 
 
             //read
-            var crfConverter = new CrfConverter();
+            var crfConverter = new CrfConverter(null);
             var labelingResults = File.ReadAllLines(labelInputFile).ToList();
             var segResults = crfConverter.ReadSegInputV1(segInputFile);
             var posInfoList = crfConverter.ReadPosInfoList(posInputFile);
