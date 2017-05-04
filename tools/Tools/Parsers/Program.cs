@@ -1,4 +1,5 @@
-﻿using Parsers.Parser;
+﻿using Parsers.Helper;
+using Parsers.Parser;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace Parsers
     {
         static void Main(string[] args)
         {
+            RelatedEntityHelper.Statistic();
             ImageVerticalParser.GetThumbnailIdsForAllTopics();
             MitParser.Parse();
             UtilizationReportParser.Parse();
