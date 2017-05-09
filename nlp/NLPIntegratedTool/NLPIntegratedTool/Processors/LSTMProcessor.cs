@@ -23,11 +23,11 @@ namespace NLPIntegratedTool
                 switch (CurrentModelType)
                 {
                     case ModelType.Mobile:
-                        return Path.Combine(ExeDir, "model");
+                        return Path.Combine(ExeDir, "model_mobile");
                     case ModelType.Hotel:
-                        return Path.Combine(ExeDir, "hotelmodel");
+                        return Path.Combine(ExeDir, "model_hotel");
                     default:
-                        return Path.Combine(ExeDir, "model");
+                        throw new Exception("Unexpected ModelType:" + CurrentModelType.ToString());
                 }
             }
         }

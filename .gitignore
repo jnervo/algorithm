@@ -16,3 +16,5 @@ nlp/NlpFileConverter/NlpFileConverter/hotel1a.txt
 nlp/NlpFileConverter/NlpFileConverter/Data/CRF/hotel_3file2crf/
 nlp/NlpFileConverter/NlpFileConverter/Data/TestData/
 nlp/NlpFileConverter/NlpFileConverter/Data/
+nlp/NlpFileConverter/NlpFileConverter/obj/
+nlp/NlpFileConverter/NlpFileConverter/bin/

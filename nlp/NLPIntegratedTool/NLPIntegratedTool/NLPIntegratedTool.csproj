@@ -93,10 +93,10 @@
     <None Include="Exe\CrfConverter\NlpFileConverter.exe.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Exe\NNCRFSegmentor\hotelmodel">
+    <None Include="Exe\NNCRFSegmentor\model_hotel">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Exe\NNCRFSegmentor\model">
+    <None Include="Exe\NNCRFSegmentor\model_mobile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="ltp_data\changelog">

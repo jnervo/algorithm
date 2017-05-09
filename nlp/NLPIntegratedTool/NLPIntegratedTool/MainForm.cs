@@ -150,6 +150,7 @@ namespace NLPIntegratedTool
         }
 
         /*
+        //Below is some legacy code for V1
         private void inputFileSelectBtn_Click(object sender, EventArgs e)
         {
             DialogResult result = inputFileOpenDialog.ShowDialog();
